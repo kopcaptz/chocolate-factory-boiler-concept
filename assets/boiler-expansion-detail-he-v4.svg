@@ -1,0 +1,319 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1430" viewBox="0 0 2100 1430" role="img" aria-labelledby="detail-title detail-description">
+<title id="detail-title">פרט מכל התפשטות והשלמה — קונספט</title>
+<desc id="detail-description">פרט נגזר מאותו גרף: T1 לפני היניקה המשותפת של שתי המשאבות, T2 מחוץ למכל, PI01 ו־PT01 בצד המערכת של VET, DVET בצד המכל ומשוב פתיחה מוצע ZSO_VET. אין בתרשים צרכני מפעל.</desc>
+<defs>
+<marker id="hot" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#c84c43"/></marker>
+<marker id="ret" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#217ca9"/></marker>
+<marker id="fill" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#0c8b80"/></marker>
+<marker id="chem" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#8652aa"/></marker>
+<marker id="drain" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#a97924"/></marker>
+<marker id="ink" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#183348"/></marker>
+<marker id="muted" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#5a7081"/></marker>
+<marker id="line" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#d7e1e8"/></marker>
+</defs><g font-family="Arial, Noto Sans Hebrew, sans-serif">
+<rect x="0" y="0" width="2100" height="1430" rx="0" fill="#f5f8fa" stroke="#f5f8fa" stroke-width="2" />
+<rect x="0" y="0" width="2100" height="135" rx="0" fill="#17384e" stroke="#17384e" stroke-width="2" />
+<text x="2040" y="58" fill="white" font-size="36" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מכל התפשטות והשלמה · שתי משאבות על יניקה משותפת</text>
+<text x="2040" y="108" fill="#d9e6ed" font-size="24" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">קונספט · פרט מתוך אותו גרף חיבורים · לבדיקת מהנדס, לא לביצוע</text>
+<rect x="40" y="170" width="920" height="1040" rx="16" fill="white" stroke="#d6e1e8" stroke-width="2" />
+<rect x="980" y="295" width="1000" height="535" rx="16" fill="#fff9f4" stroke="#ead8c9" stroke-width="2" />
+<text x="1520" y="329" fill="#183348" font-size="26" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סחרור 1+1 · סידור מוצע</text>
+<g data-edge="AS_IN&gt;AS_OUT" data-a="AS_IN" data-b="AS_OUT" data-kind="hot" data-state="open"><title>AS_IN → AS_OUT</title>
+<path d="M 260 260 L 320 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 260 260 L 320 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="AS_OUT&gt;T1" data-a="AS_OUT" data-b="T1" data-kind="hot" data-state="open"><title>AS_OUT → T1</title>
+<path d="M 320 260 L 460 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 320 260 L 460 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="FS_IN&gt;FS_OUT" data-a="FS_IN" data-b="FS_OUT" data-kind="hot" data-state="open"><title>FS_IN → FS_OUT</title>
+<path d="M 1620 520 L 1680 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1620 520 L 1680 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="FS_OUT&gt;TT_TAP" data-a="FS_OUT" data-b="TT_TAP" data-kind="hot" data-state="open"><title>FS_OUT → TT_TAP</title>
+<path d="M 1680 520 L 1740 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1680 520 L 1740 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="TT_TAP&gt;SUPPLY" data-a="TT_TAP" data-b="SUPPLY" data-kind="hot" data-state="open"><title>TT_TAP → SUPPLY</title>
+<path d="M 1740 520 L 1890 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1740 520 L 1890 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="TT_TAP&gt;TT01" data-a="TT_TAP" data-b="TT01" data-kind="hot" data-state="open"><title>TT_TAP → TT01</title>
+<path d="M 1740 520 L 1740 445" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1740 520 L 1740 445" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="T1&gt;ET_PRESS_TEE" data-a="T1" data-b="ET_PRESS_TEE" data-kind="hot" data-state="open"><title>T1 → ET_PRESS_TEE</title>
+<path d="M 460 260 L 460 420" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 260 L 460 420" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_PRESS_TEE&gt;T2" data-a="ET_PRESS_TEE" data-b="T2" data-kind="hot" data-state="open"><title>ET_PRESS_TEE → T2</title>
+<path d="M 460 420 L 460 570" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 420 L 460 570" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_PRESS_TEE&gt;PI_TAP" data-a="ET_PRESS_TEE" data-b="PI_TAP" data-kind="hot" data-state="open"><title>ET_PRESS_TEE → PI_TAP</title>
+<path d="M 460 420 L 660 420" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 420 L 660 420" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PI_TAP&gt;PT_TAP" data-a="PI_TAP" data-b="PT_TAP" data-kind="hot" data-state="open"><title>PI_TAP → PT_TAP</title>
+<path d="M 660 420 L 820 420" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 660 420 L 820 420" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PI_TAP&gt;PI01" data-a="PI_TAP" data-b="PI01" data-kind="hot" data-state="open"><title>PI_TAP → PI01</title>
+<path d="M 660 420 L 660 350" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 660 420 L 660 350" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PT_TAP&gt;PT01" data-a="PT_TAP" data-b="PT01" data-kind="hot" data-state="open"><title>PT_TAP → PT01</title>
+<path d="M 820 420 L 820 350" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 820 420 L 820 350" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="VET_IN&gt;VET_OUT" data-a="VET_IN" data-b="VET_OUT" data-kind="hot" data-state="locked_open"><title>VET_IN → VET_OUT</title>
+<path d="M 460 690 L 460 750" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 690 L 460 750" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="T2&gt;VET_IN" data-a="T2" data-b="VET_IN" data-kind="hot" data-state="open"><title>T2 → VET_IN</title>
+<path d="M 460 570 L 460 690" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 570 L 460 690" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="VET_OUT&gt;ET_DRAIN_TEE" data-a="VET_OUT" data-b="ET_DRAIN_TEE" data-kind="hot" data-state="open"><title>VET_OUT → ET_DRAIN_TEE</title>
+<path d="M 460 750 L 460 820" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 750 L 460 820" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_DRAIN_TEE&gt;ET_WATER" data-a="ET_DRAIN_TEE" data-b="ET_WATER" data-kind="hot" data-state="open"><title>ET_DRAIN_TEE → ET_WATER</title>
+<path d="M 460 820 L 460 930" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 820 L 460 930" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_DRAIN_TEE&gt;DRAIN_BRANCH" data-a="ET_DRAIN_TEE" data-b="DRAIN_BRANCH" data-kind="drain" data-state="open"><title>ET_DRAIN_TEE → DRAIN_BRANCH</title>
+<path d="M 460 820 L 250 820" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 820 L 250 820" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="DVET_IN&gt;DVET_OUT" data-a="DVET_IN" data-b="DVET_OUT" data-kind="drain" data-state="closed"><title>DVET_IN → DVET_OUT</title>
+<path d="M 250 880 L 250 930" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 250 880 L 250 930" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="DRAIN_BRANCH&gt;DVET_IN" data-a="DRAIN_BRANCH" data-b="DVET_IN" data-kind="drain" data-state="open"><title>DRAIN_BRANCH → DVET_IN</title>
+<path d="M 250 820 L 250 880" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 250 820 L 250 880" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="DVET_OUT&gt;ET_DRAIN" data-a="DVET_OUT" data-b="ET_DRAIN" data-kind="drain" data-state="open"><title>DVET_OUT → ET_DRAIN</title>
+<path d="M 250 930 L 250 1050" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 250 930 L 250 1050" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="CV1_IN&gt;CV1_OUT" data-a="CV1_IN" data-b="CV1_OUT" data-kind="fill" data-state="oneway"><title>CV1_IN → CV1_OUT</title>
+<path d="M 980 860 L 920 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 980 860 L 920 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="CV1_OUT&gt;T2" data-a="CV1_OUT" data-b="T2" data-kind="fill" data-state="open"><title>CV1_OUT → T2</title>
+<path d="M 920 860 L 920 570 L 460 570" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 920 860 L 920 570 L 460 570" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_SUC&gt;P01A_VI_IN" data-a="P_SUC" data-b="P01A_VI_IN" data-kind="hot" data-state="open"><title>P_SUC → P01A_VI_IN</title>
+<path d="M 1000 520 L 1000 400 L 1100 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1000 520 L 1000 400 L 1100 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VI_IN&gt;P01A_VI_OUT" data-a="P01A_VI_IN" data-b="P01A_VI_OUT" data-kind="hot" data-state="open"><title>P01A_VI_IN → P01A_VI_OUT</title>
+<path d="M 1100 400 L 1140 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1100 400 L 1140 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VI_OUT&gt;P01A_IN" data-a="P01A_VI_OUT" data-b="P01A_IN" data-kind="hot" data-state="open"><title>P01A_VI_OUT → P01A_IN</title>
+<path d="M 1140 400 L 1190 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1140 400 L 1190 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_IN&gt;P01A_OUT" data-a="P01A_IN" data-b="P01A_OUT" data-kind="hot" data-state="open"><title>P01A_IN → P01A_OUT</title>
+<path d="M 1190 400 L 1270 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1190 400 L 1270 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_OUT&gt;P01A_CV_IN" data-a="P01A_OUT" data-b="P01A_CV_IN" data-kind="hot" data-state="open"><title>P01A_OUT → P01A_CV_IN</title>
+<path d="M 1270 400 L 1330 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1270 400 L 1330 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_CV_IN&gt;P01A_CV_OUT" data-a="P01A_CV_IN" data-b="P01A_CV_OUT" data-kind="hot" data-state="open"><title>P01A_CV_IN → P01A_CV_OUT</title>
+<path d="M 1330 400 L 1370 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1330 400 L 1370 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_CV_OUT&gt;P01A_VO_IN" data-a="P01A_CV_OUT" data-b="P01A_VO_IN" data-kind="hot" data-state="open"><title>P01A_CV_OUT → P01A_VO_IN</title>
+<path d="M 1370 400 L 1430 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1370 400 L 1430 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VO_IN&gt;P01A_VO_OUT" data-a="P01A_VO_IN" data-b="P01A_VO_OUT" data-kind="hot" data-state="open"><title>P01A_VO_IN → P01A_VO_OUT</title>
+<path d="M 1430 400 L 1470 400" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1430 400 L 1470 400" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VO_OUT&gt;P_DIS" data-a="P01A_VO_OUT" data-b="P_DIS" data-kind="hot" data-state="open"><title>P01A_VO_OUT → P_DIS</title>
+<path d="M 1470 400 L 1540 400 L 1540 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1470 400 L 1540 400 L 1540 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_SUC&gt;P01B_VI_IN" data-a="P_SUC" data-b="P01B_VI_IN" data-kind="hot" data-state="open"><title>P_SUC → P01B_VI_IN</title>
+<path d="M 1000 520 L 1000 700 L 1100 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1000 520 L 1000 700 L 1100 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VI_IN&gt;P01B_VI_OUT" data-a="P01B_VI_IN" data-b="P01B_VI_OUT" data-kind="hot" data-state="open"><title>P01B_VI_IN → P01B_VI_OUT</title>
+<path d="M 1100 700 L 1140 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1100 700 L 1140 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VI_OUT&gt;P01B_IN" data-a="P01B_VI_OUT" data-b="P01B_IN" data-kind="hot" data-state="open"><title>P01B_VI_OUT → P01B_IN</title>
+<path d="M 1140 700 L 1190 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1140 700 L 1190 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_IN&gt;P01B_OUT" data-a="P01B_IN" data-b="P01B_OUT" data-kind="hot" data-state="open"><title>P01B_IN → P01B_OUT</title>
+<path d="M 1190 700 L 1270 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1190 700 L 1270 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_OUT&gt;P01B_CV_IN" data-a="P01B_OUT" data-b="P01B_CV_IN" data-kind="hot" data-state="open"><title>P01B_OUT → P01B_CV_IN</title>
+<path d="M 1270 700 L 1330 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1270 700 L 1330 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_CV_IN&gt;P01B_CV_OUT" data-a="P01B_CV_IN" data-b="P01B_CV_OUT" data-kind="hot" data-state="open"><title>P01B_CV_IN → P01B_CV_OUT</title>
+<path d="M 1330 700 L 1370 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1330 700 L 1370 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_CV_OUT&gt;P01B_VO_IN" data-a="P01B_CV_OUT" data-b="P01B_VO_IN" data-kind="hot" data-state="open"><title>P01B_CV_OUT → P01B_VO_IN</title>
+<path d="M 1370 700 L 1430 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1370 700 L 1430 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VO_IN&gt;P01B_VO_OUT" data-a="P01B_VO_IN" data-b="P01B_VO_OUT" data-kind="hot" data-state="open"><title>P01B_VO_IN → P01B_VO_OUT</title>
+<path d="M 1430 700 L 1470 700" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1430 700 L 1470 700" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VO_OUT&gt;P_DIS" data-a="P01B_VO_OUT" data-b="P_DIS" data-kind="hot" data-state="open"><title>P01B_VO_OUT → P_DIS</title>
+<path d="M 1470 700 L 1540 700 L 1540 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1470 700 L 1540 700 L 1540 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_DIS&gt;FS_IN" data-a="P_DIS" data-b="FS_IN" data-kind="hot" data-state="open"><title>P_DIS → FS_IN</title>
+<path d="M 1540 520 L 1620 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1540 520 L 1620 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="B_OUT&gt;VB01O_IN" data-a="B_OUT" data-b="VB01O_IN" data-kind="hot" data-state="open"><title>B_OUT → VB01O_IN</title>
+<path d="M 70 260 L 150 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 70 260 L 150 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01O_IN&gt;VB01O_OUT" data-a="VB01O_IN" data-b="VB01O_OUT" data-kind="hot" data-state="open"><title>VB01O_IN → VB01O_OUT</title>
+<path d="M 150 260 L 190 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 150 260 L 190 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01O_OUT&gt;AS_IN" data-a="VB01O_OUT" data-b="AS_IN" data-kind="hot" data-state="open"><title>VB01O_OUT → AS_IN</title>
+<path d="M 190 260 L 260 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 190 260 L 260 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="T1&gt;P_HI" data-a="T1" data-b="P_HI" data-kind="hot" data-state="open"><title>T1 → P_HI</title>
+<path d="M 460 260 L 1000 260" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 260 L 1000 260" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_HI&gt;P_SUC" data-a="P_HI" data-b="P_SUC" data-kind="hot" data-state="open"><title>P_HI → P_SUC</title>
+<path d="M 1000 260 L 1000 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1000 260 L 1000 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-component="AS" data-type="airSeparator" transform="translate(290.0 260.0) rotate(0)">
+<rect x="-29" y="-40" width="58" height="80" rx="19" fill="#f4f8fa" stroke="#c84c43" stroke-width="3"/>
+<circle cx="-9" cy="-9" r="5" fill="none" stroke="#c84c43"/><circle cx="9" cy="9" r="6" fill="none" stroke="#c84c43"/>
+</g>
+<g data-component="FS01" data-type="flowSwitch" transform="translate(1650.0 520.0) rotate(0)">
+<rect x="-28" y="-23" width="56" height="46" rx="9" fill="white" stroke="#c84c43" stroke-width="3"/>
+</g>
+<g data-component="VET" data-type="valve" transform="translate(460.0 720.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DVET" data-type="valve" transform="translate(250.0 905.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="CV1" data-type="check" transform="translate(950.0 860.0) rotate(180)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#0c8b80" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VAI" data-type="valve" transform="translate(1120.0 400.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="P01A" data-type="pump" transform="translate(1230.0 400.0) rotate(0)">
+<circle r="35" fill="white" stroke="#c84c43" stroke-width="4"/>
+<path d="M-15 -20 L22 0 L-15 20 Z" fill="#c84c43"/>
+</g>
+<g data-component="CVA" data-type="check" transform="translate(1350.0 400.0) rotate(0)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#c84c43" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VAO" data-type="valve" transform="translate(1450.0 400.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VBI" data-type="valve" transform="translate(1120.0 700.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="P01B" data-type="pump" transform="translate(1230.0 700.0) rotate(0)">
+<circle r="35" fill="white" stroke="#c84c43" stroke-width="4"/>
+<path d="M-15 -20 L22 0 L-15 20 Z" fill="#c84c43"/>
+</g>
+<g data-component="CVB" data-type="check" transform="translate(1350.0 700.0) rotate(0)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#c84c43" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VBO" data-type="valve" transform="translate(1450.0 700.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VB01O" data-type="valve" transform="translate(170.0 260.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<rect x="370" y="930" width="180" height="240" rx="55" fill="#f0f4f9" stroke="#617f91" stroke-width="3" />
+<polyline points="375,1045 545,1045" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<text x="460" y="1000" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ET01</text>
+<text x="460" y="1090" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מכל התפשטות</text>
+<text x="460" y="1130" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">כללי · ללא דגם</text>
+<circle cx="660" cy="350" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="660" y="357" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PI01</text>
+<text x="660" y="305" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מד לחץ</text>
+<circle cx="820" cy="350" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="820" y="357" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PT01</text>
+<text x="820" y="305" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משדר לחץ</text>
+<circle cx="1740" cy="445" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="1740" y="452" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT01</text>
+<text x="1740" y="400" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טמפרטורת אספקה</text>
+<circle cx="460" cy="260" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1000" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1540" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="460" cy="420" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="660" cy="420" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="460" cy="570" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="460" cy="820" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1740" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<text x="110" y="220" fill="#c84c43" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מהדוד</text>
+<text x="170" y="306" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VB01O</text>
+<text x="290" y="316" fill="#183348" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">AS</text>
+<text x="460" y="220" fill="#183348" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">T1 · לפני היניקה המשותפת</text>
+<text x="460" y="610" fill="#0c8b80" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">T2 · נקודת ההשלמה מחוץ למכל</text>
+<text x="660" y="470" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">PI/PT נשארים בצד המערכת של VET</text>
+<text x="715" y="540" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מי השלמה אל המערכת</text>
+<text x="950" y="905" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CV1</text>
+<text x="1280" y="860" fill="#0c8b80" font-size="22" font-weight="600" text-anchor="start" direction="rtl" unicode-bidi="plaintext">משרשרת ההשלמה</text>
+<text x="1230" y="472" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">P01A</text>
+<text x="1120" y="360" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VAI</text>
+<text x="1350" y="360" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CVA</text>
+<text x="1450" y="360" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VAO</text>
+<text x="1230" y="772" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">P01B</text>
+<text x="1120" y="660" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VBI</text>
+<text x="1350" y="660" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CVB</text>
+<text x="1450" y="660" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VBO</text>
+<text x="1650" y="580" fill="#183348" font-size="24" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">FS01</text>
+<text x="1650" y="620" fill="#5a7081" font-size="22" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אישור זרימה משותף</text>
+<text x="1900" y="565" fill="#c84c43" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אל סעפת האספקה</text>
+<text x="565" y="716" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VET</text>
+<text x="680" y="766" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">נעול פתוח בהפעלה רגילה</text>
+<text x="320" y="902" fill="#183348" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DVET</text>
+<text x="250" y="1100" fill="#a97924" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ניקוז · סגור בהפעלה רגילה</text>
+<polyline points="238,1063 238,1078 262,1078 262,1063" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="650" y="650" width="280" height="82" rx="10" fill="#fff6e8" stroke="#d9bd8a" stroke-width="2" />
+<text x="790" y="681" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ZSO_VET</text>
+<text x="790" y="714" fill="#183348" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משוב פתיחה מוצע · לא מחובר</text>
+<polyline points="478,720 620,720 620,690 650,690" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 6"/>
+<rect x="1020" y="900" width="1000" height="280" rx="14" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="1960" y="946" fill="#183348" font-size="27" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מה נשאר מחוץ לפרט</text>
+<text x="1960" y="994" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ברזי ניקוז/אוורור המשאבות והסעפות מופיעים בתרשים הכללי.</text>
+<text x="1960" y="1029" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PSV והגנות עצמאיות בדוד נשארים בצד הדוד.</text>
+<text x="1960" y="1064" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">VET סגור או משוב לא ידוע: אין הרשאת חימום.</text>
+<text x="1960" y="1099" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">סגירת VB01I/VB01O מנתקת את הדוד מהמכל — רק בנוהל נעילה.</text>
+<text x="1960" y="1134" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין כאן צרכנים; שישה זוגות הממשקים מוצגים בתרשים הכללי.</text>
+<polyline points="60,1240 2040,1240" fill="none" stroke="#d7e1e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2030" y="1290" fill="#183348" font-size="25" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">כיוון חיבור המכל, יכולת ניקוזו, קדם־לחץ, נפח ומרווח תחזוקה ייקבעו לפי הדגם והנתונים — לא נקבעו כאן.</text>
+<text x="2030" y="1333" fill="#183348" font-size="25" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין אל־חוזר בין T1 למכל. השלמת מים מצטרפת ב־T2 לפני VET ואינה מוזרמת ישירות לתוך המכל.</text>
+<text x="2030" y="1376" fill="#183348" font-size="25" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">נתון ראשוני: עד 2 בר למעטפות לפי טכנאי, ללא דרכון; בסיס הלחץ ותחולתו לא אומתו. אין ערכי כיוון או אישור לביצוע.</text>
+</g></svg>

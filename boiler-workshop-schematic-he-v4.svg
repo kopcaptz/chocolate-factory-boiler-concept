@@ -1,0 +1,1477 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3000" height="3070" viewBox="0 0 3000 3070" role="img" aria-labelledby="title description">
+<title id="title">חדר דוד חשמלי — סחרור 1+1 ושישה צרכנים חיצוניים</title>
+<desc id="description">תרשים עקרוני מעודכן, זהה בגרף החיבורים למודל הנבחר. שתי משאבות במקביל, מכל התפשטות לפני היניקה המשותפת, מילוי בנקודת T2 מחוץ למכל ושישה זוגות אספקה וחזרה. הצעה לאישור הבעלים ולבדיקת מהנדס, לא לביצוע.</desc>
+<defs>
+<marker id="hot" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#c84c43"/></marker>
+<marker id="ret" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#217ca9"/></marker>
+<marker id="fill" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#0c8b80"/></marker>
+<marker id="chem" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#8652aa"/></marker>
+<marker id="drain" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#a97924"/></marker>
+<marker id="ink" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#183348"/></marker>
+<marker id="muted" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#5a7081"/></marker>
+<marker id="line" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#d7e1e8"/></marker>
+</defs><g font-family="Arial, Noto Sans Hebrew, sans-serif">
+<rect x="0" y="0" width="3000" height="3070" rx="0" fill="#f5f8fa" stroke="#f5f8fa" stroke-width="2" />
+<rect x="0" y="0" width="3000" height="142" rx="0" fill="#17384e" stroke="#17384e" stroke-width="2" />
+<text x="2915" y="60" fill="white" font-size="44" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">חדר דוד חשמלי · מערכת מים חמים לתהליך</text>
+<text x="2915" y="109" fill="#d9e6ed" font-size="25" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מפעל שוקולד · צרכני המפעל מחוץ לתרשים</text>
+<rect x="65" y="37" width="810" height="65" rx="12" fill="#fff3cf" stroke="#f2cb6c" stroke-width="2" />
+<text x="470" y="78" fill="#825b12" font-size="25" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">קונספט · תיקונים לבדיקת מהנדס · לא לביצוע</text>
+<polyline points="90,187 160,187" fill="none" stroke="#c84c43" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<text x="265" y="195" fill="#183348" font-size="23" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אספקה</text>
+<polyline points="390,187 460,187" fill="none" stroke="#217ca9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="565" y="195" fill="#183348" font-size="23" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חזרה</text>
+<polyline points="690,187 760,187" fill="none" stroke="#0c8b80" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fill)"/>
+<text x="865" y="195" fill="#183348" font-size="23" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מי השלמה</text>
+<polyline points="1030,187 1100,187" fill="none" stroke="#8652aa" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#chem)"/>
+<text x="1205" y="195" fill="#183348" font-size="23" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">תוספים</text>
+<polyline points="1340,187 1410,187" fill="none" stroke="#a97924" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#drain)"/>
+<text x="1515" y="195" fill="#183348" font-size="23" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ניקוז / פריקה</text>
+<text x="1870" y="195" fill="#5a7081" font-size="22" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">● נקודה = חיבור</text>
+<text x="2170" y="195" fill="#5a7081" font-size="22" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">קשת = מעבר ללא חיבור</text>
+<text x="2710" y="195" fill="#5a7081" font-size="22" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">תרשים חיבורים · ללא קנה מידה ונתוני תכן</text>
+<rect x="70" y="225" width="2590" height="1840" rx="18" fill="white" stroke="#cbd9e2" stroke-width="2" />
+<rect x="2678" y="225" width="255" height="1160" rx="18" fill="#edf2f6" stroke="#edf2f6" stroke-width="2" />
+<polyline points="2660,240 2660,2060" fill="none" stroke="#5a7081" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 10"/>
+<text x="2805" y="270" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מחוץ לחדר</text>
+<text x="2805" y="310" fill="#5a7081" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכנים לא מפורטים</text>
+<text x="250" y="270" fill="#183348" font-size="27" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חדר הדוד</text>
+<rect x="610" y="725" width="475" height="675" rx="16" fill="#f5f8fc" stroke="#d8e4ec" stroke-width="2" />
+<text x="845" y="762" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">התפשטות, לחץ והשלמה</text>
+<rect x="1120" y="450" width="610" height="725" rx="16" fill="#fff9f4" stroke="#ead8c9" stroke-width="2" />
+<text x="1425" y="433" fill="#183348" font-size="26" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סחרור במקביל · עובדת + גיבוי</text>
+<rect x="1095" y="1480" width="1530" height="265" rx="16" fill="#f0f8f5" stroke="#d4e8df" stroke-width="2" />
+<text x="2400" y="1520" fill="#183348" font-size="26" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">שרשרת מי השלמה מבוקרת</text>
+<g data-edge="RET_HEAD&gt;RET_T" data-a="RET_HEAD" data-b="RET_T" data-kind="ret" data-state="open"><title>RET_HEAD&gt;RET_T</title>
+<path d="M 2300 350 L 2180 350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 350 L 2180 350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_T&gt;RET_EC" data-a="RET_T" data-b="RET_EC" data-kind="ret" data-state="open"><title>RET_T&gt;RET_EC</title>
+<path d="M 2180 350 L 2050 350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2180 350 L 2050 350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_EC&gt;RET_PH" data-a="RET_EC" data-b="RET_PH" data-kind="ret" data-state="open"><title>RET_EC&gt;RET_PH</title>
+<path d="M 2050 350 L 1920 350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2050 350 L 1920 350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_PH&gt;DOSE_T" data-a="RET_PH" data-b="DOSE_T" data-kind="ret" data-state="open"><title>RET_PH&gt;DOSE_T</title>
+<path d="M 1920 350 L 1780 350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1920 350 L 1780 350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_LEFT&gt;DS_OUT" data-a="RET_LEFT" data-b="DS_OUT" data-kind="ret" data-state="open"><title>RET_LEFT&gt;DS_OUT</title>
+<path d="M 560 1030 L 560 1110" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1030 L 560 1110" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_T&gt;TT02" data-a="RET_T" data-b="TT02" data-kind="ret" data-state="open"><title>RET_T&gt;TT02</title>
+<path d="M 2180 350 L 2180 285" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2180 350 L 2180 285" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_EC&gt;EC01" data-a="RET_EC" data-b="EC01" data-kind="ret" data-state="open"><title>RET_EC&gt;EC01</title>
+<path d="M 2050 350 L 2050 285" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2050 350 L 2050 285" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_PH&gt;pH01" data-a="RET_PH" data-b="pH01" data-kind="ret" data-state="open"><title>RET_PH&gt;pH01</title>
+<path d="M 1920 350 L 1920 285" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1920 350 L 1920 285" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R1&gt;RET_HEAD" data-a="R1" data-b="RET_HEAD" data-kind="ret" data-state="open"><title>R1&gt;RET_HEAD</title>
+<path d="M 2300 480 L 2300 350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 480 L 2300 350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV1_IN&gt;RV1_OUT" data-a="RV1_IN" data-b="RV1_OUT" data-kind="ret" data-state="open"><title>RV1_IN&gt;RV1_OUT</title>
+<path d="M 2440 480 L 2400 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 480 L 2400 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV1_OUT&gt;R1" data-a="RV1_OUT" data-b="R1" data-kind="ret" data-state="open"><title>RV1_OUT&gt;R1</title>
+<path d="M 2400 480 L 2300 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 480 L 2300 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R2&gt;R1" data-a="R2" data-b="R1" data-kind="ret" data-state="open"><title>R2&gt;R1</title>
+<path d="M 2300 600 L 2300 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 600 L 2300 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV2_IN&gt;RV2_OUT" data-a="RV2_IN" data-b="RV2_OUT" data-kind="ret" data-state="open"><title>RV2_IN&gt;RV2_OUT</title>
+<path d="M 2440 600 L 2400 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 600 L 2400 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV2_OUT&gt;R2" data-a="RV2_OUT" data-b="R2" data-kind="ret" data-state="open"><title>RV2_OUT&gt;R2</title>
+<path d="M 2400 600 L 2300 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 600 L 2300 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R3&gt;R2" data-a="R3" data-b="R2" data-kind="ret" data-state="open"><title>R3&gt;R2</title>
+<path d="M 2300 720 L 2300 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 720 L 2300 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV3_IN&gt;RV3_OUT" data-a="RV3_IN" data-b="RV3_OUT" data-kind="ret" data-state="open"><title>RV3_IN&gt;RV3_OUT</title>
+<path d="M 2440 720 L 2400 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 720 L 2400 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV3_OUT&gt;R3" data-a="RV3_OUT" data-b="R3" data-kind="ret" data-state="open"><title>RV3_OUT&gt;R3</title>
+<path d="M 2400 720 L 2300 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 720 L 2300 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R4&gt;R3" data-a="R4" data-b="R3" data-kind="ret" data-state="open"><title>R4&gt;R3</title>
+<path d="M 2300 840 L 2300 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 840 L 2300 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV4_IN&gt;RV4_OUT" data-a="RV4_IN" data-b="RV4_OUT" data-kind="ret" data-state="open"><title>RV4_IN&gt;RV4_OUT</title>
+<path d="M 2440 840 L 2400 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 840 L 2400 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV4_OUT&gt;R4" data-a="RV4_OUT" data-b="R4" data-kind="ret" data-state="open"><title>RV4_OUT&gt;R4</title>
+<path d="M 2400 840 L 2300 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 840 L 2300 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R5&gt;R4" data-a="R5" data-b="R4" data-kind="ret" data-state="open"><title>R5&gt;R4</title>
+<path d="M 2300 960 L 2300 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 960 L 2300 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV5_IN&gt;RV5_OUT" data-a="RV5_IN" data-b="RV5_OUT" data-kind="ret" data-state="open"><title>RV5_IN&gt;RV5_OUT</title>
+<path d="M 2440 960 L 2400 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 960 L 2400 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV5_OUT&gt;R5" data-a="RV5_OUT" data-b="R5" data-kind="ret" data-state="open"><title>RV5_OUT&gt;R5</title>
+<path d="M 2400 960 L 2300 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 960 L 2300 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R6&gt;R5" data-a="R6" data-b="R5" data-kind="ret" data-state="open"><title>R6&gt;R5</title>
+<path d="M 2300 1080 L 2300 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 1080 L 2300 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV6_IN&gt;RV6_OUT" data-a="RV6_IN" data-b="RV6_OUT" data-kind="ret" data-state="open"><title>RV6_IN&gt;RV6_OUT</title>
+<path d="M 2440 1080 L 2400 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 1080 L 2400 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RV6_OUT&gt;R6" data-a="RV6_OUT" data-b="R6" data-kind="ret" data-state="open"><title>RV6_OUT&gt;R6</title>
+<path d="M 2400 1080 L 2300 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 1080 L 2300 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DOSE_T&gt;VDSI_IN" data-a="DOSE_T" data-b="VDSI_IN" data-kind="ret" data-state="open"><title>DOSE_T&gt;VDSI_IN</title>
+<path d="M 1780 350 L 560 350 L 560 940" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1780 350 L 560 350 L 560 940" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VDSI_IN&gt;VDSI_OUT" data-a="VDSI_IN" data-b="VDSI_OUT" data-kind="ret" data-state="open"><title>VDSI_IN&gt;VDSI_OUT</title>
+<path d="M 560 940 L 560 980" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 940 L 560 980" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VDSI_OUT&gt;RET_LEFT" data-a="VDSI_OUT" data-b="RET_LEFT" data-kind="ret" data-state="open"><title>VDSI_OUT&gt;RET_LEFT</title>
+<path d="M 560 980 L 560 1030" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 980 L 560 1030" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DS_OUT&gt;VDSO_IN" data-a="DS_OUT" data-b="VDSO_IN" data-kind="ret" data-state="open"><title>DS_OUT&gt;VDSO_IN</title>
+<path d="M 560 1110 L 560 1140" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1110 L 560 1140" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VDSO_IN&gt;VDSO_OUT" data-a="VDSO_IN" data-b="VDSO_OUT" data-kind="ret" data-state="open"><title>VDSO_IN&gt;VDSO_OUT</title>
+<path d="M 560 1140 L 560 1180" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1140 L 560 1180" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VDSO_OUT&gt;VB01I_IN" data-a="VDSO_OUT" data-b="VB01I_IN" data-kind="ret" data-state="open"><title>VDSO_OUT&gt;VB01I_IN</title>
+<path d="M 560 1180 L 560 1260" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1180 L 560 1260" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01I_IN&gt;VB01I_OUT" data-a="VB01I_IN" data-b="VB01I_OUT" data-kind="ret" data-state="open"><title>VB01I_IN&gt;VB01I_OUT</title>
+<path d="M 560 1260 L 560 1300" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1260 L 560 1300" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01I_OUT&gt;B_IN" data-a="VB01I_OUT" data-b="B_IN" data-kind="ret" data-state="open"><title>VB01I_OUT&gt;B_IN</title>
+<path d="M 560 1300 L 560 1350 L 520 1350" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 560 1300 L 560 1350 L 520 1350" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R1&gt;TR1_TAP" data-a="EXT_R1" data-b="TR1_TAP" data-kind="ret" data-state="open"><title>EXT_R1&gt;TR1_TAP</title>
+<path d="M 2780 480 L 2620 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 480 L 2620 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR1_TAP&gt;BV1_IN" data-a="TR1_TAP" data-b="BV1_IN" data-kind="ret" data-state="open"><title>TR1_TAP&gt;BV1_IN</title>
+<path d="M 2620 480 L 2540 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 480 L 2540 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV1_IN&gt;BV1_OUT" data-a="BV1_IN" data-b="BV1_OUT" data-kind="ret" data-state="open"><title>BV1_IN&gt;BV1_OUT</title>
+<path d="M 2540 480 L 2500 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 480 L 2500 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV1_OUT&gt;RV1_IN" data-a="BV1_OUT" data-b="RV1_IN" data-kind="ret" data-state="open"><title>BV1_OUT&gt;RV1_IN</title>
+<path d="M 2500 480 L 2440 480" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 480 L 2440 480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR1_TAP&gt;TT_R1" data-a="TR1_TAP" data-b="TT_R1" data-kind="ret" data-state="open"><title>TR1_TAP&gt;TT_R1</title>
+<path d="M 2620 480 L 2620 430" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 480 L 2620 430" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV1_IN&gt;BV1_P1" data-a="BV1_IN" data-b="BV1_P1" data-kind="ret" data-state="open"><title>BV1_IN&gt;BV1_P1</title>
+<path d="M 2540 480 L 2540 452" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 480 L 2540 452" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV1_OUT&gt;BV1_P2" data-a="BV1_OUT" data-b="BV1_P2" data-kind="ret" data-state="open"><title>BV1_OUT&gt;BV1_P2</title>
+<path d="M 2500 480 L 2500 452" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 480 L 2500 452" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R2&gt;TR2_TAP" data-a="EXT_R2" data-b="TR2_TAP" data-kind="ret" data-state="open"><title>EXT_R2&gt;TR2_TAP</title>
+<path d="M 2780 600 L 2620 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 600 L 2620 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR2_TAP&gt;BV2_IN" data-a="TR2_TAP" data-b="BV2_IN" data-kind="ret" data-state="open"><title>TR2_TAP&gt;BV2_IN</title>
+<path d="M 2620 600 L 2540 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 600 L 2540 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV2_IN&gt;BV2_OUT" data-a="BV2_IN" data-b="BV2_OUT" data-kind="ret" data-state="open"><title>BV2_IN&gt;BV2_OUT</title>
+<path d="M 2540 600 L 2500 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 600 L 2500 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV2_OUT&gt;RV2_IN" data-a="BV2_OUT" data-b="RV2_IN" data-kind="ret" data-state="open"><title>BV2_OUT&gt;RV2_IN</title>
+<path d="M 2500 600 L 2440 600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 600 L 2440 600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR2_TAP&gt;TT_R2" data-a="TR2_TAP" data-b="TT_R2" data-kind="ret" data-state="open"><title>TR2_TAP&gt;TT_R2</title>
+<path d="M 2620 600 L 2620 550" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 600 L 2620 550" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV2_IN&gt;BV2_P1" data-a="BV2_IN" data-b="BV2_P1" data-kind="ret" data-state="open"><title>BV2_IN&gt;BV2_P1</title>
+<path d="M 2540 600 L 2540 572" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 600 L 2540 572" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV2_OUT&gt;BV2_P2" data-a="BV2_OUT" data-b="BV2_P2" data-kind="ret" data-state="open"><title>BV2_OUT&gt;BV2_P2</title>
+<path d="M 2500 600 L 2500 572" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 600 L 2500 572" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R3&gt;TR3_TAP" data-a="EXT_R3" data-b="TR3_TAP" data-kind="ret" data-state="open"><title>EXT_R3&gt;TR3_TAP</title>
+<path d="M 2780 720 L 2620 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 720 L 2620 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR3_TAP&gt;BV3_IN" data-a="TR3_TAP" data-b="BV3_IN" data-kind="ret" data-state="open"><title>TR3_TAP&gt;BV3_IN</title>
+<path d="M 2620 720 L 2540 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 720 L 2540 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV3_IN&gt;BV3_OUT" data-a="BV3_IN" data-b="BV3_OUT" data-kind="ret" data-state="open"><title>BV3_IN&gt;BV3_OUT</title>
+<path d="M 2540 720 L 2500 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 720 L 2500 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV3_OUT&gt;RV3_IN" data-a="BV3_OUT" data-b="RV3_IN" data-kind="ret" data-state="open"><title>BV3_OUT&gt;RV3_IN</title>
+<path d="M 2500 720 L 2440 720" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 720 L 2440 720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR3_TAP&gt;TT_R3" data-a="TR3_TAP" data-b="TT_R3" data-kind="ret" data-state="open"><title>TR3_TAP&gt;TT_R3</title>
+<path d="M 2620 720 L 2620 670" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 720 L 2620 670" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV3_IN&gt;BV3_P1" data-a="BV3_IN" data-b="BV3_P1" data-kind="ret" data-state="open"><title>BV3_IN&gt;BV3_P1</title>
+<path d="M 2540 720 L 2540 692" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 720 L 2540 692" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV3_OUT&gt;BV3_P2" data-a="BV3_OUT" data-b="BV3_P2" data-kind="ret" data-state="open"><title>BV3_OUT&gt;BV3_P2</title>
+<path d="M 2500 720 L 2500 692" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 720 L 2500 692" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R4&gt;TR4_TAP" data-a="EXT_R4" data-b="TR4_TAP" data-kind="ret" data-state="open"><title>EXT_R4&gt;TR4_TAP</title>
+<path d="M 2780 840 L 2620 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 840 L 2620 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR4_TAP&gt;BV4_IN" data-a="TR4_TAP" data-b="BV4_IN" data-kind="ret" data-state="open"><title>TR4_TAP&gt;BV4_IN</title>
+<path d="M 2620 840 L 2540 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 840 L 2540 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV4_IN&gt;BV4_OUT" data-a="BV4_IN" data-b="BV4_OUT" data-kind="ret" data-state="open"><title>BV4_IN&gt;BV4_OUT</title>
+<path d="M 2540 840 L 2500 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 840 L 2500 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV4_OUT&gt;RV4_IN" data-a="BV4_OUT" data-b="RV4_IN" data-kind="ret" data-state="open"><title>BV4_OUT&gt;RV4_IN</title>
+<path d="M 2500 840 L 2440 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 840 L 2440 840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR4_TAP&gt;TT_R4" data-a="TR4_TAP" data-b="TT_R4" data-kind="ret" data-state="open"><title>TR4_TAP&gt;TT_R4</title>
+<path d="M 2620 840 L 2620 790" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 840 L 2620 790" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV4_IN&gt;BV4_P1" data-a="BV4_IN" data-b="BV4_P1" data-kind="ret" data-state="open"><title>BV4_IN&gt;BV4_P1</title>
+<path d="M 2540 840 L 2540 812" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 840 L 2540 812" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV4_OUT&gt;BV4_P2" data-a="BV4_OUT" data-b="BV4_P2" data-kind="ret" data-state="open"><title>BV4_OUT&gt;BV4_P2</title>
+<path d="M 2500 840 L 2500 812" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 840 L 2500 812" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R5&gt;TR5_TAP" data-a="EXT_R5" data-b="TR5_TAP" data-kind="ret" data-state="open"><title>EXT_R5&gt;TR5_TAP</title>
+<path d="M 2780 960 L 2620 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 960 L 2620 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR5_TAP&gt;BV5_IN" data-a="TR5_TAP" data-b="BV5_IN" data-kind="ret" data-state="open"><title>TR5_TAP&gt;BV5_IN</title>
+<path d="M 2620 960 L 2540 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 960 L 2540 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV5_IN&gt;BV5_OUT" data-a="BV5_IN" data-b="BV5_OUT" data-kind="ret" data-state="open"><title>BV5_IN&gt;BV5_OUT</title>
+<path d="M 2540 960 L 2500 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 960 L 2500 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV5_OUT&gt;RV5_IN" data-a="BV5_OUT" data-b="RV5_IN" data-kind="ret" data-state="open"><title>BV5_OUT&gt;RV5_IN</title>
+<path d="M 2500 960 L 2440 960" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 960 L 2440 960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR5_TAP&gt;TT_R5" data-a="TR5_TAP" data-b="TT_R5" data-kind="ret" data-state="open"><title>TR5_TAP&gt;TT_R5</title>
+<path d="M 2620 960 L 2620 910" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 960 L 2620 910" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV5_IN&gt;BV5_P1" data-a="BV5_IN" data-b="BV5_P1" data-kind="ret" data-state="open"><title>BV5_IN&gt;BV5_P1</title>
+<path d="M 2540 960 L 2540 932" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 960 L 2540 932" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV5_OUT&gt;BV5_P2" data-a="BV5_OUT" data-b="BV5_P2" data-kind="ret" data-state="open"><title>BV5_OUT&gt;BV5_P2</title>
+<path d="M 2500 960 L 2500 932" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 960 L 2500 932" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="EXT_R6&gt;TR6_TAP" data-a="EXT_R6" data-b="TR6_TAP" data-kind="ret" data-state="open"><title>EXT_R6&gt;TR6_TAP</title>
+<path d="M 2780 1080 L 2620 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 1080 L 2620 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR6_TAP&gt;BV6_IN" data-a="TR6_TAP" data-b="BV6_IN" data-kind="ret" data-state="open"><title>TR6_TAP&gt;BV6_IN</title>
+<path d="M 2620 1080 L 2540 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 1080 L 2540 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV6_IN&gt;BV6_OUT" data-a="BV6_IN" data-b="BV6_OUT" data-kind="ret" data-state="open"><title>BV6_IN&gt;BV6_OUT</title>
+<path d="M 2540 1080 L 2500 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 1080 L 2500 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV6_OUT&gt;RV6_IN" data-a="BV6_OUT" data-b="RV6_IN" data-kind="ret" data-state="open"><title>BV6_OUT&gt;RV6_IN</title>
+<path d="M 2500 1080 L 2440 1080" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 1080 L 2440 1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TR6_TAP&gt;TT_R6" data-a="TR6_TAP" data-b="TT_R6" data-kind="ret" data-state="open"><title>TR6_TAP&gt;TT_R6</title>
+<path d="M 2620 1080 L 2620 1030" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2620 1080 L 2620 1030" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV6_IN&gt;BV6_P1" data-a="BV6_IN" data-b="BV6_P1" data-kind="ret" data-state="open"><title>BV6_IN&gt;BV6_P1</title>
+<path d="M 2540 1080 L 2540 1052" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2540 1080 L 2540 1052" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BV6_OUT&gt;BV6_P2" data-a="BV6_OUT" data-b="BV6_P2" data-kind="ret" data-state="open"><title>BV6_OUT&gt;BV6_P2</title>
+<path d="M 2500 1080 L 2500 1052" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 1080 L 2500 1052" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="AIR&gt;VENT" data-a="AIR" data-b="VENT" data-kind="drain" data-state="open"><title>AIR&gt;VENT</title>
+<path d="M 700 480 L 700 410" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 700 480 L 700 410" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_DRAIN_TEE&gt;DRAIN_BRANCH" data-a="ET_DRAIN_TEE" data-b="DRAIN_BRANCH" data-kind="drain" data-state="open"><title>ET_DRAIN_TEE&gt;DRAIN_BRANCH</title>
+<path d="M 800 945 L 650 945" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 945 L 650 945" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DVET_IN&gt;DVET_OUT" data-a="DVET_IN" data-b="DVET_OUT" data-kind="drain" data-state="closed"><title>DVET_IN&gt;DVET_OUT</title>
+<path d="M 650 1000 L 650 1040" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 650 1000 L 650 1040" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DRAIN_BRANCH&gt;DVET_IN" data-a="DRAIN_BRANCH" data-b="DVET_IN" data-kind="drain" data-state="open"><title>DRAIN_BRANCH&gt;DVET_IN</title>
+<path d="M 650 945 L 650 1000" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 650 945 L 650 1000" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DVET_OUT&gt;ET_DRAIN" data-a="DVET_OUT" data-b="ET_DRAIN" data-kind="drain" data-state="open"><title>DVET_OUT&gt;ET_DRAIN</title>
+<path d="M 650 1040 L 650 1150" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 650 1040 L 650 1150" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV_ROOT&gt;PSV_IN" data-a="PSV_ROOT" data-b="PSV_IN" data-kind="drain" data-state="open"><title>PSV_ROOT&gt;PSV_IN</title>
+<path d="M 350 470 L 350 380" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 470 L 350 380" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV_IN&gt;PSV_OUT" data-a="PSV_IN" data-b="PSV_OUT" data-kind="drain" data-state="relief"><title>PSV_IN&gt;PSV_OUT</title>
+<path d="M 350 380 L 350 330" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 380 L 350 330" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV_OUT&gt;PSV_DISCHARGE" data-a="PSV_OUT" data-b="PSV_DISCHARGE" data-kind="drain" data-state="open"><title>PSV_OUT&gt;PSV_DISCHARGE</title>
+<path d="M 350 330 L 125 330 L 125 1000" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 330 L 125 330 L 125 1000" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SAMPLE_OUT&gt;SAMPLE_DRAIN" data-a="SAMPLE_OUT" data-b="SAMPLE_DRAIN" data-kind="drain" data-state="open"><title>SAMPLE_OUT&gt;SAMPLE_DRAIN</title>
+<path d="M 1710 1800 L 1710 1880" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1710 1800 L 1710 1880" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="B_DRAIN&gt;DB01_IN" data-a="B_DRAIN" data-b="DB01_IN" data-kind="drain" data-state="open"><title>B_DRAIN&gt;DB01_IN</title>
+<path d="M 350 1370 L 350 1410" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 1370 L 350 1410" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DB01_IN&gt;DB01_OUT" data-a="DB01_IN" data-b="DB01_OUT" data-kind="drain" data-state="closed"><title>DB01_IN&gt;DB01_OUT</title>
+<path d="M 350 1410 L 350 1440" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 1410 L 350 1440" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DB01_OUT&gt;DB01_END" data-a="DB01_OUT" data-b="DB01_END" data-kind="drain" data-state="open"><title>DB01_OUT&gt;DB01_END</title>
+<path d="M 350 1440 L 350 1460" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 350 1440 L 350 1460" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DS_PURGE_ROOT&gt;DDS01_IN" data-a="DS_PURGE_ROOT" data-b="DDS01_IN" data-kind="drain" data-state="open"><title>DS_PURGE_ROOT&gt;DDS01_IN</title>
+<path d="M 588 1070 L 610 1070 L 610 1100" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 588 1070 L 610 1070 L 610 1100" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DDS01_IN&gt;DDS01_OUT" data-a="DDS01_IN" data-b="DDS01_OUT" data-kind="drain" data-state="closed"><title>DDS01_IN&gt;DDS01_OUT</title>
+<path d="M 610 1100 L 610 1130" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 610 1100 L 610 1130" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DDS01_OUT&gt;DDS01_END" data-a="DDS01_OUT" data-b="DDS01_END" data-kind="drain" data-state="open"><title>DDS01_OUT&gt;DDS01_END</title>
+<path d="M 610 1130 L 610 1160" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 610 1130 L 610 1160" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_OUT&gt;DPA1_IN" data-a="P01A_OUT" data-b="DPA1_IN" data-kind="drain" data-state="open"><title>P01A_OUT&gt;DPA1_IN</title>
+<path d="M 1420 580 L 1420 660" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 580 L 1420 660" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPA1_IN&gt;DPA1_OUT" data-a="DPA1_IN" data-b="DPA1_OUT" data-kind="drain" data-state="closed"><title>DPA1_IN&gt;DPA1_OUT</title>
+<path d="M 1420 660 L 1420 695" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 660 L 1420 695" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPA1_OUT&gt;DPA1_END" data-a="DPA1_OUT" data-b="DPA1_END" data-kind="drain" data-state="open"><title>DPA1_OUT&gt;DPA1_END</title>
+<path d="M 1420 695 L 1420 730" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 695 L 1420 730" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_CV_OUT&gt;DPA2_IN" data-a="P01A_CV_OUT" data-b="DPA2_IN" data-kind="drain" data-state="open"><title>P01A_CV_OUT&gt;DPA2_IN</title>
+<path d="M 1530 580 L 1530 660" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 580 L 1530 660" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPA2_IN&gt;DPA2_OUT" data-a="DPA2_IN" data-b="DPA2_OUT" data-kind="drain" data-state="closed"><title>DPA2_IN&gt;DPA2_OUT</title>
+<path d="M 1530 660 L 1530 695" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 660 L 1530 695" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPA2_OUT&gt;DPA2_END" data-a="DPA2_OUT" data-b="DPA2_END" data-kind="drain" data-state="open"><title>DPA2_OUT&gt;DPA2_END</title>
+<path d="M 1530 695 L 1530 730" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 695 L 1530 730" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_IN&gt;VPA_IN" data-a="P01A_IN" data-b="VPA_IN" data-kind="drain" data-state="open"><title>P01A_IN&gt;VPA_IN</title>
+<path d="M 1340 580 L 1340 520" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 580 L 1340 520" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VPA_IN&gt;VPA_OUT" data-a="VPA_IN" data-b="VPA_OUT" data-kind="drain" data-state="closed"><title>VPA_IN&gt;VPA_OUT</title>
+<path d="M 1340 520 L 1340 490" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 520 L 1340 490" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VPA_OUT&gt;VPA_END" data-a="VPA_OUT" data-b="VPA_END" data-kind="drain" data-state="open"><title>VPA_OUT&gt;VPA_END</title>
+<path d="M 1340 490 L 1340 460" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 490 L 1340 460" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_OUT&gt;DPB1_IN" data-a="P01B_OUT" data-b="DPB1_IN" data-kind="drain" data-state="open"><title>P01B_OUT&gt;DPB1_IN</title>
+<path d="M 1420 840 L 1420 920" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 840 L 1420 920" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPB1_IN&gt;DPB1_OUT" data-a="DPB1_IN" data-b="DPB1_OUT" data-kind="drain" data-state="closed"><title>DPB1_IN&gt;DPB1_OUT</title>
+<path d="M 1420 920 L 1420 955" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 920 L 1420 955" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPB1_OUT&gt;DPB1_END" data-a="DPB1_OUT" data-b="DPB1_END" data-kind="drain" data-state="open"><title>DPB1_OUT&gt;DPB1_END</title>
+<path d="M 1420 955 L 1420 990" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 955 L 1420 990" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_CV_OUT&gt;DPB2_IN" data-a="P01B_CV_OUT" data-b="DPB2_IN" data-kind="drain" data-state="open"><title>P01B_CV_OUT&gt;DPB2_IN</title>
+<path d="M 1530 840 L 1530 920" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 840 L 1530 920" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPB2_IN&gt;DPB2_OUT" data-a="DPB2_IN" data-b="DPB2_OUT" data-kind="drain" data-state="closed"><title>DPB2_IN&gt;DPB2_OUT</title>
+<path d="M 1530 920 L 1530 955" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 920 L 1530 955" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DPB2_OUT&gt;DPB2_END" data-a="DPB2_OUT" data-b="DPB2_END" data-kind="drain" data-state="open"><title>DPB2_OUT&gt;DPB2_END</title>
+<path d="M 1530 955 L 1530 990" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 955 L 1530 990" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_IN&gt;VPB_IN" data-a="P01B_IN" data-b="VPB_IN" data-kind="drain" data-state="open"><title>P01B_IN&gt;VPB_IN</title>
+<path d="M 1340 840 L 1340 780" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 840 L 1340 780" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VPB_IN&gt;VPB_OUT" data-a="VPB_IN" data-b="VPB_OUT" data-kind="drain" data-state="closed"><title>VPB_IN&gt;VPB_OUT</title>
+<path d="M 1340 780 L 1340 750" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 780 L 1340 750" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VPB_OUT&gt;VPB_END" data-a="VPB_OUT" data-b="VPB_END" data-kind="drain" data-state="open"><title>VPB_OUT&gt;VPB_END</title>
+<path d="M 1340 750 L 1340 720" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 750 L 1340 720" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S6&gt;DH_S_IN" data-a="S6" data-b="DH_S_IN" data-kind="drain" data-state="open"><title>S6&gt;DH_S_IN</title>
+<path d="M 2100 1120 L 2100 1200" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1120 L 2100 1200" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DH_S_IN&gt;DH_S_OUT" data-a="DH_S_IN" data-b="DH_S_OUT" data-kind="drain" data-state="closed"><title>DH_S_IN&gt;DH_S_OUT</title>
+<path d="M 2100 1200 L 2100 1240" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1200 L 2100 1240" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DH_S_OUT&gt;DH_S_END" data-a="DH_S_OUT" data-b="DH_S_END" data-kind="drain" data-state="open"><title>DH_S_OUT&gt;DH_S_END</title>
+<path d="M 2100 1240 L 2100 1280" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1240 L 2100 1280" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R6&gt;DH_R_IN" data-a="R6" data-b="DH_R_IN" data-kind="drain" data-state="open"><title>R6&gt;DH_R_IN</title>
+<path d="M 2300 1080 L 2300 1160" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 1080 L 2300 1160" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DH_R_IN&gt;DH_R_OUT" data-a="DH_R_IN" data-b="DH_R_OUT" data-kind="drain" data-state="closed"><title>DH_R_IN&gt;DH_R_OUT</title>
+<path d="M 2300 1160 L 2300 1200" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 1160 L 2300 1200" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DH_R_OUT&gt;DH_R_END" data-a="DH_R_OUT" data-b="DH_R_END" data-kind="drain" data-state="open"><title>DH_R_OUT&gt;DH_R_END</title>
+<path d="M 2300 1200 L 2300 1280" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 1200 L 2300 1280" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RET_T&gt;DR_LOW_IN" data-a="RET_T" data-b="DR_LOW_IN" data-kind="drain" data-state="open"><title>RET_T&gt;DR_LOW_IN</title>
+<path d="M 2180 350 L 2180 370" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2180 350 L 2180 370" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DR_LOW_IN&gt;DR_LOW_OUT" data-a="DR_LOW_IN" data-b="DR_LOW_OUT" data-kind="drain" data-state="closed"><title>DR_LOW_IN&gt;DR_LOW_OUT</title>
+<path d="M 2180 370 L 2180 400" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2180 370 L 2180 400" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DR_LOW_OUT&gt;DR_LOW_END" data-a="DR_LOW_OUT" data-b="DR_LOW_END" data-kind="drain" data-state="open"><title>DR_LOW_OUT&gt;DR_LOW_END</title>
+<path d="M 2180 400 L 2180 430" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2180 400 L 2180 430" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S6&gt;VH_S_IN" data-a="S6" data-b="VH_S_IN" data-kind="drain" data-state="open"><title>S6&gt;VH_S_IN</title>
+<path d="M 2100 1120 L 2050 1120" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1120 L 2050 1120" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_S_IN&gt;VH_S_OUT" data-a="VH_S_IN" data-b="VH_S_OUT" data-kind="drain" data-state="closed"><title>VH_S_IN&gt;VH_S_OUT</title>
+<path d="M 2050 1120 L 2010 1120" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2050 1120 L 2010 1120" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_S_OUT&gt;VH_S_END" data-a="VH_S_OUT" data-b="VH_S_END" data-kind="drain" data-state="open"><title>VH_S_OUT&gt;VH_S_END</title>
+<path d="M 2010 1120 L 2010 1080" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2010 1120 L 2010 1080" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="R6&gt;VH_R_IN" data-a="R6" data-b="VH_R_IN" data-kind="drain" data-state="open"><title>R6&gt;VH_R_IN</title>
+<path d="M 2300 1080 L 2250 1080" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2300 1080 L 2250 1080" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_R_IN&gt;VH_R_OUT" data-a="VH_R_IN" data-b="VH_R_OUT" data-kind="drain" data-state="closed"><title>VH_R_IN&gt;VH_R_OUT</title>
+<path d="M 2250 1080 L 2210 1080" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2250 1080 L 2210 1080" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_R_OUT&gt;VH_R_END" data-a="VH_R_OUT" data-b="VH_R_END" data-kind="drain" data-state="open"><title>VH_R_OUT&gt;VH_R_END</title>
+<path d="M 2210 1080 L 2210 1040" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2210 1080 L 2210 1040" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_HI&gt;VH_P_IN" data-a="P_HI" data-b="VH_P_IN" data-kind="drain" data-state="open"><title>P_HI&gt;VH_P_IN</title>
+<path d="M 1160 520 L 1160 460" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 520 L 1160 460" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_P_IN&gt;VH_P_OUT" data-a="VH_P_IN" data-b="VH_P_OUT" data-kind="drain" data-state="closed"><title>VH_P_IN&gt;VH_P_OUT</title>
+<path d="M 1160 460 L 1160 420" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 460 L 1160 420" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VH_P_OUT&gt;VH_P_END" data-a="VH_P_OUT" data-b="VH_P_END" data-kind="drain" data-state="open"><title>VH_P_OUT&gt;VH_P_END</title>
+<path d="M 1160 420 L 1160 380" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 420 L 1160 380" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VENT&gt;VENT_OUT" data-a="VENT" data-b="VENT_OUT" data-kind="drain" data-state="automatic_vent"><title>VENT&gt;VENT_OUT</title>
+<path d="M 700 410 L 700 375" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 700 410 L 700 375" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VENT_OUT&gt;VENT_END" data-a="VENT_OUT" data-b="VENT_END" data-kind="drain" data-state="open"><title>VENT_OUT&gt;VENT_END</title>
+<path d="M 700 375 L 700 305 L 150 305 L 150 1190" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 700 375 L 700 305 L 150 305 L 150 1190" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="AS_IN&gt;AS_OUT" data-a="AS_IN" data-b="AS_OUT" data-kind="hot" data-state="open"><title>AS_IN&gt;AS_OUT</title>
+<path d="M 670 520 L 730 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 670 520 L 730 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="AS_OUT&gt;T1" data-a="AS_OUT" data-b="T1" data-kind="hot" data-state="open"><title>AS_OUT&gt;T1</title>
+<path d="M 730 520 L 800 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 730 520 L 800 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="FS_IN&gt;FS_OUT" data-a="FS_IN" data-b="FS_OUT" data-kind="hot" data-state="open"><title>FS_IN&gt;FS_OUT</title>
+<path d="M 1810 660 L 1870 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1810 660 L 1870 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="FS_OUT&gt;TT_TAP" data-a="FS_OUT" data-b="TT_TAP" data-kind="hot" data-state="open"><title>FS_OUT&gt;TT_TAP</title>
+<path d="M 1870 660 L 1940 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1870 660 L 1940 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TT_TAP&gt;SUPPLY" data-a="TT_TAP" data-b="SUPPLY" data-kind="hot" data-state="open"><title>TT_TAP&gt;SUPPLY</title>
+<path d="M 1940 660 L 2020 660 L 2020 420 L 2100 420" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1940 660 L 2020 660 L 2020 420 L 2100 420" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="TT_TAP&gt;TT01" data-a="TT_TAP" data-b="TT01" data-kind="hot" data-state="open"><title>TT_TAP&gt;TT01</title>
+<path d="M 1940 660 L 1940 735" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1940 660 L 1940 735" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="T1&gt;ET_PRESS_TEE" data-a="T1" data-b="ET_PRESS_TEE" data-kind="hot" data-state="open"><title>T1&gt;ET_PRESS_TEE</title>
+<path d="M 800 520 L 800 680" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 520 L 800 680" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_PRESS_TEE&gt;T2" data-a="ET_PRESS_TEE" data-b="T2" data-kind="hot" data-state="open"><title>ET_PRESS_TEE&gt;T2</title>
+<path d="M 800 680 L 800 800" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 680 L 800 800" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_PRESS_TEE&gt;PI_TAP" data-a="ET_PRESS_TEE" data-b="PI_TAP" data-kind="hot" data-state="open"><title>ET_PRESS_TEE&gt;PI_TAP</title>
+<path d="M 800 680 L 920 680" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 680 L 920 680" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PI_TAP&gt;PT_TAP" data-a="PI_TAP" data-b="PT_TAP" data-kind="hot" data-state="open"><title>PI_TAP&gt;PT_TAP</title>
+<path d="M 920 680 L 1040 680" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 920 680 L 1040 680" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PI_TAP&gt;PI01" data-a="PI_TAP" data-b="PI01" data-kind="hot" data-state="open"><title>PI_TAP&gt;PI01</title>
+<path d="M 920 680 L 920 620" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 920 680 L 920 620" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PT_TAP&gt;PT01" data-a="PT_TAP" data-b="PT01" data-kind="hot" data-state="open"><title>PT_TAP&gt;PT01</title>
+<path d="M 1040 680 L 1040 620" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1040 680 L 1040 620" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VET_IN&gt;VET_OUT" data-a="VET_IN" data-b="VET_OUT" data-kind="hot" data-state="locked_open"><title>VET_IN&gt;VET_OUT</title>
+<path d="M 800 860 L 800 900" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 860 L 800 900" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="T2&gt;VET_IN" data-a="T2" data-b="VET_IN" data-kind="hot" data-state="open"><title>T2&gt;VET_IN</title>
+<path d="M 800 800 L 800 860" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 800 L 800 860" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VET_OUT&gt;ET_DRAIN_TEE" data-a="VET_OUT" data-b="ET_DRAIN_TEE" data-kind="hot" data-state="open"><title>VET_OUT&gt;ET_DRAIN_TEE</title>
+<path d="M 800 900 L 800 945" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 900 L 800 945" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="ET_DRAIN_TEE&gt;ET_WATER" data-a="ET_DRAIN_TEE" data-b="ET_WATER" data-kind="hot" data-state="open"><title>ET_DRAIN_TEE&gt;ET_WATER</title>
+<path d="M 800 945 L 800 1010" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 945 L 800 1010" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_SUC&gt;P01A_VI_IN" data-a="P_SUC" data-b="P01A_VI_IN" data-kind="hot" data-state="open"><title>P_SUC&gt;P01A_VI_IN</title>
+<path d="M 1160 660 L 1160 580 L 1240 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 660 L 1160 580 L 1240 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VI_IN&gt;P01A_VI_OUT" data-a="P01A_VI_IN" data-b="P01A_VI_OUT" data-kind="hot" data-state="open"><title>P01A_VI_IN&gt;P01A_VI_OUT</title>
+<path d="M 1240 580 L 1280 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1240 580 L 1280 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VI_OUT&gt;P01A_IN" data-a="P01A_VI_OUT" data-b="P01A_IN" data-kind="hot" data-state="open"><title>P01A_VI_OUT&gt;P01A_IN</title>
+<path d="M 1280 580 L 1340 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1280 580 L 1340 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_IN&gt;P01A_OUT" data-a="P01A_IN" data-b="P01A_OUT" data-kind="hot" data-state="open"><title>P01A_IN&gt;P01A_OUT</title>
+<path d="M 1340 580 L 1420 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 580 L 1420 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_OUT&gt;P01A_CV_IN" data-a="P01A_OUT" data-b="P01A_CV_IN" data-kind="hot" data-state="open"><title>P01A_OUT&gt;P01A_CV_IN</title>
+<path d="M 1420 580 L 1490 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 580 L 1490 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_CV_IN&gt;P01A_CV_OUT" data-a="P01A_CV_IN" data-b="P01A_CV_OUT" data-kind="hot" data-state="open"><title>P01A_CV_IN&gt;P01A_CV_OUT</title>
+<path d="M 1490 580 L 1530 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1490 580 L 1530 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_CV_OUT&gt;P01A_VO_IN" data-a="P01A_CV_OUT" data-b="P01A_VO_IN" data-kind="hot" data-state="open"><title>P01A_CV_OUT&gt;P01A_VO_IN</title>
+<path d="M 1530 580 L 1590 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 580 L 1590 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VO_IN&gt;P01A_VO_OUT" data-a="P01A_VO_IN" data-b="P01A_VO_OUT" data-kind="hot" data-state="open"><title>P01A_VO_IN&gt;P01A_VO_OUT</title>
+<path d="M 1590 580 L 1630 580" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1590 580 L 1630 580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01A_VO_OUT&gt;P_DIS" data-a="P01A_VO_OUT" data-b="P_DIS" data-kind="hot" data-state="open"><title>P01A_VO_OUT&gt;P_DIS</title>
+<path d="M 1630 580 L 1690 580 L 1690 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1630 580 L 1690 580 L 1690 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_SUC&gt;P01B_VI_IN" data-a="P_SUC" data-b="P01B_VI_IN" data-kind="hot" data-state="open"><title>P_SUC&gt;P01B_VI_IN</title>
+<path d="M 1160 660 L 1160 840 L 1240 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 660 L 1160 840 L 1240 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VI_IN&gt;P01B_VI_OUT" data-a="P01B_VI_IN" data-b="P01B_VI_OUT" data-kind="hot" data-state="open"><title>P01B_VI_IN&gt;P01B_VI_OUT</title>
+<path d="M 1240 840 L 1280 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1240 840 L 1280 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VI_OUT&gt;P01B_IN" data-a="P01B_VI_OUT" data-b="P01B_IN" data-kind="hot" data-state="open"><title>P01B_VI_OUT&gt;P01B_IN</title>
+<path d="M 1280 840 L 1340 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1280 840 L 1340 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_IN&gt;P01B_OUT" data-a="P01B_IN" data-b="P01B_OUT" data-kind="hot" data-state="open"><title>P01B_IN&gt;P01B_OUT</title>
+<path d="M 1340 840 L 1420 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1340 840 L 1420 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_OUT&gt;P01B_CV_IN" data-a="P01B_OUT" data-b="P01B_CV_IN" data-kind="hot" data-state="open"><title>P01B_OUT&gt;P01B_CV_IN</title>
+<path d="M 1420 840 L 1490 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1420 840 L 1490 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_CV_IN&gt;P01B_CV_OUT" data-a="P01B_CV_IN" data-b="P01B_CV_OUT" data-kind="hot" data-state="open"><title>P01B_CV_IN&gt;P01B_CV_OUT</title>
+<path d="M 1490 840 L 1530 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1490 840 L 1530 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_CV_OUT&gt;P01B_VO_IN" data-a="P01B_CV_OUT" data-b="P01B_VO_IN" data-kind="hot" data-state="open"><title>P01B_CV_OUT&gt;P01B_VO_IN</title>
+<path d="M 1530 840 L 1590 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1530 840 L 1590 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VO_IN&gt;P01B_VO_OUT" data-a="P01B_VO_IN" data-b="P01B_VO_OUT" data-kind="hot" data-state="open"><title>P01B_VO_IN&gt;P01B_VO_OUT</title>
+<path d="M 1590 840 L 1630 840" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1590 840 L 1630 840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P01B_VO_OUT&gt;P_DIS" data-a="P01B_VO_OUT" data-b="P_DIS" data-kind="hot" data-state="open"><title>P01B_VO_OUT&gt;P_DIS</title>
+<path d="M 1630 840 L 1690 840 L 1690 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1630 840 L 1690 840 L 1690 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_DIS&gt;FS_IN" data-a="P_DIS" data-b="FS_IN" data-kind="hot" data-state="open"><title>P_DIS&gt;FS_IN</title>
+<path d="M 1690 660 L 1810 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1690 660 L 1810 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SUPPLY&gt;S1" data-a="SUPPLY" data-b="S1" data-kind="hot" data-state="open"><title>SUPPLY&gt;S1</title>
+<path d="M 2100 420 L 2100 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 420 L 2100 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S1&gt;SV1_IN" data-a="S1" data-b="SV1_IN" data-kind="hot" data-state="open"><title>S1&gt;SV1_IN</title>
+<path d="M 2100 520 L 2287 520 Q 2300 494 2313 520 L 2400 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 520 L 2287 520 Q 2300 494 2313 520 L 2400 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV1_IN&gt;SV1_OUT" data-a="SV1_IN" data-b="SV1_OUT" data-kind="hot" data-state="open"><title>SV1_IN&gt;SV1_OUT</title>
+<path d="M 2400 520 L 2440 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 520 L 2440 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV1_OUT&gt;EXT_S1" data-a="SV1_OUT" data-b="EXT_S1" data-kind="hot" data-state="open"><title>SV1_OUT&gt;EXT_S1</title>
+<path d="M 2440 520 L 2780 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 520 L 2780 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S1&gt;S2" data-a="S1" data-b="S2" data-kind="hot" data-state="open"><title>S1&gt;S2</title>
+<path d="M 2100 520 L 2100 640" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 520 L 2100 640" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S2&gt;SV2_IN" data-a="S2" data-b="SV2_IN" data-kind="hot" data-state="open"><title>S2&gt;SV2_IN</title>
+<path d="M 2100 640 L 2287 640 Q 2300 614 2313 640 L 2400 640" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 640 L 2287 640 Q 2300 614 2313 640 L 2400 640" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV2_IN&gt;SV2_OUT" data-a="SV2_IN" data-b="SV2_OUT" data-kind="hot" data-state="open"><title>SV2_IN&gt;SV2_OUT</title>
+<path d="M 2400 640 L 2440 640" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 640 L 2440 640" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV2_OUT&gt;EXT_S2" data-a="SV2_OUT" data-b="EXT_S2" data-kind="hot" data-state="open"><title>SV2_OUT&gt;EXT_S2</title>
+<path d="M 2440 640 L 2780 640" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 640 L 2780 640" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S2&gt;S3" data-a="S2" data-b="S3" data-kind="hot" data-state="open"><title>S2&gt;S3</title>
+<path d="M 2100 640 L 2100 760" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 640 L 2100 760" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S3&gt;SV3_IN" data-a="S3" data-b="SV3_IN" data-kind="hot" data-state="open"><title>S3&gt;SV3_IN</title>
+<path d="M 2100 760 L 2287 760 Q 2300 734 2313 760 L 2400 760" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 760 L 2287 760 Q 2300 734 2313 760 L 2400 760" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV3_IN&gt;SV3_OUT" data-a="SV3_IN" data-b="SV3_OUT" data-kind="hot" data-state="open"><title>SV3_IN&gt;SV3_OUT</title>
+<path d="M 2400 760 L 2440 760" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 760 L 2440 760" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV3_OUT&gt;EXT_S3" data-a="SV3_OUT" data-b="EXT_S3" data-kind="hot" data-state="open"><title>SV3_OUT&gt;EXT_S3</title>
+<path d="M 2440 760 L 2780 760" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 760 L 2780 760" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S3&gt;S4" data-a="S3" data-b="S4" data-kind="hot" data-state="open"><title>S3&gt;S4</title>
+<path d="M 2100 760 L 2100 880" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 760 L 2100 880" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S4&gt;SV4_IN" data-a="S4" data-b="SV4_IN" data-kind="hot" data-state="open"><title>S4&gt;SV4_IN</title>
+<path d="M 2100 880 L 2287 880 Q 2300 854 2313 880 L 2400 880" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 880 L 2287 880 Q 2300 854 2313 880 L 2400 880" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV4_IN&gt;SV4_OUT" data-a="SV4_IN" data-b="SV4_OUT" data-kind="hot" data-state="open"><title>SV4_IN&gt;SV4_OUT</title>
+<path d="M 2400 880 L 2440 880" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 880 L 2440 880" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV4_OUT&gt;EXT_S4" data-a="SV4_OUT" data-b="EXT_S4" data-kind="hot" data-state="open"><title>SV4_OUT&gt;EXT_S4</title>
+<path d="M 2440 880 L 2780 880" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 880 L 2780 880" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S4&gt;S5" data-a="S4" data-b="S5" data-kind="hot" data-state="open"><title>S4&gt;S5</title>
+<path d="M 2100 880 L 2100 1000" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 880 L 2100 1000" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S5&gt;SV5_IN" data-a="S5" data-b="SV5_IN" data-kind="hot" data-state="open"><title>S5&gt;SV5_IN</title>
+<path d="M 2100 1000 L 2287 1000 Q 2300 974 2313 1000 L 2400 1000" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1000 L 2287 1000 Q 2300 974 2313 1000 L 2400 1000" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV5_IN&gt;SV5_OUT" data-a="SV5_IN" data-b="SV5_OUT" data-kind="hot" data-state="open"><title>SV5_IN&gt;SV5_OUT</title>
+<path d="M 2400 1000 L 2440 1000" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 1000 L 2440 1000" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV5_OUT&gt;EXT_S5" data-a="SV5_OUT" data-b="EXT_S5" data-kind="hot" data-state="open"><title>SV5_OUT&gt;EXT_S5</title>
+<path d="M 2440 1000 L 2780 1000" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 1000 L 2780 1000" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S5&gt;S6" data-a="S5" data-b="S6" data-kind="hot" data-state="open"><title>S5&gt;S6</title>
+<path d="M 2100 1000 L 2100 1120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1000 L 2100 1120" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="S6&gt;SV6_IN" data-a="S6" data-b="SV6_IN" data-kind="hot" data-state="open"><title>S6&gt;SV6_IN</title>
+<path d="M 2100 1120 L 2287 1120 Q 2300 1094 2313 1120 L 2400 1120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2100 1120 L 2287 1120 Q 2300 1094 2313 1120 L 2400 1120" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV6_IN&gt;SV6_OUT" data-a="SV6_IN" data-b="SV6_OUT" data-kind="hot" data-state="open"><title>SV6_IN&gt;SV6_OUT</title>
+<path d="M 2400 1120 L 2440 1120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2400 1120 L 2440 1120" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SV6_OUT&gt;EXT_S6" data-a="SV6_OUT" data-b="EXT_S6" data-kind="hot" data-state="open"><title>SV6_OUT&gt;EXT_S6</title>
+<path d="M 2440 1120 L 2780 1120" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2440 1120 L 2780 1120" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="B_OUT&gt;VB01O_IN" data-a="B_OUT" data-b="VB01O_IN" data-kind="hot" data-state="open"><title>B_OUT&gt;VB01O_IN</title>
+<path d="M 520 520 L 547 520 Q 560 494 573 520 L 585 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 520 520 L 547 520 Q 560 494 573 520 L 585 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01O_IN&gt;VB01O_OUT" data-a="VB01O_IN" data-b="VB01O_OUT" data-kind="hot" data-state="open"><title>VB01O_IN&gt;VB01O_OUT</title>
+<path d="M 585 520 L 625 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 585 520 L 625 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="VB01O_OUT&gt;AS_IN" data-a="VB01O_OUT" data-b="AS_IN" data-kind="hot" data-state="open"><title>VB01O_OUT&gt;AS_IN</title>
+<path d="M 625 520 L 670 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 625 520 L 670 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="T1&gt;P_HI" data-a="T1" data-b="P_HI" data-kind="hot" data-state="open"><title>T1&gt;P_HI</title>
+<path d="M 800 520 L 1160 520" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 800 520 L 1160 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="P_HI&gt;P_SUC" data-a="P_HI" data-b="P_SUC" data-kind="hot" data-state="open"><title>P_HI&gt;P_SUC</title>
+<path d="M 1160 520 L 1160 660" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1160 520 L 1160 660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="V1_IN&gt;V1_OUT" data-a="V1_IN" data-b="V1_OUT" data-kind="fill" data-state="open"><title>V1_IN&gt;V1_OUT</title>
+<path d="M 2630 1600 L 2590 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2630 1600 L 2590 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="RAW&gt;V1_IN" data-a="RAW" data-b="V1_IN" data-kind="fill" data-state="open"><title>RAW&gt;V1_IN</title>
+<path d="M 2780 1600 L 2630 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2780 1600 L 2630 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="V1_OUT&gt;Y_IN" data-a="V1_OUT" data-b="Y_IN" data-kind="fill" data-state="open"><title>V1_OUT&gt;Y_IN</title>
+<path d="M 2590 1600 L 2490 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2590 1600 L 2490 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="Y_IN&gt;Y_OUT" data-a="Y_IN" data-b="Y_OUT" data-kind="fill" data-state="open"><title>Y_IN&gt;Y_OUT</title>
+<path d="M 2490 1600 L 2430 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2490 1600 L 2430 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BF1_IN&gt;BF1_OUT" data-a="BF1_IN" data-b="BF1_OUT" data-kind="fill" data-state="open"><title>BF1_IN&gt;BF1_OUT</title>
+<path d="M 2330 1600 L 2250 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2330 1600 L 2250 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="Y_OUT&gt;BF1_IN" data-a="Y_OUT" data-b="BF1_IN" data-kind="fill" data-state="open"><title>Y_OUT&gt;BF1_IN</title>
+<path d="M 2430 1600 L 2330 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2430 1600 L 2330 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="WT1_IN&gt;WT1_OUT" data-a="WT1_IN" data-b="WT1_OUT" data-kind="fill" data-state="open"><title>WT1_IN&gt;WT1_OUT</title>
+<path d="M 2110 1600 L 1870 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2110 1600 L 1870 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="BF1_OUT&gt;WT1_IN" data-a="BF1_OUT" data-b="WT1_IN" data-kind="fill" data-state="open"><title>BF1_OUT&gt;WT1_IN</title>
+<path d="M 2250 1600 L 2110 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2250 1600 L 2110 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="WT1_OUT&gt;SAMPLE_TEE" data-a="WT1_OUT" data-b="SAMPLE_TEE" data-kind="fill" data-state="open"><title>WT1_OUT&gt;SAMPLE_TEE</title>
+<path d="M 1870 1600 L 1710 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1870 1600 L 1710 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SAMPLE_TEE&gt;FQ_IN" data-a="SAMPLE_TEE" data-b="FQ_IN" data-kind="fill" data-state="open"><title>SAMPLE_TEE&gt;FQ_IN</title>
+<path d="M 1710 1600 L 1660 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1710 1600 L 1660 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="FQ_IN&gt;FQ_OUT" data-a="FQ_IN" data-b="FQ_OUT" data-kind="fill" data-state="open"><title>FQ_IN&gt;FQ_OUT</title>
+<path d="M 1660 1600 L 1600 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1660 1600 L 1600 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PRV1_IN&gt;PRV1_OUT" data-a="PRV1_IN" data-b="PRV1_OUT" data-kind="fill" data-state="open"><title>PRV1_IN&gt;PRV1_OUT</title>
+<path d="M 1500 1600 L 1450 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1500 1600 L 1450 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="FQ_OUT&gt;PRV1_IN" data-a="FQ_OUT" data-b="PRV1_IN" data-kind="fill" data-state="open"><title>FQ_OUT&gt;PRV1_IN</title>
+<path d="M 1600 1600 L 1500 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1600 1600 L 1500 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="XV1_IN&gt;XV1_OUT" data-a="XV1_IN" data-b="XV1_OUT" data-kind="fill" data-state="controlled_closed"><title>XV1_IN&gt;XV1_OUT</title>
+<path d="M 1350 1600 L 1300 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1350 1600 L 1300 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="PRV1_OUT&gt;XV1_IN" data-a="PRV1_OUT" data-b="XV1_IN" data-kind="fill" data-state="open"><title>PRV1_OUT&gt;XV1_IN</title>
+<path d="M 1450 1600 L 1350 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1450 1600 L 1350 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="CV1_IN&gt;CV1_OUT" data-a="CV1_IN" data-b="CV1_OUT" data-kind="fill" data-state="oneway"><title>CV1_IN&gt;CV1_OUT</title>
+<path d="M 1190 1600 L 1140 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1190 1600 L 1140 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="XV1_OUT&gt;CV1_IN" data-a="XV1_OUT" data-b="CV1_IN" data-kind="fill" data-state="open"><title>XV1_OUT&gt;CV1_IN</title>
+<path d="M 1300 1600 L 1190 1600" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1300 1600 L 1190 1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="CV1_OUT&gt;T2" data-a="CV1_OUT" data-b="T2" data-kind="fill" data-state="open"><title>CV1_OUT&gt;T2</title>
+<path d="M 1140 1600 L 1080 1600 L 1080 800 L 800 800" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1140 1600 L 1080 1600 L 1080 800 L 800 800" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SAMPLE_TEE&gt;SAMPLE_IN" data-a="SAMPLE_TEE" data-b="SAMPLE_IN" data-kind="fill" data-state="open"><title>SAMPLE_TEE&gt;SAMPLE_IN</title>
+<path d="M 1710 1600 L 1710 1730" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1710 1600 L 1710 1730" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="SAMPLE_IN&gt;SAMPLE_OUT" data-a="SAMPLE_IN" data-b="SAMPLE_OUT" data-kind="fill" data-state="open"><title>SAMPLE_IN&gt;SAMPLE_OUT</title>
+<path d="M 1710 1730 L 1710 1800" fill="none" stroke="white" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 1710 1730 L 1710 1800" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="CHEM_OUT&gt;DP_IN" data-a="CHEM_OUT" data-b="DP_IN" data-kind="chem" data-state="open"><title>CHEM_OUT&gt;DP_IN</title>
+<path d="M 2500 1880 L 2330 1880" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2500 1880 L 2330 1880" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DP_IN&gt;DP_OUT" data-a="DP_IN" data-b="DP_OUT" data-kind="chem" data-state="open"><title>DP_IN&gt;DP_OUT</title>
+<path d="M 2330 1880 L 2260 1880" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2330 1880 L 2260 1880" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DCV_IN&gt;DCV_OUT" data-a="DCV_IN" data-b="DCV_OUT" data-kind="chem" data-state="oneway"><title>DCV_IN&gt;DCV_OUT</title>
+<path d="M 2140 1880 L 2080 1880" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2140 1880 L 2080 1880" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DP_OUT&gt;DCV_IN" data-a="DP_OUT" data-b="DCV_IN" data-kind="chem" data-state="open"><title>DP_OUT&gt;DCV_IN</title>
+<path d="M 2260 1880 L 2140 1880" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2260 1880 L 2140 1880" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g data-edge="DCV_OUT&gt;DOSE_T" data-a="DCV_OUT" data-b="DOSE_T" data-kind="chem" data-state="open"><title>DCV_OUT&gt;DOSE_T</title>
+<path d="M 2080 1880 L 1780 1880 L 1780 1613 Q 1754 1600 1780 1587 L 1780 673 Q 1754 660 1780 647 L 1780 350" fill="none" stroke="white" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M 2080 1880 L 1780 1880 L 1780 1613 Q 1754 1600 1780 1587 L 1780 673 Q 1754 660 1780 647 L 1780 350" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<rect x="220" y="470" width="300" height="900" rx="48" fill="#edf3f6" stroke="#617f91" stroke-width="4" />
+<polyline points="252,700 488,700" fill="none" stroke="#d7e1e8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="275,820 305,804 335,836 365,804 395,836 425,804 455,820" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="275,875 305,859 335,891 365,859 395,891 425,859 455,875" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="275,930 305,914 335,946 365,914 395,946 425,914 455,930" fill="none" stroke="#a97924" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="370" y="610" fill="#183348" font-size="34" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">B01</text>
+<text x="370" y="660" fill="#183348" font-size="31" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">דוד חשמלי</text>
+<text x="370" y="1010" fill="#c84c43" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">יציאה עליונה</text>
+<text x="370" y="1050" fill="#217ca9" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חזרה תחתונה</text>
+<text x="370" y="1240" fill="#5a7081" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ללא הספק או נפח נבחר</text>
+<polyline points="270,1370 270,1400 470,1400 470,1370" fill="none" stroke="#5a7081" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="710" y="1010" width="180" height="230" rx="55" fill="#f0f4f9" stroke="#617f91" stroke-width="3" />
+<path d="M714 1120 Q800 1085 886 1120" fill="none" stroke="#8b9daa" stroke-width="3" stroke-dasharray="6 5"/>
+<text x="800" y="1080" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ET01</text>
+<text x="800" y="1160" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מכל</text>
+<text x="800" y="1190" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">התפשטות</text>
+<polyline points="740,1240 740,1260 860,1260 860,1240" fill="none" stroke="#5a7081" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<g data-component="AS" data-type="airSeparator" transform="translate(700.0 520.0) rotate(0)">
+<rect x="-29" y="-40" width="58" height="80" rx="19" fill="#f4f8fa" stroke="#c84c43" stroke-width="3"/>
+<circle cx="-9" cy="-9" r="5" fill="none" stroke="#c84c43"/><circle cx="9" cy="9" r="6" fill="none" stroke="#c84c43"/>
+</g>
+<g data-component="FS01" data-type="flowSwitch" transform="translate(1840.0 660.0) rotate(0)">
+<rect x="-28" y="-23" width="56" height="46" rx="9" fill="white" stroke="#c84c43" stroke-width="3"/>
+</g>
+<g data-component="VET" data-type="valve" transform="translate(800.0 880.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DVET" data-type="valve" transform="translate(650.0 1020.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="PSV01" data-type="psv" transform="translate(350.0 355.0) rotate(-90)">
+<rect x="-24" y="-22" width="48" height="44" rx="5" fill="white" stroke="#a97924" stroke-width="3"/><path d="M-14 10 L14 -10 M0 -22 V-30 L-8 -34 L8 -39 L-8 -44 L8 -49" fill="none" stroke="#a97924" stroke-width="3"/>
+</g>
+<g data-component="DS01" data-type="dirtSeparator" transform="translate(560.0 1070.0) rotate(90)">
+<rect x="-38" y="-28" width="76" height="56" rx="14" fill="#f4f8fa" stroke="#217ca9" stroke-width="3"/>
+</g>
+<g data-component="V1" data-type="valve" transform="translate(2610.0 1600.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#0c8b80" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#0c8b80" fill="none" stroke-width="3"/>
+</g>
+<g data-component="Y1" data-type="strainer" transform="translate(2460.0 1600.0) rotate(180)">
+<path d="M-25 -15 L25 -15 L16 17 L-15 17 Z M-10 -8 L10 10 M0 -8 L15 3" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="BF1" data-type="box" transform="translate(2290.0 1600.0) rotate(180)">
+<rect x="-40.0" y="-35" width="80" height="70" rx="9" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="WT1" data-type="box" transform="translate(1990.0 1600.0) rotate(180)">
+<rect x="-120.0" y="-35" width="240" height="70" rx="9" fill="white" stroke="#0c8b80" stroke-width="3" stroke-dasharray="8 5"/>
+</g>
+<g data-component="FQ01" data-type="meter" transform="translate(1630.0 1600.0) rotate(180)">
+<rect x="-28" y="-23" width="56" height="46" rx="9" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="PRV1" data-type="prv" transform="translate(1475.0 1600.0) rotate(180)">
+<path d="M-23 -17 H23 V17 H-23 Z M-14 9 L14 -9" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="XV1" data-type="ctrlValve" transform="translate(1325.0 1600.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#0c8b80" stroke="#0c8b80" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#0c8b80" fill="none" stroke-width="3"/>
+<rect x="-12" y="-46" width="24" height="20" rx="3" fill="white" stroke="#0c8b80" stroke-width="2"/>
+</g>
+<g data-component="CV1" data-type="check" transform="translate(1165.0 1600.0) rotate(180)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#0c8b80" fill="white" stroke-width="3"/>
+</g>
+<g data-component="AN1" data-type="box" transform="translate(1710.0 1765.0) rotate(90)">
+<rect x="-35.0" y="-35" width="70" height="70" rx="9" fill="white" stroke="#0c8b80" stroke-width="3" stroke-dasharray="8 5"/>
+</g>
+<g data-component="DP01" data-type="dosingPump" transform="translate(2295.0 1880.0) rotate(180)">
+<circle r="27" fill="white" stroke="#8652aa" stroke-width="4"/>
+<path d="M-15 -20 L22 0 L-15 20 Z" fill="#8652aa"/>
+</g>
+<g data-component="DCV" data-type="check" transform="translate(2110.0 1880.0) rotate(180)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#8652aa" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VAI" data-type="valve" transform="translate(1260.0 580.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="P01A" data-type="pump" transform="translate(1380.0 580.0) rotate(0)">
+<circle r="35" fill="white" stroke="#c84c43" stroke-width="4"/>
+<path d="M-15 -20 L22 0 L-15 20 Z" fill="#c84c43"/>
+</g>
+<g data-component="CVA" data-type="check" transform="translate(1510.0 580.0) rotate(0)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#c84c43" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VAO" data-type="valve" transform="translate(1610.0 580.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VBI" data-type="valve" transform="translate(1260.0 840.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="P01B" data-type="pump" transform="translate(1380.0 840.0) rotate(0)">
+<circle r="35" fill="white" stroke="#c84c43" stroke-width="4"/>
+<path d="M-15 -20 L22 0 L-15 20 Z" fill="#c84c43"/>
+</g>
+<g data-component="CVB" data-type="check" transform="translate(1510.0 840.0) rotate(0)">
+<path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#c84c43" fill="white" stroke-width="3"/>
+</g>
+<g data-component="VBO" data-type="valve" transform="translate(1610.0 840.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV1" data-type="valve" transform="translate(2420.0 520.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV1" data-type="valve" transform="translate(2420.0 480.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV2" data-type="valve" transform="translate(2420.0 640.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV2" data-type="valve" transform="translate(2420.0 600.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV3" data-type="valve" transform="translate(2420.0 760.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV3" data-type="valve" transform="translate(2420.0 720.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV4" data-type="valve" transform="translate(2420.0 880.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV4" data-type="valve" transform="translate(2420.0 840.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV5" data-type="valve" transform="translate(2420.0 1000.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV5" data-type="valve" transform="translate(2420.0 960.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="SV6" data-type="valve" transform="translate(2420.0 1120.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="RV6" data-type="valve" transform="translate(2420.0 1080.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VB01O" data-type="valve" transform="translate(605.0 520.0) rotate(0)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VDSI" data-type="valve" transform="translate(560.0 960.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VDSO" data-type="valve" transform="translate(560.0 1160.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VB01I" data-type="valve" transform="translate(560.0 1280.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DB01" data-type="valve" transform="translate(350.0 1425.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DDS01" data-type="valve" transform="translate(610.0 1115.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DPA1" data-type="valve" transform="translate(1420.0 677.5) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DPA2" data-type="valve" transform="translate(1530.0 677.5) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VPA" data-type="valve" transform="translate(1340.0 505.0) rotate(-90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DPB1" data-type="valve" transform="translate(1420.0 937.5) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DPB2" data-type="valve" transform="translate(1530.0 937.5) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VPB" data-type="valve" transform="translate(1340.0 765.0) rotate(-90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DH_S" data-type="valve" transform="translate(2100.0 1220.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DH_R" data-type="valve" transform="translate(2300.0 1180.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="DR_LOW" data-type="valve" transform="translate(2180.0 385.0) rotate(90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VH_S" data-type="valve" transform="translate(2030.0 1120.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VH_R" data-type="valve" transform="translate(2230.0 1080.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="VH_P" data-type="valve" transform="translate(1160.0 440.0) rotate(-90)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="BV1" data-type="balancingValve" transform="translate(2520.0 480.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<g data-component="BV2" data-type="balancingValve" transform="translate(2520.0 600.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<g data-component="BV3" data-type="balancingValve" transform="translate(2520.0 720.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<g data-component="BV4" data-type="balancingValve" transform="translate(2520.0 840.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<g data-component="BV5" data-type="balancingValve" transform="translate(2520.0 960.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<g data-component="BV6" data-type="balancingValve" transform="translate(2520.0 1080.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#217ca9" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#217ca9" fill="none" stroke-width="3"/>
+<circle cx="0" cy="-29" r="8" fill="white" stroke="#217ca9" stroke-width="2"/>
+</g>
+<text x="1380" y="649" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">P01A</text>
+<text x="1260" y="538" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VAI</text>
+<text x="1510" y="538" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CVA</text>
+<text x="1610" y="538" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VAO</text>
+<polyline points="1340,623 1420,623" fill="none" stroke="#5a7081" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1325,667 1435,667" fill="none" stroke="#5a7081" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1380" y="909" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">P01B</text>
+<text x="1260" y="798" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VBI</text>
+<text x="1510" y="798" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CVB</text>
+<text x="1610" y="798" fill="#c84c43" font-size="20" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VBO</text>
+<polyline points="1340,883 1420,883" fill="none" stroke="#5a7081" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1325,927 1435,927" fill="none" stroke="#5a7081" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1425" y="1090" fill="#183348" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">כל משאבה: מלוא הספיקה והעומד שייקבעו בתכן</text>
+<text x="1425" y="1124" fill="#5a7081" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ברז בידוד בכל צד · אל־חוזר ביציאת כל ענף</text>
+<text x="1425" y="1157" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">החלפה אוטומטית טעונה בקר, משוב ובדיקה בפועל</text>
+<text x="1840" y="714" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">FS01</text>
+<text x="1820" y="755" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אישור זרימה</text>
+<text x="1820" y="781" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משותף</text>
+<text x="800" y="489" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">T1</text>
+<text x="1000" y="470" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">לפני היניקה המשותפת</text>
+<text x="825" y="830" fill="#183348" font-size="22" font-weight="700" text-anchor="start" direction="ltr" unicode-bidi="plaintext">T2</text>
+<text x="800" y="1288" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חיבור יחיד למי המערכת · זרימה לשני הכיוונים</text>
+<text x="845" y="1325" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">השלמה מצטרפת ב־T2 מחוץ למכל</text>
+<text x="845" y="1362" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אין אל־חוזר בין המכל לבין T1</text>
+<text x="870" y="882" fill="#183348" font-size="23" font-weight="700" text-anchor="start" direction="ltr" unicode-bidi="plaintext">VET</text>
+<text x="935" y="917" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">נעול פתוח בהפעלה רגילה</text>
+<text x="720" y="986" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">DVET · סגור בהפעלה רגילה</text>
+<polyline points="700,990 668,1010" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="395" y="362" fill="#183348" font-size="23" font-weight="700" text-anchor="start" direction="ltr" unicode-bidi="plaintext">PSV01</text>
+<text x="340" y="422" fill="#a97924" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ללא ברז בידוד מהדוד</text>
+<text x="190" y="1046" fill="#a97924" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">פריקה ליעד בטוח</text>
+<text x="700" y="576" fill="#5a7081" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">AS · הפרדת אוויר</text>
+<text x="700" y="385" fill="#5a7081" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">שחרור אוויר</text>
+<rect x="385" y="1072" width="140" height="64" rx="8" fill="white" stroke="#dce6ec" stroke-width="1" />
+<text x="455" y="1098" fill="#183348" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DS01</text>
+<text x="455" y="1125" fill="#5a7081" font-size="17" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">הפרדת לכלוך</text>
+<polyline points="525,1102 532,1102" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="920" cy="620" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="920" y="627" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PI01</text>
+<text x="920" y="577" fill="#5a7081" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מד לחץ</text>
+<circle cx="1040" cy="620" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="1040" y="627" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PT01</text>
+<text x="1040" y="577" fill="#5a7081" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משדר לחץ</text>
+<circle cx="1940" cy="735" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="1940" y="742" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT01</text>
+<text x="1940" y="790" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טמפרטורת אספקה</text>
+<circle cx="2180" cy="285" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="2180" y="292" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT02</text>
+<text x="2180" y="241" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טמפרטורת חזרה</text>
+<circle cx="2050" cy="285" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="2050" y="292" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">EC01</text>
+<text x="2050" y="241" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מוליכות</text>
+<circle cx="1920" cy="285" r="28" fill="white" stroke="#5a7081" stroke-width="2.5"/>
+<text x="1920" y="292" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">pH01</text>
+<text x="1920" y="241" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חומציות</text>
+<circle cx="800" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1160" cy="660" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1690" cy="660" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1940" cy="660" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="800" cy="680" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="920" cy="680" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="800" cy="800" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="800" cy="945" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2180" cy="350" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2050" cy="350" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="1920" cy="350" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="1780" cy="350" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="1710" cy="1600" r="7" fill="#0c8b80" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="640" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="760" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="880" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="1000" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2100" cy="1120" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="480" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="600" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="720" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="840" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="960" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2300" cy="1080" r="7" fill="#217ca9" stroke="none" stroke-width="2"/>
+<polyline points="2540,520 2735,520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,480 2585,480" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="508.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 1</text>
+<text x="2470" y="550" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV1</text>
+<polyline points="2470,530 2445,524" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="456" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV1</text>
+<polyline points="2540,640 2735,640" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,600 2585,600" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="628.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 2</text>
+<text x="2470" y="670" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV2</text>
+<polyline points="2470,650 2445,644" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="576" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV2</text>
+<polyline points="2540,760 2735,760" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,720 2585,720" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="748.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 3</text>
+<text x="2470" y="790" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV3</text>
+<polyline points="2470,770 2445,764" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="696" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV3</text>
+<polyline points="2540,880 2735,880" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,840 2585,840" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="868.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 4</text>
+<text x="2470" y="910" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV4</text>
+<polyline points="2470,890 2445,884" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="816" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV4</text>
+<polyline points="2540,1000 2735,1000" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,960 2585,960" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="988.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 5</text>
+<text x="2470" y="1030" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV5</text>
+<polyline points="2470,1010 2445,1004" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="936" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV5</text>
+<polyline points="2540,1120 2735,1120" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="2740,1080 2585,1080" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<text x="2850" y="1108.0" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">צרכן 6</text>
+<text x="2470" y="1150" fill="#c84c43" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">SV6</text>
+<polyline points="2470,1130 2445,1124" fill="none" stroke="#5a7081" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2385" y="1056" fill="#217ca9" font-size="17" font-weight="600" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">RV6</text>
+<text x="2100" y="395" fill="#c84c43" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סעפת אספקה</text>
+<text x="2470" y="395" fill="#217ca9" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סעפת חזרה</text>
+<text x="2310" y="1370" fill="#183348" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">שישה זוגות נפרדים · אספקה וחזרה</text>
+<text x="2310" y="1408" fill="#5a7081" font-size="22" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">הצנרת והמכלים במפעל אינם מוצגים</text>
+<text x="2310" y="1445" fill="#5a7081" font-size="21" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אין חיבור עוקף בין הסעפות בתוך חדר הדוד</text>
+<polyline points="1540,350 1440,350" fill="none" stroke="#217ca9" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<polyline points="600,520 645,520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="1190,580 1220,580" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="1190,840 1220,840" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="1720,660 1765,660" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="560,1160 560,1185" fill="none" stroke="#217ca9" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ret)"/>
+<polyline points="800,705 800,735" fill="none" stroke="#c84c43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<polyline points="800,735 800,705" fill="none" stroke="#c84c43" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<text x="2610" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">V1</text>
+<text x="2610" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">בידוד</text>
+<text x="2460" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">Y1</text>
+<text x="2460" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מסנן</text>
+<text x="2290" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BF1</text>
+<text x="2290" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מניעת זרימה חוזרת</text>
+<text x="1990" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">WT1</text>
+<text x="1990" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טיפול לפי בדיקות מים</text>
+<text x="1630" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">FQ01</text>
+<text x="1630" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מד כמות השלמה</text>
+<text x="1475" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PRV1</text>
+<text x="1475" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">הפחתת לחץ</text>
+<text x="1325" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">XV1</text>
+<text x="1325" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סגור רגיל</text>
+<text x="1165" y="1555" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CV1</text>
+<text x="1165" y="1673" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">אל־חוזר</text>
+<text x="1990" y="1596" fill="#0c8b80" font-size="18" font-weight="600" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ממשק טיפול שייבחר</text>
+<text x="1990" y="1620" fill="#0c8b80" font-size="18" font-weight="600" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">חלופות מפורטות למטה</text>
+<text x="2790" y="1560" fill="#0c8b80" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מי רשת</text>
+<text x="1710" y="1710" fill="#0c8b80" font-size="19" font-weight="600" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">נקודת דגימה</text>
+<text x="1710" y="1769" fill="#0c8b80" font-size="20" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">AN1</text>
+<text x="1650" y="1842" fill="#5a7081" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">בדיקת קשיות · לפי צורך</text>
+<text x="1710" y="1920" fill="#a97924" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ניקוז דגימה</text>
+<polyline points="2725,1600 2660,1600" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fill)"/>
+<polyline points="1079,1000 1079,940" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fill)"/>
+<polyline points="1045,800 960,800" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fill)"/>
+<rect x="2500" y="1805" width="120" height="180" rx="25" fill="#f7f1fa" stroke="#8652aa" stroke-width="3" />
+<text x="2560" y="1852" fill="#8652aa" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מכל</text>
+<text x="2560" y="1888" fill="#8652aa" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">תוסף</text>
+<text x="2295" y="1940" fill="#8652aa" font-size="21" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">DP01 · משאבת מינון</text>
+<text x="2110" y="1840" fill="#8652aa" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DCV</text>
+<text x="2180" y="1980" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">תוסף ומינון ייקבעו לאחר בדיקות והתאמת חומרים</text>
+<text x="2180" y="2016" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מינון מבוקר לפי תכנית טיפול מאושרת</text>
+<polyline points="1780,1200 1780,1145" fill="none" stroke="#8652aa" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#chem)"/>
+<text x="1780" y="415" fill="#8652aa" font-size="20" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">הזרקה לחזרה המשותפת</text>
+<circle cx="2620" cy="430" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="436" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R1</text>
+<text x="2520" y="422" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV1</text>
+<circle cx="2540" cy="452" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="452" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="480" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="550" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="556" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R2</text>
+<text x="2520" y="542" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV2</text>
+<circle cx="2540" cy="572" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="572" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="600" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="670" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="676" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R3</text>
+<text x="2520" y="662" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV3</text>
+<circle cx="2540" cy="692" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="692" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="720" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="790" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="796" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R4</text>
+<text x="2520" y="782" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV4</text>
+<circle cx="2540" cy="812" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="812" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="840" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="910" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="916" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R5</text>
+<text x="2520" y="902" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV5</text>
+<circle cx="2540" cy="932" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="932" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="960" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="1030" r="23" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="2620" y="1036" fill="#183348" font-size="14" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT_R6</text>
+<text x="2520" y="1022" fill="#217ca9" font-size="17" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">BV6</text>
+<circle cx="2540" cy="1052" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2500" cy="1052" r="4" fill="#217ca9" stroke="none" stroke-width="2"/>
+<circle cx="2620" cy="1080" r="5" fill="#217ca9" stroke="none" stroke-width="2"/>
+<text x="605" y="568" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VB01O</text>
+<text x="480" y="968" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VDSI</text>
+<text x="480" y="1170" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VDSO</text>
+<text x="480" y="1290" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VB01I</text>
+<text x="415" y="1440" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DB01</text>
+<text x="610" y="1220" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DDS01</text>
+<text x="1420" y="770" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DPA1</text>
+<text x="1530" y="770" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DPA2</text>
+<text x="1420" y="1030" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DPB1</text>
+<text x="1530" y="1030" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DPB2</text>
+<text x="1300" y="500" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VPA</text>
+<text x="1300" y="760" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VPB</text>
+<text x="1215" y="440" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VH_P</text>
+<text x="2100" y="1330" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DH_S</text>
+<text x="2300" y="1330" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DH_R</text>
+<text x="1980" y="1065" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VH_S</text>
+<text x="2210" y="1025" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VH_R</text>
+<text x="2235" y="428" fill="#a97924" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">DR_LOW</text>
+<polyline points="339,1471 339,1482 361,1482 361,1471" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="599,1171 599,1182 621,1182 621,1171" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1409,741 1409,752 1431,752 1431,741" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1519,741 1519,752 1541,752 1541,741" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1329,471 1329,482 1351,482 1351,471" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1409,1001 1409,1012 1431,1012 1431,1001" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1519,1001 1519,1012 1541,1012 1541,1001" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1329,731 1329,742 1351,742 1351,731" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2089,1291 2089,1302 2111,1302 2111,1291" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2289,1291 2289,1302 2311,1302 2311,1291" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2169,441 2169,452 2191,452 2191,441" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1999,1091 1999,1102 2021,1102 2021,1091" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="2199,1051 2199,1062 2221,1062 2221,1051" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1149,391 1149,402 1171,402 1171,391" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="114,1011 114,1022 136,1022 136,1011" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="639,1161 639,1172 661,1172 661,1161" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1699,1891 1699,1902 1721,1902 1721,1891" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="139,1201 139,1212 161,1212 161,1201" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="245" y="710" width="250" height="82" rx="8" fill="#fff6e8" stroke="#d9bd8a" stroke-width="2" />
+<text x="370" y="739" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">THH_B01 / LW_B01</text>
+<text x="370" y="770" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">ניתוק עצמאי → K_HEAT</text>
+<rect x="1120" y="1205" width="585" height="250" rx="12" fill="#fff4d9" stroke="#deb85c" stroke-width="2" />
+<text x="1655" y="1242" fill="#825b12" font-size="25" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ספיקה מזערית — פתוח לתכן</text>
+<text x="1655" y="1280" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">נדרשים: Qmin לדוד ולמשאבה,</text>
+<text x="1655" y="1311" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">עקומות ΔP, פרופיל סגירת ענפים</text>
+<text x="1655" y="1342" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ודרישות פיזור חום לאחר עצירה.</text>
+<text x="1655" y="1373" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לא נבחר מעקף; חסימות ועצירה</text>
+<text x="1655" y="1404" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">יותאמו להידראוליקה וליצרן.</text>
+<rect x="880" y="940" width="175" height="86" rx="8" fill="#fff6e8" stroke="#d9bd8a" stroke-width="2" />
+<text x="968" y="971" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ZSO_VET</text>
+<text x="968" y="1000" fill="#183348" font-size="18" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משוב פתוח מוצע</text>
+<polyline points="880,981 840,981 840,880 820,880" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
+<rect x="120" y="1480" width="900" height="540" rx="16" fill="#f3f7fa" stroke="#dce6ec" stroke-width="2" />
+<text x="965" y="1530" fill="#183348" font-size="29" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מים, לחץ ובקרה</text>
+<text x="965" y="1580" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PT01 מודד את לחץ המערכת בצד המשותף של VET.</text>
+<text x="965" y="1628" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">XV1 נפתח רק בהרשאת הבקר; FQ01 סופר מי השלמה.</text>
+<text x="965" y="1676" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">FS01 מאשר זרימה בסחרור — אינו מד כמות ההשלמה.</text>
+<text x="965" y="1724" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ללא אישור זרימה: חימום ומינון חסומים; רצף עצירה לפי תכן.</text>
+<text x="965" y="1772" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">משוב משאבות ו־ZSO_VET דורשים חיבור ובדיקת חומרה.</text>
+<text x="965" y="1820" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מוליכות וחומציות אינן מחליפות בדיקת קשיות או מעבדה.</text>
+<text x="965" y="1868" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אוסמוזה מותנית: אגירה והגברת לחץ לפי המערכת שתיבחר.</text>
+<text x="965" y="1916" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מי רשת, טיפול כימי ותכנית דגימה ייבחנו כמכלול.</text>
+<rect x="70" y="2100" width="1385" height="350" rx="16" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="1395" y="2145" fill="#183348" font-size="28" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">הגנות עצמאיות וגבולות לחץ · R1 / R3 / R4 / R7</text>
+<text x="1395" y="2190" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">THH_B01: מגביל טמפרטורת־יתר עצמאי, איפוס ידני מקומי.</text>
+<text x="1395" y="2221" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">LW_B01: הגנת חוסר מים לפי יצרן; לחץ נמוך אינו הוכחת חוסר מים.</text>
+<text x="1395" y="2252" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">THH_B01 + LW_B01 → K_HEAT: ניתוק כוח עצמאי מהבקר ומהמסך.</text>
+<text x="1395" y="2283" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ZSO_VET: מצב לא ידוע או סגור חוסם הרשאת חימום; לא תיבת סימון.</text>
+<text x="1395" y="2314" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">VB01I/VB01O: בידוד דוד רק לאחר ניתוק חשמל ונוהל נעילה.</text>
+<text x="1395" y="2345" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">דוד מבודד מנותק ממכל ההתפשטות; PSV01 נשאר בצד הדוד.</text>
+<text x="1395" y="2376" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">עדכון נתון ראשוני: עד 2 בר לפי טכנאי, ללא דרכון; לא ערך תכן או כיוון.</text>
+<text x="1395" y="2407" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לחץ מקומי כולל גובה ומשאבה; PSV הדוד אינו הגנה מוכחת למעטפות.</text>
+<text x="1395" y="2438" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לא ידוע: יחסי/מוחלט, עבודה/מרבי, והאם חל על כל ששת הצרכנים.</text>
+<rect x="1485" y="2100" width="1445" height="350" rx="16" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="2870" y="2145" fill="#183348" font-size="28" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">חלופות טיפול ומניעת זרימה חוזרת · R12 / R13</text>
+<text x="2870" y="2190" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">WT1 הוא ממשק טיפול לבחירה — אינו מציג RO כמעבר רציף בלחץ.</text>
+<text x="2870" y="2221" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">חלופה א: טיפול בקו, אם בדיקות המים והיצרן מאפשרים זאת.</text>
+<text x="2870" y="2252" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">חלופה ב: RO לפי צורך; אגירה והגברת לחץ אם המערכת הנבחרת דורשת.</text>
+<text x="2870" y="2283" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין חובה גורפת לאוסמוזה או למכל אגירה; גם מי דחייה דורשים יעד.</text>
+<text x="2870" y="2314" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">BF1 ייבחר לפי סיכון, הדרישות החלות ואישור בעל מקצוע מתאים.</text>
+<text x="2870" y="2345" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אם נבחר מז״ח עם פריקה: BF1_RELIEF → פער אוויר → קולט מאושר.</text>
+<text x="2870" y="2376" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">זו חלופה מותנית, לא חיבור מים פעיל ולא דגם שכבר נבחר.</text>
+<text x="2870" y="2407" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">השלמה מבוקרת: PT01 + XV1 + FQ01; סיבה להשלמה נבדקת ונרשמת.</text>
+<rect x="70" y="2480" width="1385" height="350" rx="16" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="1395" y="2525" fill="#183348" font-size="27" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">שירות, אוורור ויעדי פריקה · R8 / R9 / R10 / R18–20</text>
+<text x="1395" y="2570" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">BV1–6: איזון עם שתי נקודות בדיקה; נפרד מברזי בידוד SV/RV.</text>
+<text x="1395" y="2601" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">DPA1/2 ו־DPB1/2 מנקזים נפחים משני צדי האל־חוזר.</text>
+<text x="1395" y="2632" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">VPA/VPB: אוורור המשאבות לפי הדגם; DH/VH: ניקוז ואוורור סעפות.</text>
+<text x="1395" y="2663" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">DDS01: פינוי משקעים; VDSI/VDSO מאפשרים בידוד ללא מעקף חדש.</text>
+<text x="1395" y="2694" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">הקצוות וקולטי הפריקה נפרדים; אין חיבור לחץ משותף ביניהם.</text>
+<text x="1395" y="2725" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">יעד סופי, ספיקת פינוי, חום, לחץ נגדי ושיפועים — פתוחים לתכן.</text>
+<text x="1395" y="2756" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">VENT הוא שחרור אוויר/מים ולא קו חזרה. נדרש ניקוז רצפה מתאים.</text>
+<text x="1395" y="2787" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ET01 כללי: כיוון, יכולת ניקוז ומרווח שירות לפי הדגם שייבחר.</text>
+<rect x="1485" y="2480" width="1445" height="350" rx="16" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="2870" y="2525" fill="#183348" font-size="28" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מצבי בקרה, מינון וממשקים · R2 / R11 / R22</text>
+<text x="2870" y="2570" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מינון מותר רק עם FS01 מוכח, משוב ריצת משאבה ותכנית טיפול מאושרת.</text>
+<text x="2870" y="2601" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מוליכות ו־pH אינם מודדים ישירות ריכוז מעכב קורוזיה.</text>
+<text x="2870" y="2632" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ללא זרימה: חסימת חימום ומינון. עצירת משאבות לפי הסיכון ההידראולי.</text>
+<text x="2870" y="2663" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">כשל הידראולי משותף מונע ניסיונות חוזרים עיוורים של משאבת הגיבוי.</text>
+<text x="2870" y="2694" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">בעת חום שיורי: סחרור מותר רק אם ההידראוליקה מאפשרת — לפי תכן.</text>
+<text x="2870" y="2725" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">TT_R1–6: משדרי חזרת ענפים מוצעים; טרם חוברו וטרם נקבעו יעדים.</text>
+<text x="2870" y="2756" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">TT-P: ממשק עתידי לטמפרטורת מוצר עם טכנולוג; אין ציור של המפעל.</text>
+<text x="2870" y="2787" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לא נקבעו ערכי תכן: ספיקה, לחץ, זמן, מינון, מידות, הספקים או דגמים.</text>
+<polyline points="95,2890 2915,2890" fill="none" stroke="#d7e1e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="2915" y="2935" fill="#183348" font-size="25" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">גרף החיבורים משותף למודל התלת־ממדי ולתרשים זה. נקודות הצרכנים הן ממשקים בלבד.</text>
+<text x="2915" y="2980" fill="#5a7081" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לאישור: סידור 1+1, שישה מעגלים חיצוניים ועדכון הסכמה. בחירת ציוד, מידות, הספקים, איזון, לחצים והגנות — בתכן ובהמשך בדיקת מהנדס.</text>
+<text x="2915" y="3025" fill="#5a7081" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מקור: מודל Claude שנבחר, עם התאמות מקומיות · קובצי v3 המקוריים נשמרו · אין בכך אישור הנדסי או הנחיות ביצוע.</text>
+</g></svg>

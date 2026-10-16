@@ -1,0 +1,647 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>מערכת חימום שוקולד — תרשים, ספקים ולוח טכנאי</title>
+<style>
+:root{font-family:Arial,"Noto Sans Hebrew",sans-serif;color:#153149;background:#eaf0f4;scroll-behavior:smooth}
+*{box-sizing:border-box}body{margin:0}nav{position:sticky;top:0;z-index:2;padding:14px 24px;background:#153149;display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:white}nav a{color:white;text-decoration:none;font-weight:700}nav a:hover{text-decoration:underline}.tag{margin-inline-start:auto;background:#fff4d9;color:#815600;padding:7px 13px;border-radius:8px;font-size:14px}main{max-width:2000px;margin:auto;padding:24px}section{scroll-margin-top:90px;margin-bottom:24px;background:white;border:1px solid #cedce5;border-radius:16px;overflow:hidden}.head{padding:22px 28px;border-bottom:1px solid #e1e9ee}.head h1,.head h2{margin:0 0 8px}.head p{margin:0;color:#577086;line-height:1.6}.drawing{width:100%;display:block;background:white}.detail{max-width:1050px;margin:auto;padding:16px}.content{padding:24px 28px;line-height:1.8;font-size:18px}.content p{margin:0 0 16px}.content a{color:#087c87}.links{display:flex;gap:12px;flex-wrap:wrap;padding:0 28px 22px}.links a{padding:10px 16px;border-radius:8px;background:#edf5f8;color:#153149;text-decoration:none;border:1px solid #ccdde6}.key{color:#c23e36;font-weight:700}.note{background:#fff7e7;border-right:4px solid #cf9222;padding:16px;border-radius:8px}.table{border-collapse:collapse;width:100%;max-width:700px;margin:18px 0}.table th,.table td{padding:12px 16px;text-align:right;border-bottom:1px solid #dce6ed}.table th{background:#eef5f8}summary{cursor:pointer;font-weight:bold;padding:12px 0}small{color:#577086}footer{padding:0 28px 32px;color:#577086}@media(max-width:650px){main{padding:10px}nav{gap:12px;padding:12px}.tag{display:none}.head,.content{padding:18px}.content{font-size:16px}}
+</style>
+<style>
+/* Local presentation navigation and supplier analysis. */
+:root{scroll-behavior:auto}
+button{font:inherit;cursor:pointer}
+a,button,summary{touch-action:manipulation}
+a:focus-visible,button:focus-visible,summary:focus-visible,[tabindex]:focus-visible{outline:3px solid #d58c17;outline-offset:4px}
+[hidden]{display:none!important}
+.topbar{gap:22px;padding:12px 24px;box-shadow:0 2px 12px #102b3b15}
+.brand{font-weight:700;line-height:1.4;white-space:nowrap}
+.brand small{display:block;color:#c6d8e2;font-size:12px;font-weight:400}
+.tabs{display:flex;gap:6px}
+.tab{border:1px solid transparent;background:transparent;color:#dce8ee;padding:12px 16px;border-radius:8px;display:flex;gap:9px;align-items:center;font-weight:700;white-space:nowrap}
+.tab .tab-number{font-size:12px;font-weight:400;opacity:.75}
+.tab:hover{background:#24465f}
+.tab[aria-selected="true"]{background:#f6fafc;color:#153149}
+.topbar .tag{font-size:12px;white-space:nowrap}
+.tab-panel{outline:none}
+.subnav,.section-links{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.subnav a,.section-links a{padding:9px 14px;color:#234c64;background:#f8fbfc;border:1px solid #cadbe4;border-radius:8px;text-decoration:none;font-size:14px}
+.subnav a:hover,.section-links a:hover{border-color:#087c87;background:#e7f3f4}
+.suppliers-panel{max-width:1600px;margin-inline:auto}
+.suppliers-panel section{scroll-margin-top:110px}
+.suppliers-panel p{line-height:1.75}
+.suppliers-panel a{color:#006d79;text-underline-offset:3px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.04em;color:#557083;margin-bottom:10px}
+.supplier-intro .head{background:#153149;color:#fff;padding:26px 28px}
+.supplier-intro .head h1{font-size:32px;line-height:1.25}
+.supplier-intro .eyebrow,.supplier-intro .head p{color:#c9dce7}
+.scope-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:20px 28px;gap:28px}
+.scope-grid>div+div{border-inline-start:1px solid #dfE8ee;padding-inline-start:28px}
+.scope-label{display:block;color:#637b8a;font-size:12px;margin-bottom:5px}
+.scope-grid strong{display:block;font-size:17px}
+.scope-grid p{font-size:14px;color:#4f697b;margin:7px 0 0}
+.section-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.badge{display:inline-block;font-size:12px;line-height:1.4;padding:5px 9px;border-radius:6px;white-space:nowrap;font-weight:700}
+.confirmed{background:#e4f3ee;color:#1e634f}
+.caution{background:#fff1d7;color:#81571a}
+.core{background:#eaf1f8;color:#355779}
+.existing{background:#ecedef;color:#56616e}
+.comparison-cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:24px 28px}
+.candidate{border:1px solid #d5e2e9;border-radius:12px;padding:22px;background:#f9fcfd}
+.candidate h3{font-size:26px;margin:14px 0 3px}
+.latin-name{text-align:right;color:#688091;margin:0!important;font-size:13px;letter-spacing:.02em}
+.candidate p{font-size:16px;margin:12px 0 15px}
+.source-link{font-size:14px}
+.source-links{display:flex;flex-wrap:wrap;gap:8px 18px}
+.table-wrap{overflow-x:auto;margin:0 28px 24px;border:1px solid #d6e3eb;border-radius:10px}
+.comparison-table{border-collapse:collapse;width:100%;min-width:680px;text-align:right;font-size:15px;line-height:1.7}
+.comparison-table caption{text-align:right;padding:10px 16px;color:#60788b;background:#f9fbfc;font-size:12px}
+.comparison-table th,.comparison-table td{padding:14px 18px;border-top:1px solid #dfe8ee;vertical-align:top}
+.comparison-table thead th{background:#eaf1f6;font-size:16px}
+.comparison-table thead th:first-child{width:19%}
+.comparison-table tbody th{font-weight:700;background:#f8fafc}
+.comparison-table td{width:40.5%}
+.comparison-table .badge{margin-inline-end:8px;margin-bottom:4px}
+.recommendation{margin:0 28px 26px;padding:18px 22px;border-right:4px solid #267e82;background:#edf6f6;border-radius:8px}
+.recommendation p{font-size:14px;color:#4d6878;margin:6px 0 0}
+.component-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;padding:18px 28px}
+.legend{display:flex;gap:8px;flex-wrap:wrap}
+#toggle-components{background:white;border:1px solid #b5cbd8;border-radius:7px;padding:9px 13px;color:#234c64;font-size:14px}
+#toggle-components:hover{background:#edf5f8}
+.component-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 28px 24px;align-items:start}
+.component{border:1px solid #d1e0e8;border-radius:10px;background:#fff;overflow:hidden}
+.component summary{display:flex;align-items:center;gap:12px;padding:17px 16px;list-style:none;min-height:94px}
+.component summary::-webkit-details-marker{display:none}
+.component summary::after{content:"+";font-size:22px;color:#557083;margin-inline-start:2px;font-weight:400}
+.component[open] summary::after{content:"−"}
+.component[open] summary{background:#f2f7fa;border-bottom:1px solid #d8e6ed}
+.package-number{font-size:13px;color:#58788b;align-self:flex-start;padding-top:4px}
+.package-title{flex:1;font-size:16px;line-height:1.5}
+.package-title small{display:block;font-weight:400;font-size:12px;line-height:1.65;margin-top:4px}
+.component-body{padding:18px 20px;font-size:14px;line-height:1.75}
+.component-body p{margin:0 0 12px}
+.component-body p:last-child{margin-bottom:0}
+.pending{color:#5b6e7c}
+.component-body .pending{border-top:1px solid #e5edf2;padding-top:12px}
+.compact{padding-top:0;padding-bottom:24px;font-size:15px}
+.compact .note{margin-bottom:0}
+.supplier-grid{display:grid;grid-template-columns:repeat(3,1fr);padding:24px 28px;gap:16px}
+.supplier-card{padding:22px;border:1px solid #d3e1e9;border-radius:10px}
+.category-label{color:#526e81;font-size:12px}
+.supplier-card h3{margin:10px 0;font-size:20px}
+.supplier-card p{font-size:14px;margin:10px 0}
+.supplier-card a{font-size:13px}
+.supplier-card .pending{border-top:1px solid #e5edf2;padding-top:12px}
+.alternatives{margin:0 28px 24px;padding:0 18px;border:1px solid #d1e0e8;border-radius:9px;background:#f8fbfc}
+.alternatives summary{padding:16px 0;font-size:15px}
+.alternative-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.alternative-grid p{font-size:14px;margin-top:0}
+.proposal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding:22px 28px}
+.proposal-grid h3{font-size:18px;margin:0 0 12px}
+.proposal-grid ul{padding-inline-start:20px;margin:0;font-size:15px;line-height:1.8}
+.proposal-grid li+li{margin-top:9px}
+.research-status{padding:18px 28px;background:#f5f8fa;border-top:1px solid #dce6ed;font-size:14px;line-height:1.8;color:#536d80}
+.visualization-placeholder{max-width:1200px;margin-inline:auto}
+.placeholder-content{padding:48px 28px;text-align:center;background:#f8fbfc}
+.placeholder-label{display:inline-block;padding:9px 14px;border:1px dashed #9fb9ca;border-radius:8px;color:#45697e;font-size:14px}
+.placeholder-content h2{font-size:28px;margin:20px 0 12px}
+.placeholder-content p{max-width:650px;margin:0 auto 22px;color:#5a7384;line-height:1.8}
+.placeholder-content a{display:inline-block;padding:12px 20px;background:#153149;border-radius:8px;color:white;text-decoration:none}
+@media(max-width:1100px){.brand{display:none}.topbar{gap:10px}.supplier-grid{grid-template-columns:1fr 1fr}.tab{padding:11px 12px}.component summary{gap:8px}.component summary>.badge{font-size:11px}}
+@media(max-width:760px){.topbar{padding:10px;gap:8px}.tabs{width:100%;gap:4px}.tab{flex:1;justify-content:center;padding:12px 6px;font-size:13px;gap:5px}.tab-number{display:none}.topbar .tag{display:none}.scope-grid,.comparison-cards,.component-grid,.supplier-grid,.proposal-grid,.alternative-grid{grid-template-columns:1fr}.scope-grid{gap:16px}.scope-grid>div+div{border-inline-start:0;padding-inline-start:0;border-top:1px solid #dfe8ee;padding-top:16px}.supplier-intro .head h1{font-size:27px}.comparison-cards,.supplier-grid{padding:18px;gap:14px}.scope-grid,.proposal-grid{padding:20px}.component-grid{padding:0 18px 18px}.component-toolbar{padding:18px}.component summary{min-height:84px}.component .badge{max-width:88px;white-space:normal}.table-wrap{margin:0 18px 18px}.recommendation{margin:0 18px 18px}.section-heading{display:block}.section-heading>.badge{margin-top:12px}.alternatives{margin:0 18px 18px}.placeholder-content{padding:32px 20px}.candidate h3{font-size:24px}}
+@media print{.topbar,.subnav,.section-links,#toggle-components{display:none}.tab-panel[hidden]{display:none!important}main{padding:0}section{box-shadow:none;break-inside:avoid}body{background:white}.table-wrap{overflow:visible}.supplier-grid{grid-template-columns:repeat(2,1fr)}a{color:inherit}}
+</style>
+<style>
+/* Selected 3D presentation is separate from the flat technician process mimic. */
+.selected-visual{margin:0;max-width:none}.selected-visual .head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 24px}.selected-visual .head h1{font-size:25px;margin:0 0 4px}.selected-visual .head p{font-size:14px}.selection-chip{background:#eef0f1;color:#46515a;border:1px solid #c8ced2;border-radius:6px;padding:8px 12px;white-space:nowrap;font-size:13px}.selected-view-frame{display:block;width:100%;height:max(470px,calc(100vh - 210px));border:0;background:#f3f5f7}.selection-foot{display:flex;gap:16px;justify-content:space-between;padding:12px 24px;font-size:13px;color:#637a89}.selection-foot a{color:#1e667d}
+.topbar{gap:14px}.tabs{flex-shrink:0}@media(max-width:1380px){.topbar .brand{display:none}}@media(max-width:760px){.tabs{flex-wrap:wrap}.tabs .tab{flex:1 1 44%}.selected-visual .head{display:block}.selection-chip{display:inline-block;margin-top:10px}}
+/* R1 HMI: neutral normal states; color is reserved for deviations. */
+#technician{max-width:1920px;margin-inline:auto;color:#313538;--hmi-bg:#e8e9ea;--hmi-line:#72777b;--hmi-muted:#646a6e;--hmi-warn:#8a5900;--hmi-trip:#ac302c}
+body:has(#technician:not([hidden])) main{padding:12px 18px}
+.hmi-shell{background:var(--hmi-bg);border:1px solid #b9bdc1;border-radius:9px;overflow:hidden}.hmi-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 18px;background:#f2f3f3;border-bottom:1px solid #bfc4c7}.hmi-top h1{font-size:19px;margin:0}.hmi-revision{font-size:12px;color:#62686c}.hmi-demo-line{padding:9px 18px;font-size:12px;line-height:1.6;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#f7f7f7;border-bottom:1px solid #c7cccf}.hmi-demo-line strong{color:#41474b}.hmi-demo-line label{margin-inline-start:auto}
+#technician button,#technician select{font:inherit;border:1px solid #afb6bb;border-radius:5px;background:#f9fafb;color:#333a40;padding:8px 11px;font-size:12px}#technician button{cursor:pointer}#technician button:hover:not(:disabled){background:#fff;border-color:#596269}#technician button:disabled,#technician select:disabled{opacity:.45;cursor:not-allowed}.hmi-nav{display:flex;gap:5px;flex-wrap:wrap;padding:8px 12px;background:#f2f3f3;border-bottom:1px solid #c2c7ca}#technician .hmi-nav button{border-color:transparent;background:transparent}#technician .hmi-nav button[aria-pressed=true]{border-color:#a6adb2;background:#fff;font-weight:700}.hmi-nav .hmi-link{margin-inline-start:auto;align-self:center;font-size:12px;color:#676d72}
+.hmi-content{padding:10px 12px}.hmi-status-line{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:9px;font-size:12px;min-height:34px}.hmi-state-pill{font-weight:700}.hmi-alert-strip{display:flex;gap:6px;flex-wrap:wrap}.hmi-alert-strip:empty::before{content:'אין מידע תפעולי מאומת';color:#666}.hmi-alert-strip button[data-tone=trip]{color:var(--hmi-trip)!important;background:#fbe9e7!important;border-color:#d7a3a0!important}.hmi-alert-strip button[data-tone=warn]{color:var(--hmi-warn)!important;background:#fff0d8!important;border-color:#d7bf94!important}
+.hmi-overview{background:#e8e9ea;border:1px solid #bfc4c7;border-radius:6px;overflow:hidden}.hmi-mimic-toolbar{padding:7px 12px;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #c9cdcf;color:#5c6368;font-size:11px}.hmi-diagram-scroll{overflow:auto}.hmi-process{display:block;width:100%;height:auto;min-width:940px;max-height:calc(100vh - 380px);min-height:430px;direction:ltr;background:#e8e9ea}.hmi-process text{font-family:Arial,"Noto Sans Hebrew",sans-serif;fill:#3c4348}.hmi-process .pipe{fill:none;stroke:var(--hmi-line);stroke-width:5;stroke-linejoin:round;stroke-linecap:round}.hmi-process .return-pipe{stroke-width:3}.hmi-process .utility-pipe{stroke-width:2.5}.hmi-process .equip{fill:#f4f4f4;stroke:#697177;stroke-width:2}.hmi-process .node{fill:#70767b}.hmi-process .tag{font-size:20px;font-weight:700}.hmi-process .caption{font-size:15px;fill:#656d72}.hmi-process .status{font-size:20px;font-weight:700}.hmi-process .reading{font-size:26px;font-weight:700}.hmi-process .band{fill:url(#hmi-band);stroke:#a9afb3;stroke-width:1}.hmi-process [role=button]{cursor:pointer}.hmi-process [role=button]:hover .equip{stroke:#343b40;stroke-width:3}.hmi-process [role=button]:focus{outline:2px solid #5a6268}.hmi-process .alarm-marker circle{fill:#fff0d7;stroke:#9f6d1c;stroke-width:1.5}.hmi-process .alarm-marker text{fill:#815418;font-size:15px;font-weight:bold}.hmi-process .alarm-marker[data-tone=trip] circle{fill:#f8dedb;stroke:#ac302c}.hmi-process .alarm-marker[data-tone=trip] text{fill:#ac302c}.hmi-process .deviation{fill:#a8352e}.hmi-process .deviation-line{stroke:#ac302c}.hmi-process .unknown{fill:#6a7075}.hmi-process [data-running="true"] .equip{fill:#626b71;stroke:#41494e}.hmi-process [data-running="true"]>path{fill:#edf0f1;stroke:#edf0f1}.hmi-mimic-foot{padding:8px 12px;border-top:1px solid #c4c9cc;font-size:11px;display:flex;justify-content:space-between;gap:12px;color:#5d656a}.hmi-mimic-foot a{color:#4a5963}
+.hmi-mini-trends{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:9px}.hmi-mini-trend{background:#f1f2f2!important;text-align:right;border-color:#c5c9cc!important;min-height:76px}.hmi-mini-trend strong{font-size:12px}.hmi-empty-chart{display:flex;justify-content:center;align-items:center;min-height:36px;margin-top:5px;border-bottom:1px solid #b9c0c4;color:#71787d;font-size:11px}.hmi-mini-trend small{float:left;color:#666e73;font-size:10px}.hmi-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.hmi-box{background:#f7f8f8;border:1px solid #c2c8cc;border-radius:6px;overflow:hidden}.hmi-box-head{padding:12px 15px;border-bottom:1px solid #d4d8da;display:flex;justify-content:space-between;gap:10px;align-items:center}.hmi-box-head h2,.hmi-box-head h3{margin:0;font-size:15px}.hmi-box-head small{font-size:11px;color:#697075}.hmi-box-body{padding:15px;font-size:13px;line-height:1.8}.hmi-view-title{font-size:20px;margin:4px 0 8px}.hmi-view-sub{font-size:13px;line-height:1.8;color:#616a70;margin:0 0 15px}.hmi-controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0;align-items:center}.hmi-controls label{display:flex;gap:7px;align-items:center}.hmi-controls select{max-width:100%}.hmi-note{font-size:12px;line-height:1.8;color:#5b656d;background:#edeff0;border:1px solid #d0d5d8;border-radius:4px;padding:10px 12px;margin:12px 0 0}.hmi-rows{margin:0}.hmi-rows>div{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid #dddfe1}.hmi-rows>div:last-child{border:0}.hmi-rows dt{color:#646c72}.hmi-rows dd{margin:0;text-align:left}.hmi-rows dd bdi{white-space:nowrap}.hmi-check{display:flex;align-items:flex-start;gap:8px;font-size:13px;line-height:1.8;margin:10px 0}.hmi-check input{margin-top:5px}.hmi-table-wrap{overflow:auto}.hmi-table{width:100%;border-collapse:collapse;text-align:right;font-size:12px;line-height:1.8;min-width:670px}.hmi-table th,.hmi-table td{padding:10px 13px;border-bottom:1px solid #d6dade;vertical-align:top}.hmi-table th{background:#e8ebed}.hmi-table .trip{color:#9f312c}.hmi-table .warn{color:#8c5e12}.hmi-tone{display:inline-block;padding:4px 7px;border-radius:4px;background:#e5e8ea;font-size:11px;margin:0 0 5px 5px}.hmi-tone.trip{background:#f8e1df;color:#a3322b}.hmi-tone.warn{background:#fff0d5;color:#815712}.hmi-alarm-title{font-size:18px;font-weight:700;margin:10px 0}.hmi-alarm-meta{font-size:11px;color:#6b7378}.hmi-alarm-action{background:#eceff0;padding:10px;font-size:13px;border-radius:4px}.hmi-alarm-picks{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}.hmi-alarm-help{font-size:12px;color:#657079}.hmi-water-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:14px}.hmi-water-value{font-size:24px;font-weight:bold;margin:8px 0}.hmi-open-list{margin:0;padding-inline-start:20px;line-height:1.9}.hmi-sources{border:1px solid #c8ced2;border-radius:6px;background:#f8f9f9;margin-top:14px;padding:0 16px}.hmi-sources summary{font-size:13px}.hmi-sources p{font-size:12px;line-height:1.8}.hmi-sources a,.hmi-box a{color:#345d70}.hmi-dialog{max-width:750px;width:calc(100% - 32px);max-height:88vh;border:1px solid #969fa6;border-radius:8px;padding:0;background:#f5f6f6;color:#333c42}.hmi-dialog::backdrop{background:#27313970}.hmi-dialog header{padding:15px 20px;display:flex;justify-content:space-between;gap:15px;align-items:center;background:#e6e9eb;border-bottom:1px solid #c7cdd1}.hmi-dialog h2{font-size:18px;margin:0}.hmi-dialog-content{padding:18px 20px;font-size:13px;line-height:1.9}.hmi-dialog-content p{margin:0 0 13px}.hmi-dialog .hmi-table{min-width:500px}.hmi-command-area{border-top:1px solid #c9d0d4;margin-top:16px;padding-top:10px}.hmi-confirmation{font-size:12px;display:flex;gap:8px;align-items:center;margin-bottom:10px}.hmi-secondary-status{font-size:12px;color:#626d74}.hmi-offline .hmi-process .reading,.hmi-offline .hmi-process .status{fill:#697178}#hmi-announcement{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+@media(max-width:1000px){.hmi-grid{grid-template-columns:1fr}.hmi-process{max-height:none}.hmi-nav .hmi-link{display:none}.hmi-status-line{align-items:flex-start}.hmi-mini-trends{grid-template-columns:repeat(3,1fr)}}@media(max-width:650px){body:has(#technician:not([hidden])) main{padding:8px}.hmi-content{padding:8px}.hmi-top{padding:12px}.hmi-top h1{font-size:17px}.hmi-demo-line{padding:9px 12px;gap:8px}.hmi-demo-line label{margin-inline-start:0}.hmi-revision{font-size:10px}.hmi-water-grid,.hmi-mini-trends{grid-template-columns:1fr}.hmi-process{min-height:0;min-width:1040px}.hmi-status-line{flex-wrap:wrap}.hmi-mimic-foot span:last-child{display:none}.hmi-mimic-toolbar span:last-child{display:none}}
+
+#technician.hmi-expanded{position:fixed;inset:0;z-index:20;max-width:none;padding:0;overflow:auto;background:#e8e9ea}#technician.hmi-expanded .hmi-shell{border-radius:0;min-height:100vh}#technician.hmi-expanded .hmi-top{display:none}#technician.hmi-expanded .hmi-demo-line{padding:5px 12px}#technician.hmi-expanded .hmi-nav{padding:4px 10px}#technician.hmi-expanded .hmi-content{padding:6px 10px}#technician.hmi-expanded .hmi-process{min-height:0;height:calc(100vh - 290px);max-height:none}#technician.hmi-expanded .hmi-mini-trend{min-height:62px;padding:5px 10px}#technician.hmi-expanded .hmi-empty-chart{min-height:25px}#technician.hmi-expanded .hmi-mini-trends{margin-top:6px}#technician .hmi-mimic-toolbar #hmi-expand{padding:4px 8px;font-size:11px}.hmi-process .alarm-marker{cursor:pointer}
+</style>
+</head>
+<body>
+<nav class="topbar" aria-label="ניווט במצגת">
+<div class="brand">מערכת חימום שוקולד<small>מפעל שוקולד</small></div>
+<div class="tabs" role="tablist" aria-label="פרקי המצגת">
+<button type="button" class="tab" role="tab" id="tab-visualization" aria-controls="visualization" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">01</span>הדמיה תלת־ממדית</button>
+<button type="button" class="tab" role="tab" id="tab-schematic" aria-controls="schematic" aria-selected="true" tabindex="0"><span class="tab-number" aria-hidden="true">02</span>תרשים המערכת</button>
+<button type="button" class="tab" role="tab" id="tab-suppliers" aria-controls="suppliers" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">03</span>רכיבים וספקים</button>
+<button type="button" class="tab" role="tab" id="tab-technician" aria-controls="technician" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">04</span>לוח טכנאי</button>
+</div><span class="tag">קונספט · לא תכנון לביצוע</span>
+</nav>
+<main>
+<div id="visualization" class="tab-panel" role="tabpanel" aria-labelledby="tab-visualization" tabindex="0" hidden>
+<section class="selected-visual">
+<div class="head"><div><h1>חדר הדוד · המודל שנבחר</h1><p>על בסיס Claude · שש יציאות ושש חזרות אל צרכנים מחוץ לחדר · ריחוף לזיהוי, לחיצה לפרטים</p></div><span class="selection-chip">קונספט · תיקונים עקרוניים</span></div>
+<iframe id="selected-model-frame" class="selected-view-frame" src="assets/selected-model-view-he.html?embedded=1&amp;rev=cards-1" title="חדר הדוד בתלת־ממד: שני מסלולי סחרור ושישה זוגות חיבורים"></iframe>
+<div class="selection-foot"><span>סחרור 1+1 מוצע · <a href="concept-notes-he.html#pressure">נתון ראשוני: עד 2 bar מפי טכנאי, ללא דרכון — לא מאומת</a> · נדרשת בדיקת מהנדס</span><a href="assets/selected-model-view-he.html" target="_blank" rel="noopener">פתיחת המודל במסך מלא ↗</a></div>
+</section>
+</div>
+<div id="schematic" class="tab-panel" role="tabpanel" aria-labelledby="tab-schematic" tabindex="0">
+<div class="subnav" aria-label="ניווט בתרשים"><a href="#system">המערכת המלאה</a><a href="#expansion">הגדלת חיבור המכל</a><a href="#temperature">טמפרטורת השוקולד</a><a href="#basis">מקורות והנחות</a><a href="concept-notes-he.html">עקרונות וגבולות הקונספט</a></div>
+
+<section id="system">
+<div class="head"><h1>חדר הדוד — תרשים מתואם, קונספט</h1><p>מפעל שוקולד • תיקונים עקרוניים לבדיקה נפרדת; נתוני אתר ויצרן טרם הושלמו</p></div>
+<a href="boiler-workshop-schematic-he-v4.svg" target="_blank" title="פתיחת התרשים בגודל מלא"><img class="drawing" src="boiler-workshop-schematic-he-v4.svg" alt="קונספט: דוד בחדר נפרד, שתי משאבות במקביל, שישה זוגות חיבורים חיצוניים, מכל התפשטות והשלמה"></a>
+<div class="content"><p class="note">מהדורת קונספט מציגה שישה זוגות חיבורים חיצוניים בלבד, ולא את ציוד המפעל עצמו. זו אינה כמות להזמנה. תכולת הרכש נשארת מערכת המים עד לממשקים; שאלות ספיקת מינימום, מעטפת לחצים והגנת מוצר נשארו לתכנון לפי נתונים.</p></div>
+<div class="links"><a href="boiler-workshop-connections-he-v4.json" download>גרף חיבורים — קונספט</a><a href="boiler-workshop-schematic-he-v4.svg" download>הורדת תרשים וקטורי</a><a href="assets/water-treatment-control-he.html">מחקר המים והבקרה</a></div>
+</section>
+<section id="redundancy">
+<div class="head"><h2>שתי משאבות · עובדת וגיבוי</h2><p>דרישת זמינות מוצעת למערכת זו, ולא כלל מחייב לכל מערכת חימום.</p></div>
+<div class="content"><p><bdi>P01A / P01B</bdi> מחוברות במקביל. כל אחת תיבחר בהמשך עבור מלוא ספיקת התכן והעומד הנדרשים. לכל ענף ברז בידוד בכניסה וביציאה ואל־חוזר בצד הסניקה. <bdi>T1</bdi> מחבר את מכל ההתפשטות בצד היניקה המשותף; <bdi>FS01</bdi> נמצא אחרי איחוד הענפים.</p>
+<p><strong>נדרש לתכנן ולאמת מעבר אוטומטי לגיבוי:</strong> פקודה, משוב ריצה, תקלה וזמינות מכל משאבה; אישור זרימה נפרד; החלפת תורנות והפעלה תקופתית לפי הציוד. אובדן אישור זרימה חוסם חימום ומינון. כשאין נתיב או כשכל הענפים סגורים, נדרשת עצירת סחרור ללא ניסיונות רזרבה חוזרים. מעבר רזרבה יוגבל לניסיון מאושר עם נתיב, כשירות ומשוב ריצה וזרימה עצמאיים. איפוס נעילה אינו מפעיל חימום. רצף המעבר, זמני ההשהיה, Qmin וקירור לאחר עצירה ייבדקו עם ספק המכלול; לא נבחר מעקף שרירותי.</p>
+<p>משאבת גיבוי אינה מגינה מפני כשל משותף: דוד, חשמל, לוח/בקר, FS01 משותף, סעפות או נתיב מים. אין דירוג הסתברות בין כשלים אלה. דיון בדוד נוסף תלוי בזמן ההשבתה המותר ובדרישות הזמינות. שתי משאבות מצוירות אינן הוכחת מעבר שנבדק.</p>
+<p>מקורות לעיקרון: <a href="https://api.grundfos.com/literature/Grundfosliterature-5235975.pdf" target="_blank" rel="noopener">Grundfos — מצב עבודה וגיבוי, סעיף 13.43</a>; <a href="https://cms.media.wilo.com/dcianimpfinder/wilo713711/9534891/en-GB/2335794571.html" target="_blank" rel="noopener">Wilo — הגדרת שתי משאבות נפרדות לפעולה משותפת</a>. אין כאן בחירה של דגם משאבה.</p>
+<p class="note">מהדורת קונספט מתאמת את גרף החיבורים, התרשים, תקריב המכל, ההמחשה ולוח הטכנאי. זו המחשה לבדיקה הנדסית נפרדת; מידות, הספקים, גבולות לחצים, מינימום זרימה, כימיה וערכי הפעלה טרם נקבעו.</p></div>
+</section>
+<section id="expansion">
+<div class="head"><h2>מכל ההתפשטות — החיבור נראה במלואו</h2><p>מהמחבר T1 לפני היניקה המשותפת למשאבות, דרך T2 וברז שירות נעול פתוח, אל חיבור המים היחיד של המכל.</p></div>
+<div class="detail"><img class="drawing" src="assets/boiler-expansion-detail-he-v4.svg" alt="תקריב: T1, חיבורי PI01 ו-PT01, כניסת מי השלמה ל-T2 מחוץ למכל, ברז שירות פתוח, ניקוז שירות סגור ומכל עם ממברנה"></div>
+<div class="content"><p><strong>מי ההשלמה נכנסים למחבר T2 שמחוץ למכל.</strong> המכל מקבל ומחזיר מים באותה שלוחה. מד הלחץ והחיישן נמצאים בצד המערכת לפני ברז השירות; הם אינם מודדים את לחץ הגז או את תקינות הממברנה. בזמן שירות למכל החימום מושבת.</p></div>
+<div class="links"><a href="assets/boiler-expansion-detail-he-v4.svg" download>פתיחת תקריב וקטורי קונספט</a></div>
+</section>
+<section id="temperature">
+<div class="head"><h2>טמפרטורת השוקולד — יעד ראשוני של <bdi>45 °C</bdi></h2><p>היישום שאושר לשלב המודל: אחסון ושינוע של שוקולד נוזלי שאינו מטומפר.</p></div>
+<div class="content">
+<p class="note"><strong><bdi>45 °C</bdi> מתייחס לשוקולד עצמו.</strong> זהו יעד שנבחר למודל, ולא הוראת הפעלה. סוג השוקולד, המתכון וזמן השהייה ייבדקו עם טכנולוג המפעל. טמפרטורת מי המעטפת תיקבע בנפרד.</p>
+<p>יצרן מכלי השוקולד AkayGAM מפרסם את הטווחים הבאים כנקודות התחלה תלויות־מתכון, ולא כמגבלות אוניברסליות. <a href="https://akaygam.com/chocolate-storage-tank.html" target="_blank" rel="noopener">מקור: תנאי העבודה של מכלי האחסון</a>.</p>
+<table class="table"><thead><tr><th>המוצר</th><th>אחסון נוזלי — טווח ייחוס בלבד</th></tr></thead><tbody><tr><td>שוקולד מריר</td><td><bdi>45–50 °C</bdi></td></tr><tr><td>שוקולד חלב ולבן</td><td><bdi>40–45 °C</bdi></td></tr></tbody></table>
+<p><strong>טמפרטורת המוצר וטמפרטורת המים אינן אותו משתנה.</strong> כוונת התכנון היא למדוד את המוצר ואת מי החימום ולהגדיר ויסות מקומי והגבלת חימום לפי הצרכן. מדידת טמפרטורת הדוד לבדה אינה מוכיחה שהשוקולד נשמר ביעד. מיקום החיישנים, השסתומים ושיטת הוויסות המקומי יפורטו בהמשך.</p>
+<p>טמפרטורות ההמסה המופיעות במדריכי טמפרור אינן הוראת אחסון ממושך. לדוגמה, Callebaut מציג עקומות שונות למתכונים שונים; אין להסיק מהן יעד אחיד של <bdi>55 °C</bdi> לכל מוצר. <a href="https://www.callebaut.com/en-GB/guide-different-tempering-methods" target="_blank" rel="noopener">מקור: Callebaut — עקומות עיבוד לפי מתכון</a>.</p>
+</div>
+</section>
+<section id="basis">
+<div class="head"><h2>בסיס הנדסי וגבולות המודל</h2><p>בדיקת החיבורים התבססה על הקווים והסמלים המצוירים ועל גרף החיבורים של אותו תרשים.</p></div>
+<div class="content">
+<p>מיקום חיבור ההרחבה סמוך לכניסת המשאבה: <a href="https://www.caleffi.com/en-us/blog/2-basic-concepts-detailing" target="_blank" rel="noopener">Caleffi — עקרונות מערכת מים סגורה</a>. חיבור מילוי לקו המכל, ברז שירות, מחבר פירוק וניקוז: <a href="https://www.amtrol.com/wp-content/uploads/2019/06/9017-094-01_19-EXTROL-L-Series-IO.pdf#page=2" target="_blank" rel="noopener">Amtrol — דוגמת הוראות יצרן, עמודים 2–3</a>. סדרת Amtrol זו אינה ציוד שנבחר לפרויקט.</p>
+<p>פונקציות מילוי, ויסות לחץ והגנת מקור המים: <a href="https://www.caleffi.com/en-int/products/filling-units" target="_blank" rel="noopener">Caleffi — מכלולי מילוי</a>. הסמלים מייצגים פונקציות; חלקן עשויות להיות משולבות באותו מכלול. אל־חוזר בקו ההשלמה אינו מחליף הגנה מתאימה מפני זיהום מקור המים.</p>
+<p>בהפעלה רגילה VET פתוח ומקובע ו-DVET סגור. חיווי פתיחה ZSO_VET מוצע אך אינו מחובר במודל למפעל; הוא אינו מחליף קיבוע מכני או בדיקת מעבר מים. סגור/לא ידוע חוסם חימום. PI01/PT01 נמצאים בצד המערכת לפני ברז השירות, ואינם מודדים לחץ גז או ממברנה. תנוחת המכל ותמיכתו לפי היצרן. במילוי מוצעים ניטור זמן ונפח מצטברים, אבחון זרימה בפקודת סגור וסגירה באות לא תקף/חריגה/אובדן מתח. פקודה אינה הוכחת אטימה.</p>
+<p><strong>טרם נקבעו:</strong> הספק, דגם, קטרים, ספיקה, נפח המכל, קדם־לחץ, לחצי עבודה, כימיקלים ומינונים. נדרשים בהמשך גם תכנון ספיקת מינימום, ויסות הצרכנים, תכנון הניקוזים, אישור הגנת מי ההזנה ובדיקת התאמה למוצר ולחומרים.</p>
+<p>PSV של הדוד אינו מוכיח הגנה על כל המעטפות והנפחים הניתנים לבידוד. יש לבחון לחצים מותרים, נוזל כלוא ונתיבי פריקה לכל מקטע. יעד פריקה בטוח חיצוני מסומן כממשק, ואינו מתקן ניקוז שתוכנן.</p><p class="note"><strong>נתון ראשוני · נתון לא מאומת:</strong> עד <bdi>2 bar</bdi> למעטפות לפי טכנאי, ללא דרכון. טרם ידוע: יחסי/מוחלט, עבודה/מרבי, והאם חל על כל השישה. לחץ מקומי כולל גובה ועומד משאבה; PSV דוד גבוה יותר אינו הגנת מעטפת מוכחת. אין ערכי כיוון. <a href="concept-notes-he.html#pressure">השוואת ויסות, מדידות ואנרגיה ←</a></p>
+<p>נדרשת אנליזה עדכנית של מי הכניסה למפעל ושל מי המעגל. מידע כללי על מי השתייה אינו מחליף בדיקה בנקודת החיבור. <a href="concept-notes-he.html#water">איכות מים ונתונים להשלמה ←</a></p>
+</div>
+</section>
+</div>
+
+<div id="suppliers" class="tab-panel suppliers-panel" role="tabpanel" aria-labelledby="tab-suppliers" tabindex="0" hidden>
+<section class="supplier-intro">
+  <div class="head">
+    <div class="eyebrow">03 / רכיבים וספקים · בדיקת מקורות: 16.10.2026</div>
+    <h1>חבילת חימום אחת. אחריות ברורה.</h1>
+    <p>מפת הרכיבים וערוצי האספקה למעגל מים חמים חשמלי — עד לחיבורי המעטפות הקיימות במפעל.</p>
+  </div>
+  <div class="scope-grid">
+    <div><span class="scope-label">מזמינים</span><strong>מערכת חימום מים שלמה</strong><p>דוד, סחרור, בטיחות, התפשטות, מילוי, טיפול במים, מכשור ובקרה — בתכולה מוסכמת.</p></div>
+    <div><span class="scope-label">מחברים לציוד קיים</span><strong>צנרת שוקולד ומכלים</strong><p>מעטפות החימום קיימות. אין כאן הזמנה של צנרת שוקולד חדשה או של מכלי שוקולד חדשים.</p></div>
+    <div><span class="scope-label">שלב ההחלטה</span><strong>בירור טכני והשוואת תכולה</strong><p>טרם נבחרו ספק, דגם, הספק, מידות או כמויות. זהו בסיס לדיון ולהכנת בקשה להצעה.</p></div>
+  </div>
+</section>
+<div class="section-links" aria-label="ניווט ברכיבים ובספקים">
+  <a href="#comparison">השוואת האינטגרטורים</a><a href="#components">פירוט הרכיבים</a><a href="#specialists">ספקים משלימים</a><a href="#proposal">מה לבקש בהצעה</a>
+</div>
+
+<section id="comparison">
+  <div class="head section-heading"><div><div class="eyebrow">ספק ראשי למערכת</div><h2>רמי רז או גרינטק?</h2><p>שני מועמדים לבירור. אף אחד מהם טרם אישר את מלוא התכולה של התרשים שלנו.</p></div><span class="badge caution">טרם נבחר ספק</span></div>
+  <div class="comparison-cards">
+    <article class="candidate">
+      <span class="badge confirmed">תיאור פומבי של מודול מים משולב</span>
+      <h3>רמי רז הנדסה</h3><p class="latin-name" dir="ltr">Rami Raz Engineering</p>
+      <p>באתר מתוארים מודולי חימום למים הכוללים גופי חימום, משאבות, לוחות חשמל ובקרה ואביזרים נלווים. מתוארים גם תכנון, התקנה, הרצה ותחזוקה.</p>
+      <a class="source-link" href="https://ramiraz.com/electric-heat-tracing/" target="_blank" rel="noopener noreferrer">מקור הספק: מערכות חימום משולבות ↗</a>
+    </article>
+    <article class="candidate">
+      <span class="badge confirmed">קטלוג דודי מים + שירותי הקמה</span>
+      <h3>גרינטק הנדסה</h3><p class="latin-name" dir="ltr">Greentech Engineering</p>
+      <p>באתר מופיעים דודי מים חמים חשמליים. בנפרד, החברה מציגה פרויקטים בשיטת הכול כלול, התקנה, הפעלה, הדרכה, תחזוקה וחלפים.</p>
+      <div class="source-links"><a class="source-link" href="https://greentech-ig.co.il/מוצרים/דודי-מים-חמים-בחשמל/" target="_blank" rel="noopener noreferrer">קטלוג דודי מים חשמליים ↗</a><a class="source-link" href="https://greentech-ig.co.il/אודות/" target="_blank" rel="noopener noreferrer">שירותים והקמה ↗</a></div>
+    </article>
+  </div>
+  <div class="table-wrap" tabindex="0" role="region" aria-label="טבלת השוואה בין רמי רז לגרינטק">
+    <table class="comparison-table">
+      <caption>מה ידוע מהמקורות — ומה צריך לקבל בכתב</caption>
+      <thead><tr><th scope="col">נושא</th><th scope="col">רמי רז</th><th scope="col">גרינטק</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">צורת האספקה</th><td>תיאור מפורש של יחידת חימום מים משולבת, מותאמת לפרויקט.</td><td>קטלוג דודי מים חשמליים; הרכב החבילה למעגל שלנו דורש פירוט.</td></tr>
+        <tr><th scope="row">משאבות ולוח בקרה</th><td>נכללים בתיאור המודול. סוג, כמות ואלגוריתם יוגדרו בהצעה.</td><td>יש לברר אם כלולים בהצעת הדוד או בחבילת ההקמה.</td></tr>
+        <tr><th scope="row">חיבור למעטפות הקיימות</th><td colspan="2"><span class="badge caution">נדרש אישור משני המועמדים</span> גבולות צנרת המים, ויסות הענפים, התאמה ללחצי המעטפות, ספיקת מינימום ובדיקות מסירה.</td></tr>
+        <tr><th scope="row">איכות מים וכימיה</th><td colspan="2">לא הוכחה תכולה מלאה לפרויקט שלנו. יש לכלול בדיקת מים, תוכנית טיפול, מינון ובקרה, עם אחריות משולבת מול יצרן הדוד.</td></tr>
+        <tr><th scope="row">תחזוקה באתר המפעל</th><td>תחזוקה נכללת בתיאור השירות; זמני תגובה, חלפים וכיסוי האתר לא אושרו.</td><td>תחזוקה וחלפים מופיעים במדיניות השירות; זמני תגובה וכיסוי האתר לא אושרו.</td></tr>
+        <tr><th scope="row">ניסיון ביישום דומה</th><td colspan="2">נדרש פרויקט ייחוס של חימום מים למעטפות בתעשיית המזון. ניסיון בקיטור או בחימום חשמלי ישיר לבדו אינו מוכיח התאמה למעגל הזה.</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="recommendation"><strong>סדר בירור מוצע: רמי רז תחילה, גרינטק להשוואה.</strong><p>זהו ניתוח של ההתאמה הפומבית לצורת החבילה המבוקשת. ההכרעה תהיה לפי הצעה עם תכולה מלאה, אחריות ותוכנית שירות. אין כאן אישור טכני או בחירה מסחרית.</p></div>
+</section>
+
+<section id="components">
+  <div class="head"><div class="eyebrow">מה נמצא בתרשים</div><h2>מפת רכיבים לפי חבילות אספקה</h2><p>המספור מסייע לדיון. הוא אינו כתב כמויות; חלק מהפונקציות עשויות להגיע בתוך אותו מכלול.</p></div>
+  <div class="component-toolbar"><div class="legend"><span class="badge core">בתכולת הבקשה</span><span class="badge caution">מותנה בבדיקה</span><span class="badge existing">ציוד קיים</span></div><button type="button" id="toggle-components" aria-controls="component-list" aria-expanded="false">פתיחת כל הפירוט</button></div>
+  <div class="component-grid" id="component-list">
+    <details class="component">
+      <summary><span class="package-number">01</span><span class="package-title">מקור החום החשמלי<small><bdi>B01</bdi> · דוד מים חמים תעשייתי</small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>דוד עם גופי חימום טבולים, חיבורי מים, מכלולי כוח ובקרת חימום, והגנות עצמאיות לטמפרטורת־יתר ולחוסר מים לפי היצרן. מפרט המודול יבהיר מה כבר מובנה בו.</p><p><strong>אחריות מבוקשת:</strong> האינטגרטור הראשי. רמי רז / גרינטק; קרשין־שלו כערוץ חלופי לבדיקת הדוד.</p><p class="pending">בתיקון R1 מופיעים VB01I/VB01O לבידוד הדוד ו-DB01 לניקוז. THH_B01, LW_B01 ו-K_HEAT מייצגים פונקציות הגנה/כוח עצמאיות מוצעות; חיווי וסכמת המימוש לפי יצרן הדוד. הגנת בטיחות דורשת איפוס מקומי לאחר בירור, ללא עקיפה מה-HMI. דגם, הספק וחומרים טרם נבחרו.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">02</span><span class="package-title">סחרור והפרדת אוויר ומשקעים<small>שתי משאבות 1+1 · מפרידים · <bdi>FS01</bdi></small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>שתי משאבות סחרור במקביל <bdi>P01A / P01B</bdi>, עובדת וגיבוי; ארבעה ברזי בידוד ושני אל־חוזרים. נדרשת בקרה למעבר לגיבוי ולתורנות עם משוב נפרד מכל משאבה. מפריד אוויר ושחרור אוטומטי, מפריד משקעים ואישור זרימה משותף <bdi>FS01</bdi>. כל משאבה תיבחר למלוא דרישת התכן; נדרשת גישה לשירות.</p><p><strong>ערוצים אפשריים:</strong> מכלול המשאבות והבקרה כחלק מחבילת האינטגרטור; בלאס / Spirotech למפרידים; רדט או מודוטק למכשור הזרימה.</p><p class="pending"><bdi>FS01</bdi> הוא אישור משותף ואינו מוכיח זרימה בכל ענף; <bdi>FQ01</bdi> מודד השלמה. נוספו VDSI/VDSO ו-DDS01 לבידוד/פריקת DS01; DPA1/DPA2/DPB1/DPB2 לניקוז משני צדי אל־חוזרי המשאבות, ואוורור VPA/VPB לפי הדגם. פתרון ספיקת מינימום, תורנות ורצף קירור עדיין טעונים נתונים ובדיקה.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">03</span><span class="package-title">מכל התפשטות ומדידת לחץ<small><bdi>ET01 · T1 · T2 · VET · ZSO_VET · PI01 · PT01</bdi></small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>מכל ממברנה עם תמיכה עצמאית; שלוחה מ־<bdi>T1</bdi> לפני היניקה המשותפת למשאבות; <bdi>T2</bdi> חיצוני למכל; ברז שירות <bdi>VET</bdi> נעול פתוח, מחבר פירוק, ברז ניקוז שירות <bdi>DVET</bdi> וקו ניקוז. מד לחץ <bdi>PI01</bdi> וחיישן <bdi>PT01</bdi> בצד המערכת לפני ברז השירות.</p><p><strong>ערוצים אפשריים:</strong> א.ש.ל למכל ואביזרי חימום; בלאס לאביזרים; רדט / מודוטק למכשור. האינטגרטור אחראי לחישוב ולהתאמה.</p><p class="pending">אין אל־חוזר בשלוחת המכל. בהפעלה רגילה VET פתוח ומקובע ו-DVET סגור. ZSO_VET הוא חיווי פתיחה מוצע; סגור/לא ידוע חוסם חימום. PI01/PT01 אינם מודדים קדם־לחץ או ממברנה. שירות למכל אוסר חימום; תנוחת ההתקנה והתמיכה לפי היצרן.</p><a href="#expansion" class="source-link">הצגת החיבור המוגדל בתרשים ←</a></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">04</span><span class="package-title">שסתום בטיחות ופריקה<small><bdi>PSV</bdi> · נתיב פריקה מהדוד</small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>שסתום בטיחות מותאם לדוד וקו פריקה עד ליעד בטוח שייקבע בתכנון. יש לבדוק אם השסתום כלול בדוד ולהימנע מכפל הזמנה.</p><p><strong>ערוץ אפשרי:</strong> יצרן הדוד דרך האינטגרטור; בלאס / LESER כאפשרות לאביזר, בכפוף לאישור.</p><p class="pending">אין ברז ניתוק בין הדוד ל-PSV. שסתום הדוד לבדו אינו מוכיח הגנה לכל מעטפת או מקטע מבודד. מעטפת הלחצים, התפשטות נוזל כלוא, לחץ הפתיחה, יכולת הפריקה ויעד בטוח חיצוני ייבדקו בתכנון.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">05</span><span class="package-title">צנרת המים וממשקי החיבור<small>סעפת אספקה · סעפת חזרה · צרכנים נוספים</small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>צנרת מים, מחברים, סעפות, תמיכות, בידוד ואביזרי שירות עד לנקודות המעטפת המוסכמות. ששת זוגות היציאה והחזרה לצרכנים שמחוץ לתרשים נכללים במיפוי הממשקים.</p><p><strong>אחריות מבוקשת:</strong> האינטגרטור הראשי וקבלן ההתקנה שלו; ספקי אביזרים כגון בלאס וא.ש.ל.</p><p class="pending">היציאה והחזרה החיצוניות אינן מעקף אספקה–חזרה. BV1…BV6 מייצגים איזון עם נקודות בדיקה; TT_R1…TT_R6 מוצעים למדידת חזרה. אורכים, קטרים, תנאי סגירת ענפים וויסות מקומי טרם נקבעו.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">06</span><span class="package-title">כניסת מי השלמה והגנת המקור<small><bdi>V1 · Y1 · BF1</bdi></small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>ברז ניתוק, מסנן כניסה והגנה מתאימה מפני זרימה חוזרת, כולל ברזי שירות ונקודות בדיקה כנדרש לסוג המכלול.</p><p><strong>ערוץ אפשרי:</strong> בלאס / Socla, בכפוף לתכנון ולאישור סוג ההגנה.</p><p class="pending">BF1 מייצג פונקציית הגנה, לא סוג שנבחר. מז״ח או הפרדה פיזית, בדיקות ונתיבי ניקוז ייקבעו לפי סיווג הסיכון, הדרישות החלות בישראל והציוד הנבחר. אל־חוזר רגיל אינו תחליף להגנת מקור המים.</p></div>
+    </details>
+    <details class="component conditional">
+      <summary><span class="package-number">07</span><span class="package-title">הכנת מי המילוי<small><bdi>WT1</bdi> · ריכוך / אוסמוזה הפוכה לפי צורך</small></span><span class="badge caution">מותנה</span></summary>
+      <div class="component-body"><p>בחירת ריכוך, אוסמוזה הפוכה או דמינרליזציה תתבסס על בדיקת מי האתר ועל דרישות הדוד והחומרים. אין החלטה שכל השלבים נחוצים או שחייבים להתקין אותם יחד.</p><p>אנלייזר קשיות עם הכנת דגימה, מגיבים וניקוז הוא אפשרות לפי תוכנית הניטור. RO עשוי לחייב אגירה ומשאבת החזרת לחץ; תצורה ולחץ זמין לפני PRV1 ייבדקו לפי היחידה והאתר. אין הנחה שהוא ציוד קווי בלחץ מספק.</p><p><strong>ערוצים אפשריים:</strong> אב־טק / טרייטל להכנת מים; TREION לדמינרליזציה; מודוטק לאנלייזר קשיות.</p><p class="pending">דגימה עם מגיבים יוצאת לניקוז ואינה חוזרת למערכת. גם אחרי RO נדרשת התאמה של הטיפול הכימי והחומרים.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">08</span><span class="package-title">מילוי והשלמה מבוקרים<small><bdi>FQ01 · PRV1 · XV1 · CV1</bdi></small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>מד נפח השלמה, וסת לחץ מילוי, שסתום מבוקר סגור ללא מתח ואל־חוזר בקו ההשלמה. הקו מתחבר ל־<bdi>T2</bdi> שמחוץ למכל ההתפשטות.</p><p><strong>ערוצים אפשריים:</strong> בלאס / א.ש.ל לאביזרים; רדט / מודוטק למדידה; האינטגרטור לאלגוריתם ולמסירת המכלול.</p><p class="pending">נדרשות מגבלות זמן ונפח גם במילויים חוזרים, התרעת זרימה בפקודת סגור ונוהל מילוי ראשוני. פקודת סגירה לבדה אינה מוכיחה אטימה מכנית.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">09</span><span class="package-title">טיפול כימי ומינון<small>מכל תוסף · משאבת מינון · אל־חוזר ונקודת הזרקה</small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>תוכנית טיפול למעגל סגור, מכל תוסף, קו יניקה, משאבת מינון, אל־חוזר ומכלול הזרקה לקו החזרה. יש לדרוש בהצעה גם ניטור חוסר חומר ואביזרי הגנה לפי יצרן הדוזר.</p><p><strong>ערוצים אפשריים:</strong> אב־טק לתוכנית מים וכימיה; מודוטק למערכת הזרקה משולבת; דיוניקס כערוץ נוסף לציוד מינון.</p><p class="pending">DOSE_T הוא מחבר ההזרקה, ואינו מכל התוסף. מינון מחייב תוכנית וגבולות מאושרים, משוב ריצת סחרור ו-FS01 תקף; חוסר זרימה חוסם מינון. טרם נבחרו חומר או מינון. נדרשים התאמה לחומרים ולסיכון זיהום מוצר, בדיקה ייעודית לריכוז ותוכנית שירות.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">10</span><span class="package-title">מדידת טמפרטורה ואיכות מים<small><bdi>TT01 · TT02 · TT_R1…TT_R6 · pH01 · EC01</bdi></small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>TT01 נמצא אחרי המשאבות ו-FS01; TT02 בחזרה. TT_R1…TT_R6 הם חיישני חזרה מוצעים לפי ענף. חיישני pH ומוליכות עם משדרים וחיבורי שירות. שיטת ההתקנה, תנאי הדגימה והתאמה למים במוליכות נמוכה ייבדקו עם ספק המכשור.</p><p><strong>ערוצים אפשריים:</strong> רדט / Endress+Hauser, מודוטק; דיוניקס / Knick כחלופה לאנליטיקה.</p><p class="pending">pH ומוליכות אינם מדידה של ריכוז מעכב קורוזיה. נדרשים כיול ובדיקות ייעודיות לפי תוכנית הטיפול.</p></div>
+    </details>
+    <details class="component">
+      <summary><span class="package-number">11</span><span class="package-title">לוח כוח, בקרה והתראות<small>איסוף אותות · הגבלת מינון · רישום נתונים</small></span><span class="badge core">בתכולה</span></summary>
+      <div class="component-body"><p>אינטגרציה של לחץ, זרימה, טמפרטורה, נפח השלמה ואיכות מים; התראות ונעילת מילוי בעת חריגה; הפסקת חימום בחוסר זרימה או לחץ; מינון מוגבל רק עם תוכנית מאושרת, משוב ריצה, זרימה ואיכות אות תקפים; רישום וכיול.</p><p><strong>אחריות מבוקשת:</strong> אינטגרטור יחיד לשיטת הבקרה, ללוח ולבדיקות. רדט / Unitronics הוא ערוץ אפשרי לבקרים ולממשק מפעיל.</p><p class="pending">סוג הבקר והממשק טרם נבחר. בקר תהליך רגיל אינו מחליף את הגנות הדוד העצמאיות; מימוש ההגנות ואימותן יפורטו בהמשך.</p></div>
+    </details>
+    <details class="component existing-component">
+      <summary><span class="package-number">12</span><span class="package-title">מעטפות ומדידת השוקולד<small>צנרת <bdi>Double-jacket</bdi> · מכלים · <bdi>TT-P</bdi></small></span><span class="badge existing">קיים</span></summary>
+      <div class="component-body"><p>הצנרת והמכלים של השוקולד קיימים. בודקים חיבורי מים, חומרי מבנה, לחץ מותר, מצב מעטפות ומדידות מוצר קיימות. חיישן מוצר חדש יתווסף רק אם נדרש אחרי הבדיקה.</p><p><strong>יעד המודל:</strong> <bdi>45 °C</bdi> לשוקולד נוזלי שאינו מטומפר. טמפרטורת מי החימום ושיטת הוויסות ייקבעו בנפרד.</p><p class="pending">ב-קונספט מוצגים שישה זוגות חיבורים חיצוניים; הצרכנים עצמם אינם מצוירים, ואין בכך כמות להזמנה. TT-P הוא ממשק מוצר עתידי בלבד; אין מדידת מוצר מחוברת. ויסות הענפים, לחץ מותר והגנת המוצר טעונים תכנון.</p><p class="note"><strong>נתון ראשוני · נתון לא מאומת:</strong> עד <bdi>2 bar</bdi> למעטפות לפי טכנאי, ללא דרכון. טרם ידוע: יחסי/מוחלט, עבודה/מרבי, והאם חל על כל השישה. לחץ מקומי כולל גובה ועומד משאבה; PSV דוד גבוה יותר אינו הגנת מעטפת מוכחת. אין ערכי כיוון. <a href="concept-notes-he.html#pressure">השוואת ויסות, מדידות ואנרגיה ←</a></p></div>
+    </details>
+  </div>
+  <div class="content compact"><p class="note"><strong>אוסמוזה הפוכה אינה החלטת ברירת מחדל.</strong> קודם מגדירים איכות מים מותרת לכל הציוד. טיפול כימי, הכנת מי המילוי וצמצום חדירת אוויר/מי השלמה הם נושאים משלימים. רמת האוטומציה אינה מבטלת כיול ובדיקות מעבדה. <a href="assets/water-treatment-control-he.html">למחקר המים והבקרה ←</a></p></div>
+</section>
+
+<section id="specialists">
+  <div class="head"><div class="eyebrow">ערוצים בישראל</div><h2>ספקים משלימים בתוך החבילה</h2><p>הכוונה היא לדרוש אחריות כוללת מהאינטגרטור הראשי. הרשימה הבאה מציגה יכולות אפשריות; לא הוכח קשר מסחרי בין הספקים לבין המועמדים הראשיים.</p></div>
+  <div class="supplier-grid">
+    <article class="supplier-card"><span class="category-label">מים וכימיה</span><h3>אב־טק השבחה <bdi>Av-Tech</bdi></h3><p>טיפול במעגלים סגורים, בדיקות מים תקופתיות, מניעת קורוזיה ומשקעים, ציוד מינון והקמה ותחזוקה של ריכוך ו־RO.</p><p class="pending"><strong>לברר:</strong> תוכנית מותאמת לחומרים שלנו, תחומי בדיקות, אחריות וכיסוי שירות למפעל.</p><a href="https://www.av-tech.co.il/אודות/" target="_blank" rel="noopener noreferrer">שירותי החברה ↗</a> · <a href="https://www.av-tech.co.il/ציוד-לטיפול-במים/" target="_blank" rel="noopener noreferrer">ציוד לטיפול במים ↗</a></article>
+    <article class="supplier-card"><span class="category-label">מכשור ובקרה</span><h3>רדט <bdi>RDT</bdi></h3><p>נציגת Endress+Hauser בישראל לפי אתר היצרן: בחירת מכשור, אוטומציה, שירות וכיול. בקטלוג רדט מופיעים גם בקרי Unitronics.</p><p class="pending"><strong>לברר:</strong> דגמי החיישנים, בניית הלוח, התוכנה, בדיקות הקבלה ואחריות האינטגרציה.</p><a href="https://www.endress.com/en/endress-hauser-group/endresshauser-at-a-glance/group-structure/worldwide-network/israel" target="_blank" rel="noopener noreferrer">אישור היצרן והשירות בישראל ↗</a> · <a href="https://rdt.co.il/product-category/מערכות-בקרה-והינע/plc/" target="_blank" rel="noopener noreferrer">בקרים ↗</a></article>
+    <article class="supplier-card"><span class="category-label">אנליטיקה ומערכות מינון</span><h3>מודוטק <bdi>Modotec</bdi></h3><p>מערכות הזרקת כימיקלים, מכשור pH, מוליכות וקשיות, מדידות תהליך והכנת דגימה. החברה בעכו מציגה שירות שטח ומעבדה/סדנה.</p><p class="pending"><strong>לברר:</strong> הרכב מערכת המינון, זמינות מגיבים וחלפים, כיול וזמן תגובה באתר המפעל.</p><a href="https://www.modotec.co.il/תעשיות/" target="_blank" rel="noopener noreferrer">תחומים ומכלולים ↗</a> · <a href="https://www.modotec.co.il/תמיכה-טכנית/" target="_blank" rel="noopener noreferrer">שירות טכני ↗</a></article>
+    <article class="supplier-card"><span class="category-label">שסתומים ומפרידים</span><h3>בלאס <bdi>Blass</bdi></h3><p>ברשימת הספקים: Spirotech להפרדת אוויר ומשקעים, LESER לשסתומי בטיחות, Socla למניעת זרימה חוזרת ויצרני אביזרי ויסות ומדידה.</p><p class="pending"><strong>לברר:</strong> התאמת הסדרה, אישורי המכלולים, זמינות וסידור בדיקות ותחזוקה.</p><a href="https://www.blass.co.il/ספקים" target="_blank" rel="noopener noreferrer">רשימת היצרנים והתחומים ↗</a></article>
+    <article class="supplier-card"><span class="category-label">מכל התפשטות ואביזרי חימום</span><h3>א.ש.ל</h3><p>קטלוג של מכלי התפשטות, משאבות סחרור, אביזרי מילוי, וסתים, מסננים ומדי לחץ. מוצגים סניפים בחולון ובחיפה.</p><p class="pending"><strong>לברר:</strong> התאמה תעשייתית, דגם ואישורים, והאם ניתן שירות בשטח. נוכחות בחיפה אינה התחייבות לזמן תגובה.</p><a href="https://eshelltd.com/" target="_blank" rel="noopener noreferrer">קטלוג ופרטי החברה ↗</a></article>
+    <article class="supplier-card"><span class="category-label">ערוץ חלופי לדוד</span><h3>קרשין־שלו / <bdi>Lattner</bdi></h3><p>ערוץ מקומי המציג דודי מים חשמליים. הוא מתאים לבדיקת אפשרות אספקה של מקור החום.</p><p class="pending"><strong>לברר:</strong> שירות לדוד המסוים ומי משלים ואחראי לכל המעגל. לא הוכחה כאן חבילת אינטגרציה מלאה.</p><a href="https://krashin-shalev.co.il/en/steam-generators-and-electric-boilers/" target="_blank" rel="noopener noreferrer">קטלוג הספק בישראל ↗</a> · <a href="https://www.lattner.com/electronic-boilers" target="_blank" rel="noopener noreferrer">קטלוג היצרן ↗</a></article>
+  </div>
+  <details class="alternatives"><summary>ערוצים נוספים להשוואה נקודתית</summary><div class="alternative-grid"><p><strong>דיוניקס / Grundfos / Knick:</strong> ציוד מינון ואנליטיקה. Knick מאשרת את דיוניקס כשותף מקומי. שירות שטח והרכב תחנת מינון מלאה טעונים בירור. <a href="https://dionyx.co.il/משאבות-מינון/" target="_blank" rel="noopener noreferrer">מינון ↗</a> · <a href="https://www.knick-international.com/en/local-partner" target="_blank" rel="noopener noreferrer">שותפים מקומיים ↗</a></p><p><strong>טרייטל / TREION:</strong> ריכוך, RO, ציוד בדיקה ועמודות דמינרליזציה. תוכנית כימית מלאה למעגל החם לא אושרה. <a href="https://treitel.co.il/our-solutions/treitel-water-online/" target="_blank" rel="noopener noreferrer">הכנת מים ↗</a> · <a href="https://treion.co.il/english/" target="_blank" rel="noopener noreferrer">דמינרליזציה ↗</a></p></div></details>
+</section>
+
+<section id="proposal">
+  <div class="head"><div class="eyebrow">בסיס לבקשה זהה משני המועמדים</div><h2>מה צריך להיכלל בהצעה השלמה</h2><p>המטרה: כתובת אחת לתכנון, להקמה, למסירה ולשירות, גם כשהציוד מגיע מכמה יצרנים.</p></div>
+  <div class="proposal-grid">
+    <div><h3>תכולה ואחריות</h3><ul><li>רשימת הכלול והחריגים מול חבילות הרכיבים והתרשים.</li><li>נקודות חיבור מדויקות למעטפות הקיימות וחלוקת עבודה עם המפעל.</li><li>אחריות כוללת גם לציוד ולשירות של ספקי משנה.</li></ul></div>
+    <div><h3>תכנון ומסירה</h3><ul><li>ויסות לפי צרכן, ספיקת מינימום, לחצים מותרים והגנת המוצר.</li><li>שטיפה, מילוי, תוכנית מים וכימיה, הרצה ובדיקות הגנות.</li><li>תרשים מפורט, רשימת אותות, הוראות יצרנים ותיעוד בדיקות.</li></ul></div>
+    <div><h3>שירות לאורך זמן</h3><ul><li>זמן תגובה מחייב באתר המפעל, חלפים והדרכת צוות.</li><li>כיול, בדיקות מעבדה ובקרה על ריכוז התוסף שנבחר.</li><li>פרויקט ייחוס דומה ואחריות מתועדת על איכות מי המעגל.</li></ul></div>
+  </div>
+  <div class="research-status"><strong>מצב המחקר:</strong> נבדקו מקורות פומביים של ספקים ויצרנים. לא התקבלו הצעות ולא נוצר קשר עם הספקים. מלאי, מחירים, זמני אספקה, התאמת דגמים וכיסוי שירות לאתר טרם אושרו.</div>
+</section>
+</div>
+
+
+<div id="technician" class="tab-panel" role="tabpanel" aria-labelledby="tab-technician" tabindex="0" hidden>
+<div class="hmi-shell" id="hmi-shell">
+  <div class="hmi-top"><h1>חימום מעטפות · עמדת טכנאי</h1><span class="hmi-revision"><bdi>קונספט</bdi> · מפעל שוקולד</span></div>
+  <div class="hmi-demo-line"><strong>DEMO — אין חיבור לציוד; כל משוב הוא קלט מקומי להמחשה</strong><span id="hmi-source">אין נתונים</span><label for="hmi-role">תפקיד מקומי:</label><select id="hmi-role"><option value="viewer">צופה</option><option value="operator">מפעיל</option><option value="technician">טכנאי</option></select><button type="button" data-hmi-equipment="permissions" aria-label="הסבר הרשאות">?</button></div>
+  <div class="hmi-nav" role="group" aria-label="מסכי עמדת הטכנאי"><button type="button" data-hmi-view="overview" aria-pressed="true">סקירת המערכת</button><button type="button" data-hmi-view="operations" aria-pressed="false">ציוד ותרחישים</button><button type="button" data-hmi-view="water" aria-pressed="false">מים והשלמה</button><button type="button" data-hmi-view="events" aria-pressed="false">תקלות ויומן</button><button type="button" data-hmi-view="service" aria-pressed="false">תחזוקה</button><span class="hmi-link" id="hmi-connection">מצב הקישור לא ידוע</span></div>
+  <div class="hmi-content">
+    <div class="hmi-status-line"><span class="hmi-state-pill" id="hmi-system-state">מצב המתקן לא ידוע</span><div class="hmi-alert-strip" id="hmi-alert-strip" aria-label="סיכום תקלות"></div></div>
+    <div data-hmi-screen="overview">
+      <div class="hmi-overview"><div class="hmi-mimic-toolbar"><span>מסלול המים · לחיצה על ציוד פותחת פרטים</span><span id="hmi-reserve-top">רזרבה: לא ידוע</span><button type="button" id="hmi-expand" aria-pressed="false">הגדלת הסקירה</button></div>
+      <div class="hmi-diagram-scroll"><svg class="hmi-process" viewBox="0 0 1320 640" role="img" aria-labelledby="hmi-mimic-title hmi-mimic-desc">
+        <title id="hmi-mimic-title">מעגל מים עם שתי משאבות ושישה זוגות חיבורים חיצוניים</title><desc id="hmi-mimic-desc">דוד, מפריד אוויר, T1 עם שלוחת התפשטות לפני שתי המשאבות במקביל, אישור זרימה וטמפרטורת אספקה, שש יציאות ושש חזרות חיצוניות. קו החזרה עובר דרך חיישנים, נקודת הזרקה ומפריד משקעים אל הדוד. אין חיבור ישיר בין סעפת האספקה לסעפת החזרה.</desc>
+        <defs><marker id="hmi-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 L6 3.5 L0 7 Z" fill="#686f74"/></marker><pattern id="hmi-band" width="7" height="7" patternUnits="userSpaceOnUse"><path d="M0 7 L7 0" stroke="#c0c5c8" stroke-width="1"/></pattern></defs>
+        <path class="pipe" d="M215 205 H430 M430 160 V300 M430 160 H600 M430 300 H600 M600 160 V300 M600 205 H850 V125 H1270"/>
+        <path class="pipe return-pipe" d="M1270 530 H40 V330 H60"/>
+        <path class="pipe utility-pipe" d="M360 205 V420 M360 275 H280 M360 335 H420 V380 H600 M360 400 H300 V425"/>
+        <path class="pipe utility-pipe" d="M685 465 H730 V530"/>
+        <path class="pipe" d="M390 205 H415 M770 205 H800" marker-end="url(#hmi-arrow)"/><path class="pipe return-pipe" d="M520 530 H490 M180 530 H150" marker-end="url(#hmi-arrow)"/>
+        <circle class="node" cx="360" cy="205" r="5"/><text class="tag" x="360" y="186" text-anchor="middle">T1</text><circle class="node" cx="360" cy="335" r="4"/><text class="tag" x="342" y="340" text-anchor="end">T2</text>
+        <g data-hmi-equipment="boiler" role="button" tabindex="0" aria-label="B01 דוד וחיווי חימום"><rect class="equip" x="60" y="170" width="155" height="190" rx="5"/><text class="tag" x="137" y="194" text-anchor="middle">B01 · דוד</text><text class="caption" x="137" y="226" text-anchor="middle">חימום · משוב</text><text class="status" id="mimic-heat" x="137" y="252" text-anchor="middle">לא ידוע</text><text class="caption" id="mimic-boiler-sp" x="137" y="282" text-anchor="middle">SP — °C</text><text class="caption" id="mimic-protections" x="137" y="309" text-anchor="middle">הגנות —</text><text class="caption" x="137" y="338" text-anchor="middle">שלבים — / —</text></g>
+        <g data-hmi-equipment="safety" role="button" tabindex="0" aria-label="PSV והגנות עצמאיות"><path class="pipe utility-pipe" d="M137 170 V110 H205"/><path class="equip" d="M130 140 L144 128 H130 L144 140 Z"/><text class="caption" x="166" y="100" text-anchor="middle">PSV → פריקה</text></g>
+        <g data-hmi-equipment="air" role="button" tabindex="0" aria-label="מפריד אוויר AS01"><circle class="equip" cx="280" cy="205" r="19"/><path class="pipe utility-pipe" d="M280 186 V170"/><text class="tag" x="280" y="155" text-anchor="middle">AS01</text></g>
+        <g data-hmi-equipment="pumpA" role="button" tabindex="0" aria-label="משאבה P01A"><circle class="equip" cx="515" cy="160" r="26"/><path d="M505 145 L532 160 L505 175 Z" fill="none" stroke="#737a7e" stroke-width="2"/><text class="tag" x="515" y="108" text-anchor="middle">P01A</text><text class="status" id="mimic-pumpA" x="515" y="129" text-anchor="middle">לא ידוע</text><text class="caption" id="mimic-pumpA-role" x="515" y="203" text-anchor="middle">זמינות —</text></g>
+        <g data-hmi-equipment="pumpB" role="button" tabindex="0" aria-label="משאבה P01B"><circle class="equip" cx="515" cy="300" r="26"/><path d="M505 285 L532 300 L505 315 Z" fill="none" stroke="#737a7e" stroke-width="2"/><text class="tag" x="515" y="253" text-anchor="middle">P01B</text><text class="status" id="mimic-pumpB" x="515" y="274" text-anchor="middle">לא ידוע</text><text class="caption" id="mimic-pumpB-role" x="515" y="345" text-anchor="middle">זמינות —</text></g>
+        <g data-hmi-equipment="flow" role="button" tabindex="0" aria-label="FS01 אישור זרימה"><circle class="equip" cx="650" cy="205" r="17"/><text class="tag" x="650" y="174" text-anchor="middle">FS01</text><text class="status" id="mimic-flow" x="650" y="244" text-anchor="middle">לא ידוע</text></g>
+        <g data-hmi-equipment="temperature" role="button" tabindex="0" aria-label="TT01 טמפרטורת אספקה אחרי המשאבות"><path class="pipe utility-pipe" d="M755 205 V180"/><text class="tag" x="755" y="151" text-anchor="middle">TT01</text><text class="reading" x="755" y="175" text-anchor="middle">— °C</text><rect class="band" x="711" y="229" width="88" height="8"/><text class="caption" x="755" y="257" text-anchor="middle">תחום טרם הוגדר</text></g>
+        <g data-hmi-equipment="expansion" role="button" tabindex="0" aria-label="PT01 ומכל התפשטות ET01"><circle class="equip" cx="267" cy="275" r="13"/><text class="tag" x="255" y="248" text-anchor="middle">PT01</text><text class="reading" x="275" y="305" text-anchor="middle">— bar</text><rect class="band" x="230" y="318" width="90" height="8"/><text class="caption" id="mimic-pressure" x="275" y="345" text-anchor="middle">לא ידוע</text><path class="equip" d="M350 360 L370 380 H350 L370 360 Z"/><text class="caption" x="385" y="369">VET</text><text class="caption" id="mimic-vet" x="383" y="390">מצב —</text><path class="equip" d="M291 409 L309 421 H291 L309 409 Z"/><text class="caption" x="285" y="409" text-anchor="end">DVET</text><rect class="equip" x="337" y="420" width="46" height="72" rx="20"/><path d="M339 455 H381" stroke="#8b9297" stroke-dasharray="4 3"/><text class="tag" x="360" y="513" text-anchor="middle">ET01</text><text class="caption" x="410" y="492">PI01 · מקומי</text></g>
+        <g data-hmi-equipment="fill" role="button" tabindex="0" aria-label="קו השלמה XV1 FQ01"><rect class="equip" x="465" y="367" width="38" height="26" rx="3"/><text class="caption" x="484" y="360" text-anchor="middle">XV1</text><circle class="equip" cx="560" cy="380" r="15"/><text class="caption" x="620" y="353" text-anchor="end">FQ01</text><text class="caption" x="605" y="385">← השלמה</text><path d="M442 373 L429 380 L442 387 Z M426 370 V390" fill="none" stroke="#737a7e" stroke-width="2"/><text class="caption" x="438" y="409" text-anchor="middle">CV1</text><text class="caption" id="mimic-fill" x="533" y="420" text-anchor="middle">פקודה — · זרימה —</text><text class="caption" x="553" y="440" text-anchor="middle">מצטבר — L · יממה — L</text></g>
+        <g data-hmi-equipment="chemistry" role="button" tabindex="0" aria-label="כימיה ונקודת הזרקה"><rect class="equip" x="645" y="445" width="40" height="38" rx="3"/><text class="caption" x="665" y="434" text-anchor="middle">מכל תוסף</text><circle class="equip" cx="710" cy="465" r="12"/><path d="M723 497 L730 509 L737 497 Z M720 513 H740" stroke="#737a7e" fill="none" stroke-width="1.5"/><circle class="node" cx="730" cy="530" r="4"/><text class="caption" x="704" y="555" text-anchor="middle">DOSE_T</text></g>
+        <g data-hmi-equipment="water" role="button" tabindex="0" aria-label="pH01 EC01 מדידות איכות מים"><path class="pipe utility-pipe" d="M832 530 V507 M861 530 V507"/><text class="caption" x="847" y="493" text-anchor="middle">pH / EC —</text></g>
+        <g data-hmi-equipment="temperature" role="button" tabindex="0" aria-label="TT02 טמפרטורת חזרה"><path class="pipe utility-pipe" d="M793 530 V555"/><text class="tag" x="793" y="580" text-anchor="middle">TT02</text><text class="reading" x="793" y="605" text-anchor="middle">— °C</text><rect class="band" x="749" y="616" width="88" height="8"/></g>
+        <g data-hmi-equipment="dirt" role="button" tabindex="0" aria-label="מפריד משקעים DS01"><rect class="equip" x="441" y="509" width="38" height="43" rx="10"/><path class="pipe utility-pipe" d="M460 552 V570"/><text class="tag" x="460" y="596" text-anchor="middle">DS01</text></g>
+        <g data-hmi-equipment="consumers" role="button" tabindex="0" aria-label="שישה זוגות יציאה וחזרה לצרכנים חיצוניים">
+          <text class="tag" x="1080" y="24" text-anchor="middle">צרכנים מחוץ לחדר · 6 זוגות</text><text class="caption" x="1080" y="47" text-anchor="middle">אספקה →</text>
+          <path class="pipe" d="M900 125 V75 M970 125 V75 M1040 125 V75 M1110 125 V75 M1180 125 V75 M1250 125 V75"/>
+          <path d="M891 76 L900 64 L909 76 M961 76 L970 64 L979 76 M1031 76 L1040 64 L1049 76 M1101 76 L1110 64 L1119 76 M1171 76 L1180 64 L1189 76 M1241 76 L1250 64 L1259 76" fill="none" stroke="#70777c" stroke-width="2"/>
+          <text class="caption" x="900" y="103" text-anchor="middle">S1</text><text class="caption" x="970" y="103" text-anchor="middle">S2</text><text class="caption" x="1040" y="103" text-anchor="middle">S3</text><text class="caption" x="1110" y="103" text-anchor="middle">S4</text><text class="caption" x="1180" y="103" text-anchor="middle">S5</text><text class="caption" x="1250" y="103" text-anchor="middle">S6</text>
+          <text class="caption" x="900" y="157" text-anchor="middle">צרכן 1</text><text class="caption" x="970" y="157" text-anchor="middle">צרכן 2</text><text class="caption" x="1040" y="157" text-anchor="middle">צרכן 3</text><text class="caption" x="1110" y="157" text-anchor="middle">צרכן 4</text><text class="caption" x="1180" y="157" text-anchor="middle">צרכן 5</text><text class="caption" x="1250" y="157" text-anchor="middle">צרכן 6</text><text class="caption" x="900" y="470" text-anchor="middle">צרכן 1</text><text class="caption" x="970" y="470" text-anchor="middle">צרכן 2</text><text class="caption" x="1040" y="470" text-anchor="middle">צרכן 3</text><text class="caption" x="1110" y="470" text-anchor="middle">צרכן 4</text><text class="caption" x="1180" y="470" text-anchor="middle">צרכן 5</text><text class="caption" x="1250" y="470" text-anchor="middle">צרכן 6</text><text class="caption" x="1080" y="202" text-anchor="middle">הציוד החיצוני אינו מצויר</text><text class="caption" id="mimic-path" x="1080" y="225" text-anchor="middle">מצב נתיב —</text>
+          <text class="caption" x="1080" y="350" text-anchor="middle">טמפרטורות חזרה לפי ענף</text><text class="caption" x="1080" y="372" text-anchor="middle">TT_R1…TT_R6 · מדידה מוצעת</text>
+          <path class="pipe return-pipe" d="M900 610 V530 M970 610 V530 M1040 610 V530 M1110 610 V530 M1180 610 V530 M1250 610 V530"/>
+          <path d="M891 598 L900 587 L909 598 M961 598 L970 587 L979 598 M1031 598 L1040 587 L1049 598 M1101 598 L1110 587 L1119 598 M1171 598 L1180 587 L1189 598 M1241 598 L1250 587 L1259 598" fill="none" stroke="#70777c" stroke-width="1.5"/>
+          <text class="caption" x="900" y="514" text-anchor="middle">R1</text><text class="caption" x="970" y="514" text-anchor="middle">R2</text><text class="caption" x="1040" y="514" text-anchor="middle">R3</text><text class="caption" x="1110" y="514" text-anchor="middle">R4</text><text class="caption" x="1180" y="514" text-anchor="middle">R5</text><text class="caption" x="1250" y="514" text-anchor="middle">R6</text>
+          <text class="reading" x="900" y="566" text-anchor="middle">—</text><text class="reading" x="970" y="566" text-anchor="middle">—</text><text class="reading" x="1040" y="566" text-anchor="middle">—</text><text class="reading" x="1110" y="566" text-anchor="middle">—</text><text class="reading" x="1180" y="566" text-anchor="middle">—</text><text class="reading" x="1250" y="566" text-anchor="middle">—</text><text class="caption" x="1080" y="634" text-anchor="middle">← חזרה מאותם צרכנים</text>
+        </g>
+        <g class="alarm-marker" data-alarm-source="boiler" hidden transform="translate(211 172)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="pumpA" hidden transform="translate(548 141)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="pumpB" hidden transform="translate(548 284)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="flow" hidden transform="translate(674 189)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="pressure" hidden transform="translate(280 253)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="expansion" hidden transform="translate(383 414)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="fill" hidden transform="translate(576 367)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="water" hidden transform="translate(872 495)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g><g class="alarm-marker" data-alarm-source="consumers" hidden transform="translate(1080 264)"><circle r="11"/><text text-anchor="middle" y="5">!</text></g>
+      </svg></div>
+      <div class="hmi-mimic-foot"><span id="hmi-reserve">רזרבה: לא ידוע</span><span>ΔT — · <a href="#system">תרשים הנדסי ופרטי שירות ←</a></span></div></div>
+      <div class="hmi-mini-trends"><button type="button" class="hmi-mini-trend" data-hmi-equipment="temperature"><strong>TT01 · אספקה</strong><small>— °C</small><span class="hmi-empty-chart">אין היסטוריית מדידות</span></button><button type="button" class="hmi-mini-trend" data-hmi-equipment="temperature"><strong>TT02 · חזרה</strong><small>— °C</small><span class="hmi-empty-chart">אין היסטוריית מדידות</span></button><button type="button" class="hmi-mini-trend" data-hmi-equipment="pressure"><strong>PT01 · לחץ</strong><small>— bar</small><span class="hmi-empty-chart" id="hmi-pressure-trend">אין היסטוריית מדידות</span></button></div>
+    </div>
+    <div data-hmi-screen="operations" hidden>
+      <h2 class="hmi-view-title">ציוד ותרחישים</h2><p class="hmi-view-sub">פתיחת פרטי ציוד מציגה בקשות ומשובים בנפרד. בחירת תפקיד כאן היא כלי להצגת הרשאות, ואינה הזדהות למפעל.</p>
+      <div class="hmi-controls"><button type="button" data-hmi-equipment="boiler">דוד</button><button type="button" data-hmi-equipment="pumps">שתי משאבות</button><button type="button" data-hmi-equipment="expansion">מכל והשלמה</button><button type="button" data-hmi-equipment="safety">הגנות עצמאיות</button><button type="button" data-hmi-equipment="consumers">צרכנים</button></div>
+      <div class="hmi-grid">
+        <div class="hmi-box"><div class="hmi-box-head"><h3>תרחישי קלט מקומיים</h3><small>ללא נתונים מספריים</small></div><div class="hmi-box-body"><label for="hmi-scenario">בחירת מצב</label><div class="hmi-controls"><select id="hmi-scenario"><option value="offline">אין קישור / מצב לא ידוע</option><option value="snapshot">תמונת עבודה תקינה — קלטים מוכנים</option><option value="normal">שחזור אותות / מצב עצור</option><option value="flow">אובדן זרימה</option><option value="branches">כל הענפים סגורים</option><option value="pumpA">תקלה במשאבה A</option><option value="pumpB">תקלה במשאבה B</option><option value="noreserve">אין רזרבה מוכנה</option><option value="bothpumps">שתי המשאבות בתקלה</option><option value="manualpump">משאבה במצב ידני</option><option value="startfailure">כשל התנעה / הוכחת זרימה</option><option value="uncommanded">משאבה פועלת ללא פקודה</option><option value="overtemp">טמפרטורת־יתר</option><option value="highpressure">לחץ גבוה</option><option value="boilertrip">הגנה עצמאית של הדוד</option><option value="lowwater">הגנת חוסר מים</option><option value="pressure">לחץ נמוך</option><option value="pt">אות לחץ לא תקף</option><option value="vetclosed">VET סגור</option><option value="vetunknown">מצב VET לא ידוע</option><option value="quality">אות pH / EC לא תקף</option><option value="makeup">זרימת השלמה בפקודת סגור</option><option value="powerreturn">חזרת מתח</option></select><button type="button" id="hmi-recover">שחזור אותות בלבד</button></div><p class="hmi-note">שחזור אותות אינו מוחק תקלות ואינו מפעיל ציוד. תמונת העבודה זמינה רק כשאין נעילות פתוחות; היא טוענת חבילת משובים מקומית מפורשת.</p><dl class="hmi-rows"><div><dt>מעבר לרזרבה</dt><dd id="hmi-failover">—</dd></div><div><dt>בקשת חימום / משוב</dt><dd id="hmi-heat-pair">— / —</dd></div></dl><div class="hmi-controls"><button type="button" id="hmi-proof-A">קלט: A בריצה</button><button type="button" id="hmi-proof-B">קלט: B בריצה</button><button type="button" id="hmi-proof-flow">קלט: FS01 אישר</button><button type="button" id="hmi-proof-on">קלט: חימום פעיל</button><button type="button" id="hmi-proof-off">קלט: חימום כבוי</button><button type="button" id="hmi-proof-stopped">קלט: המשאבות עצרו</button><button type="button" id="hmi-start-failure">קלט: ניסיון נכשל</button></div><p class="hmi-secondary-status">אלה הזרקות משוב לצורך בדיקת הרצף המקומי, ולא אישור שנשלח מבקר. אין זמן התנעה מספרי במודל.</p></div></div>
+        <div class="hmi-box"><div class="hmi-box-head"><h3>התקלה שנבחרה</h3><span id="hmi-alarm-count">—</span></div><div class="hmi-box-body"><div id="hmi-alarm-badges"></div><p class="hmi-alarm-title" id="hmi-alarm-title"></p><div class="hmi-alarm-meta" id="hmi-alarm-meta"></div><p id="hmi-alarm-copy"></p><div class="hmi-alarm-action" id="hmi-alarm-action"></div><div class="hmi-alarm-picks" id="hmi-alarm-picks"></div><div class="hmi-controls"><button type="button" id="hmi-ack">אישור ראייה</button><button type="button" id="hmi-reset">איפוס נעילה</button></div><p class="hmi-alarm-help" id="hmi-reset-help"></p></div></div>
+      </div>
+    </div>
+    <div data-hmi-screen="water" hidden>
+      <h2 class="hmi-view-title">מים, השלמה וטיפול כימי</h2><p class="hmi-view-sub">איכות האות מוצגת בנפרד מהתוכנית הכימית. pH ומוליכות אינם מודדים ריכוז מעכב קורוזיה.</p>
+      <div class="hmi-water-grid"><div class="hmi-box hmi-box-body"><bdi>pH01</bdi><div class="hmi-water-value">— pH</div><div id="hmi-water-ph">לא ידוע</div></div><div class="hmi-box hmi-box-body"><bdi>EC01</bdi><div class="hmi-water-value">— µS/cm</div><div id="hmi-water-ec">לא ידוע</div></div><div class="hmi-box hmi-box-body">ריכוז מעכב קורוזיה<div class="hmi-water-value">טרם נבדק</div>בדיקה ייעודית / מעבדה לפי החומר</div></div>
+      <div class="hmi-grid"><div class="hmi-box"><div class="hmi-box-head"><h3>השלמה · XV1 / FQ01</h3><button type="button" data-hmi-equipment="fill">פרטים</button></div><div class="hmi-box-body"><dl class="hmi-rows"><div><dt>פקודת XV1</dt><dd id="hmi-fill-command">לא ידוע</dd></div><div><dt>משוב מיקום / אטימה</dt><dd>לא הוגדר / אין מדידה</dd></div><div><dt>עדות זרימה FQ01</dt><dd id="hmi-fill-evidence">לא ידוע</dd></div><div><dt>נפח כולל / יממה / משמרת</dt><dd><bdi>— / — / — L</bdi></dd></div><div><dt>מחזורים / משך מצטבר</dt><dd>— / —</dd></div><div><dt>נעילת השלמה</dt><dd id="hmi-fill-status">—</dd></div></dl><p class="hmi-note">מגבלות זמן, נפח, לחץ ומחזורים חוזרים טרם נקבעו. פקודת סגירה אינה מוכיחה אטימה. הספירה במערכת המיועדת נשמרת בין מחזורים; כאן אין היסטוריית מדידה.</p></div></div><div class="hmi-box"><div class="hmi-box-head"><h3>תוכנית מינון</h3><button type="button" data-hmi-equipment="chemistry">פרטים</button></div><div class="hmi-box-body"><dl class="hmi-rows"><div><dt>תוכנית / חומר / גבולות</dt><dd>טרם אושרו</dd></div><div><dt>בקשת מינון</dt><dd id="hmi-dose-status">חסומה</dd></div><div><dt>מפלס מכל תוסף</dt><dd>אין אות מחובר</dd></div><div><dt>בדיקה אחרונה / הבאה</dt><dd>טרם הוזנו</dd></div><div><dt>קשיות אחרי ריכוך</dt><dd>אפשרות מותנית, לא מיושמת</dd></div></dl><p class="hmi-note">מינון מחייב תוכנית מאושרת, גבולות, משוב ריצה ו־FS01 תקף, וכן אותות איכות תקפים לפי התוכנית. אין מינון בלתי מוגבל ואין המרת pH/EC אוטומטית לריכוז תוסף.</p></div></div></div>
+    </div>
+    <div data-hmi-screen="events" hidden><h2 class="hmi-view-title">תקלות ויומן</h2><p class="hmi-view-sub">סיבה פעילה, אישור ראייה ונעילה הם מצבים נפרדים. היומן מקומי בלבד ונמחק בטעינת הדף. עדיפויות התצוגה ראשוניות, ללא קביעה של זמני תגובה.</p><div class="hmi-box"><div class="hmi-table-wrap"><table class="hmi-table"><thead><tr><th>עדיפות / מקור</th><th>תקלה והשפעה</th><th>סיבה</th><th>אישור ראייה</th><th>פרטים</th></tr></thead><tbody id="hmi-alarms-table"></tbody></table></div></div><div class="hmi-box" style="margin-top:14px"><div class="hmi-box-head"><h3>יומן מקומי</h3><small>סדר אירועים; אין חותמות זמן מהציוד</small></div><div class="hmi-table-wrap"><table class="hmi-table"><thead><tr><th>אירוע</th><th>פעולה</th><th>מקור</th></tr></thead><tbody id="hmi-event-log"></tbody></table></div></div><p class="hmi-note">הסתרת תקלה, השבתת חיישן ומסלולי עקיפת הגנה אינם מיושמים. רשימת תקלות מוסתרות / ציוד מחוץ לעבודה תחייב ניהול הרשאות, משך ותיעוד בתכנון.</p></div>
+    <div data-hmi-screen="service" hidden><h2 class="hmi-view-title">תחזוקה והרשאות</h2><p class="hmi-view-sub">בדיקות ידניות נשארות חלק מההפעלה. תנוחות התקנה, מרווחי טיפול ופרטי ציוד נקבעים לפי היצרן והתכנון.</p><div class="hmi-grid"><div class="hmi-box"><div class="hmi-box-head"><h3>מכל התפשטות ובדיקת קדם־הפעלה</h3></div><div class="hmi-box-body"><label class="hmi-check"><input type="checkbox" id="hmi-manual-check"><span>דיווח בדיקה: ET01 מחובר; בהפעלה רגילה VET פתוח ומקובע, DVET סגור.</span></label><label class="hmi-check"><input type="checkbox" id="hmi-tank-service"><span>מצב שירות למכל — אין היתר חימום / הפעלת סחרור מהעמדה.</span></label><dl class="hmi-rows"><div><dt>ZSO_VET · חיווי פתיחה מוצע</dt><dd id="hmi-vet-proof">לא ידוע</dd></div><div><dt>PI01</dt><dd>מד מקומי בלבד</dd></div><div><dt>לחץ גז / ממברנה</dt><dd>בדיקה בשטח</dd></div></dl><p class="hmi-note">ZSO_VET אינו מוכיח מעבר מים, קדם־לחץ או תקינות ממברנה. משוב פתיחה אינו מחליף קיבוע מכני ונוהל שירות. <a href="assets/boiler-expansion-detail-he-v4.svg">תקריב קונספט ←</a></p></div></div><div class="hmi-box"><div class="hmi-box-head"><h3>בדיקת שחזור לאחר כשל</h3></div><div class="hmi-box-body"><dl class="hmi-rows"><div><dt>איפוס הגנה מקומי נדרש</dt><dd id="hmi-local-reset-status">לא ידוע</dd></div><div><dt>ניסיון רזרבה</dt><dd id="hmi-rearm-status">—</dd></div></dl><div class="hmi-controls"><button type="button" id="hmi-local-reset">הדמיית דיווח: איפוס ידני בוצע בשטח</button><button type="button" id="hmi-rearm">הכנת ניסיון רזרבה חדש</button></div><p class="hmi-note">דיווח זה הוא קלט בדיקה בלבד; העמדה אינה מאפסת הגנות עצמאיות. הסרת הסיבה, איפוס מקומי, אישור ראייה, איפוס הנעילה ובקשת הפעלה חדשה הם שלבים נפרדים. ניסיון רזרבה לא חוזר ללא גבול.</p></div></div></div><div class="hmi-box" style="margin-top:14px"><div class="hmi-box-head"><h3>תוכנית תחזוקה — להשלמת נתוני האתר</h3><small>אין שירות תזמון / שמירה פעיל</small></div><div class="hmi-box-body"><ul class="hmi-open-list"><li>בדיקות ET01, אביזרי ניתוק/ניקוז, AS01, DS01 ונתיבי פריקה.</li><li>כיול PT, TT, pH/EC, אימות FS/FQ והגנות עצמאיות; דיגום מים ובדיקת מעכב קורוזיה.</li><li>לכל משאבה: שעות, התנעות, תפקיד, כשירות ומועד החלפת תורנות — שדות ללא נתוני אמת.</li><li>לכל משימה: אחראי, מועד אחרון/הבא, תוצאה ומסמך — טרם הוטמעו.</li><li>זמן תגובה ומלאי שירות בישראל דורשים אישור מהספק, גם כשיש ערוץ מקומי.</li></ul><p class="hmi-note"><a href="concept-notes-he.html">נתונים חסרים, תגובות עקרוניות וגבולות הקונספט ←</a> · <a href="assets/water-treatment-control-he.html">טיפול במים ובקרה ←</a></p></div></div></div>
+    <div id="hmi-announcement" role="status" aria-live="polite">העמדה אינה מחוברת לציוד.</div>
+  </div>
+</div>
+<details class="hmi-sources"><summary>בסיס התצוגה וגבולות המודל</summary><p>תצוגת תהליך שטוחה ורקע ניטרלי, עם צבע לחריגות: <a href="https://www.emersonautomationexperts.com/2023/discrete-automation/up-your-productivity-and-safety-with-high-performance-hmi-design-white-paper/" target="_blank" rel="noopener noreferrer">Emerson — High Performance HMI</a>. הפרדה בין מצב הסיבה, אישור ראייה ואיפוס: <a href="https://reference.opcfoundation.org/specs/OPC-10000-9/3" target="_blank" rel="noopener noreferrer">OPC Foundation — מונחי תקלות ותנאים</a>. לא נטענת עמידה בתקן ISA מלא.</p><p>תצוגת התהליך מפושטת; פרטי ארמטורה ואבטחה נמצאים <a href="#system">בתרשים ההנדסי</a>. מקור הקלטים, גבולות, זמני תגובה, תוכנית מינון, ספיקת מינימום, חיווי מגענים/הגנות ודרישות גישה טרם תוכננו ואומתו. אין בקר מחובר ואין שליחת פקודות. אובדן קישור אינו מוכיח שהמערכת הפיזית נעצרה.</p><p>מידע מוצר: <bdi>45 °C</bdi> הוא ייחוס ראשוני לשוקולד נוזלי שאינו מטומפר. הוא אינו ערך נמדד ואינו ערך כיוון למי החימום. <a href="concept-notes-he.html">גבולות הנדסיים ומידע להשלמה ←</a></p></details>
+<dialog id="hmi-faceplate" class="hmi-dialog"><header><h2 id="hmi-faceplate-title">פרטי ציוד</h2><button type="button" id="hmi-faceplate-close" aria-label="סגירת פרטי ציוד">סגירה</button></header><div id="hmi-faceplate-content" class="hmi-dialog-content"></div></dialog>
+</div>
+
+</main><footer>קונספט • הוכן לשלב המחשה בלבד • עודכן ב־16.10.2026 • אין שינוי בהגדרות ציוד או מערכת פיזית</footer>
+
+<script>
+(() => {
+  const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+  const panels = Array.from(document.querySelectorAll('.tab-panel'));
+  const defaultPanel = document.getElementById('visualization');
+  const syncFromHash = () => {
+    let hash = '';
+    try { hash = decodeURIComponent(location.hash.slice(1)); } catch {}
+    const target = document.getElementById(hash);
+    const panel = target?.closest('.tab-panel') || defaultPanel;
+    for (const item of panels) item.hidden = item !== panel;
+    for (const tab of tabs) {
+      const selected = tab.getAttribute('aria-controls') === panel.id;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    }
+    if(panel.id==='visualization')requestAnimationFrame(()=>document.getElementById('selected-model-frame').contentWindow?.postMessage('fit-selected-model',location.origin));
+    if (target && target !== panel) target.scrollIntoView({block:'start'});
+    else window.scrollTo({top:0,left:0,behavior:'instant'});
+  };
+  const select = (tab) => {
+    const hash = '#' + tab.getAttribute('aria-controls');
+    if (location.hash === hash) syncFromHash();
+    else location.hash = hash;
+  };
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowLeft') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowRight') next = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === undefined) return;
+      event.preventDefault();
+      tabs[next].focus();
+      select(tabs[next]);
+    });
+  });
+  window.addEventListener('hashchange', syncFromHash);
+  syncFromHash();
+  const components = Array.from(document.querySelectorAll('.component'));
+  const toggle = document.getElementById('toggle-components');
+  const syncToggle = () => {
+    const allOpen = components.every(item => item.open);
+    toggle.textContent = allOpen ? 'סגירת כל הפירוט' : 'פתיחת כל הפירוט';
+    toggle.setAttribute('aria-expanded', String(allOpen));
+  };
+  toggle.addEventListener('click', () => {
+    const open = !components.every(item => item.open);
+    components.forEach(item => { item.open = open; });
+    syncToggle();
+  });
+  components.forEach(item => item.addEventListener('toggle', syncToggle));
+})();
+</script>
+
+
+<script>
+/* HMI_MODEL_START */
+// Pure, nonnumeric local model. Every feedback field is an explicit simulated input.
+const HMI_ALARM_DEFS = Object.freeze({
+  flow:{title:'אובדן אישור זרימה',source:'FS01',node:'flow',priority:1,tone:'trip',heat:true,effect:'חימום ומינון חסומים; סחרור רק בניסיון התנעה מבוקר',action:'באובדן זרימה בזמן עבודה נדרשת עצירה. בכשל משאבה מזוהה מותר ניסיון רזרבה מוגבל רק בנתיב בטוח, עם הוכחת ריצה וזרימה. אין ניסיונות עיוורים; זמני ההוכחה טרם נקבעו.'},
+  branches:{title:'כל הענפים סגורים',source:'ממשק צרכנים',node:'consumers',priority:1,tone:'trip',heat:true,effect:'חימום ומינון חסומים; בקשת עצירת סחרור',action:'נדרש נתיב מאומת לפני הפעלה. פתרון Qmin ייקבע לפי הדוד, המשאבות, השסתומים והקירור לאחר עצירה.'},
+  pressure:{title:'לחץ נמוך',source:'PT01',node:'pressure',priority:1,tone:'trip',heat:true,effect:'חימום וסחרור חסומים',action:'לברר את הסיבה ולבדוק את PI01 המקומי; אין להשלים מים ללא גבול.'},
+  highpressure:{title:'לחץ גבוה',source:'PT01',node:'pressure',priority:1,tone:'trip',heat:true,fill:true,effect:'חימום והשלמה חסומים',action:'לבדוק לפי נוהל. לחץ מותר, מעטפת הלחצים והגנת מקטעים מבודדים עדיין דורשים תכנון.'},
+  pt:{title:'אות לחץ לא תקף',source:'PT01',node:'pressure',priority:1,tone:'trip',heat:true,fill:true,effect:'אין היתר חימום או מילוי אוטומטי',action:'לבדוק חיווט, חיישן וכיול. PI01 אינו מקור דיגיטלי חלופי.'},
+  pumpA:{title:'תקלה במשאבה A',source:'P01A',node:'pumpA',priority:2,tone:'warn',heat:false,effect:'בדיקת מעבר מוגבל לרזרבה',action:'רזרבה מותרת רק עם נתיב וכשירות מאומתים. נדרשים משוב ריצה ואישור FS01 בנפרד.'},
+  pumpB:{title:'תקלה במשאבה B',source:'P01B',node:'pumpB',priority:2,tone:'warn',heat:false,effect:'בדיקת מעבר מוגבל לרזרבה',action:'לא להסיק ריצה מפקודה. ללא רזרבה מוכנה נשארת נעילה ונדרשת פעולה.'},
+  noreserve:{title:'אין רזרבה מוכנה',source:'P01A / P01B',node:'pumpB',priority:3,tone:'warn',heat:false,effect:'זמינות הגיבוי אינה מאושרת',action:'לבדוק מצב אוטומטי, תקלה, בידוד וכשירות. אין דירוג הסתברות של כשלי המערכת.'},
+  manualpump:{title:'משאבה במצב ידני',source:'מצב משאבה',node:'pumpA',priority:2,tone:'warn',heat:true,effect:'רצף אוטומטי חסום',action:'לבדוק את המצב המקומי. העמדה אינה עוקפת בורר מקומי או הגנות.'},
+  startA:{title:'אין הוכחת התנעה / זרימה A',source:'P01A / FS01',node:'pumpA',priority:1,tone:'trip',heat:true,effect:'ניסיון נעצר; אין ניסיון אוטומטי נוסף',action:'לבדוק ריצה וזרימה. פסק זמן והליך חידוש ניסיון יוגדרו בתכנון.'},
+  startB:{title:'אין הוכחת התנעה / זרימה B',source:'P01B / FS01',node:'pumpB',priority:1,tone:'trip',heat:true,effect:'ניסיון נעצר; אין ניסיון אוטומטי נוסף',action:'לבדוק ריצה וזרימה. אין ספירה אינסופית של ניסיונות רזרבה.'},
+  uncommanded:{title:'משאבה פועלת ללא פקודה',source:'משוב מנוע',node:'pumpA',priority:1,tone:'trip',heat:true,effect:'חימום חסום; נדרשת בדיקה מקומית',action:'בקשת עצירה אינה הוכחת עצירה. לבדוק בורר, מגען ומשוב לפי נוהל בטוח.'},
+  overtemp:{title:'הגנת טמפרטורת־יתר',source:'THH_B01',node:'boiler',priority:1,tone:'trip',heat:true,local:true,effect:'הגנה עצמאית; איפוס מקומי נדרש',action:'לברר את הסיבה. אין איפוס הגנה או עקיפה מה-HMI; רצף קירור ייקבע עם היצרן.'},
+  boilertrip:{title:'הגנה עצמאית של הדוד',source:'B01 / K_HEAT',node:'boiler',priority:1,tone:'trip',heat:true,local:true,effect:'שרשרת היתר חסומה; איפוס מקומי נדרש',action:'לבדוק את האות המקומי ואת סיבת ההפסקה. איפוס נעילת תצוגה אינו מאפס חומרה.'},
+  lowwater:{title:'הגנת חוסר מים',source:'LW_B01',node:'boiler',priority:1,tone:'trip',heat:true,local:true,effect:'חימום וסחרור חסומים; איפוס מקומי נדרש',action:'מימוש לפי יצרן הדוד. PT01 לבדו אינו מחליף הגנת חוסר מים ייעודית.'},
+  vetclosed:{title:'VET אינו פתוח',source:'ZSO_VET',node:'expansion',priority:1,tone:'trip',heat:true,effect:'אין היתר חימום או סחרור מהעמדה',action:'לבדוק חיבור ET01, פתיחה וקיבוע VET וסגירת DVET בהפעלה רגילה.'},
+  vetunknown:{title:'פתיחת VET אינה מאומתת',source:'ZSO_VET',node:'expansion',priority:2,tone:'warn',heat:true,effect:'היתר חימום חסום',action:'משוב פתיחה מוצע אינו מחובר למפעל. יש לאמת בשטח; הוא אינו בודק ממברנה או לחץ גז.'},
+  quality:{title:'אות איכות מים לא תקף',source:'pH01 / EC01',node:'water',priority:2,tone:'warn',heat:false,effect:'מינון אוטומטי חסום',action:'לבדוק כיול ותנאי מדידה. מעכב קורוזיה נבדק בשיטה ייעודית; אין להסיק ריכוז מ-pH/EC.'},
+  makeup:{title:'זרימת השלמה בפקודת סגור',source:'FQ01 / XV1',node:'fill',priority:2,tone:'warn',heat:false,fill:true,effect:'נעילת השלמה ופקודת סגירה',action:'לבדוק קו ומדידה. פקודת סגירה אינה מוכיחה ששסתום תקוע אטום.'},
+  offline:{title:'אובדן קישור',source:'קישור עמדה–בקר',node:'boiler',priority:1,tone:'trip',heat:true,fill:true,effect:'מצבים לא ידועים; פקודות חסומות',action:'אין להסיק שהציוד הפיזי נעצר. אין אגירת פקודות או הפעלה אוטומטית בחזרת קישור.'},
+  powerreturn:{title:'חזרת מתח — שחזור נדרש',source:'לוח / בקר',node:'boiler',priority:2,tone:'warn',heat:true,fill:true,effect:'אין חידוש חימום אוטומטי',action:'לאמת כניסות, הגנות ומצבי ציוד. לאחר הסרת הסיבה ואיפוס נדרשת בקשה חדשה.'}
+});
+function createHmiModel() {
+  const unknownInputs=()=>({path:'unknown',pressure:'unknown',flow:'unknown',waterQuality:'unknown',vet:'unknown',safety:'unknown',overtemp:'unknown',lowwater:'unknown',boilerTrip:'unknown',heatFeedback:'unknown',makeupFlow:'unknown'});
+  const unknownPump=()=>({command:'unknown',feedback:'unknown',mode:'unknown',ready:'unknown',fault:'unknown'});
+  const state={input:'offline',role:'viewer',connected:false,physicalConnection:false,source:'none',inputs:unknownInputs(),pumps:{A:unknownPump(),B:unknownPump()},heatRequest:false,heatCommand:'unknown',fillCommand:'unknown',doseCommand:'unknown',manualConfirmed:false,tankService:false,localSafetyResetRequired:false,failover:{attemptUsed:false,phase:'idle',target:null},startPending:null,chemistry:{approved:false,limits:'unconfigured'},measurements:{TT01:null,TT02:null,PT01:null,pH01:null,EC01:null,TT_P:null},normalBands:'unconfigured',makeupCounter:{total:null,day:null,shift:null,cycles:null,duration:null},alarms:{},selected:null,events:[],sequence:0};
+  const log=text=>{state.events.unshift({n:++state.sequence,text,source:'local-demo'});};
+  const authorized=()=>state.role==='operator'||state.role==='technician';
+  const technician=()=>state.role==='technician';
+  const offline=()=>!state.connected;
+  const alarmKeys=()=>Object.keys(state.alarms).sort((a,b)=>HMI_ALARM_DEFS[a].priority-HMI_ALARM_DEFS[b].priority);
+  const latch=key=>{const old=state.alarms[key];if(!old||old.cause!=='active'){state.alarms[key]={active:true,cause:'active',ack:false};state.selected=key;log('תקלה: '+HMI_ALARM_DEFS[key].title);}else{old.active=true;old.cause='active';}if(HMI_ALARM_DEFS[key].local)state.localSafetyResetRequired=true;};
+  const clearCause=key=>{if(state.alarms[key]){state.alarms[key].active=false;state.alarms[key].cause='cleared';}};
+  const heatLocked=()=>alarmKeys().some(key=>HMI_ALARM_DEFS[key].heat);
+  const fillLocked=()=>offline()||state.inputs.pressure!=='permitted'||alarmKeys().some(key=>HMI_ALARM_DEFS[key].fill);
+  const anyRunning=()=>Object.values(state.pumps).some(p=>p.feedback==='running'&&p.fault==='clear'&&p.mode==='auto');
+  const pathSafe=()=>!offline()&&state.inputs.path==='available'&&state.inputs.pressure==='permitted'&&state.inputs.vet==='open'&&state.inputs.lowwater==='clear'&&state.manualConfirmed&&!state.tankService;
+  const reserveReady=id=>{const p=state.pumps[id];return !offline()&&p.ready==='ready'&&p.mode==='auto'&&p.fault==='clear'&&p.feedback==='stopped'&&p.command!=='run';};
+  const heatPermitted=()=>pathSafe()&&state.inputs.safety==='clear'&&!state.localSafetyResetRequired&&state.inputs.flow==='proven'&&anyRunning()&&!heatLocked();
+  const dosePermitted=()=>heatPermitted()&&state.inputs.waterQuality==='valid-demo'&&state.chemistry.approved&&state.chemistry.limits==='approved';
+  const stopHeat=()=>{state.heatRequest=false;state.heatCommand=offline()?'unknown':'off';};
+  const stopPumps=()=>{for(const p of Object.values(state.pumps))p.command=offline()?'unknown':'stop';state.startPending=null;if(state.failover.phase==='awaiting-run'||state.failover.phase==='awaiting-flow')state.failover.phase='stopped';};
+  const enforce=()=>{if(offline()){stopHeat();stopPumps();state.fillCommand='unknown';state.doseCommand='unknown';return;}state.fillCommand='close';state.doseCommand='inhibited';if(!pathSafe()||(state.inputs.safety!=='clear'&&!(anyRunning()&&state.inputs.flow==='proven')))stopPumps();if(!heatPermitted())stopHeat();};
+  const selected=()=>state.alarms[state.selected]?{key:state.selected,...state.alarms[state.selected]}:null;
+  const choose=key=>{if(!state.alarms[key])return false;state.selected=key;return true;};
+  const setRole=role=>{if(!['viewer','operator','technician'].includes(role))return false;state.role=role;log('תפקיד תצוגה מקומי: '+role+'; אין שינוי הרשאות במפעל.');return true;};
+  const normalInputs=()=>{state.connected=true;state.source='local-demo';state.inputs={path:'available',pressure:'permitted',flow:'absent',waterQuality:'valid-demo',vet:'open',safety:'clear',overtemp:'clear',lowwater:'clear',boilerTrip:'clear',heatFeedback:'off',makeupFlow:'absent'};for(const id of ['A','B'])state.pumps[id]={command:'stop',feedback:'stopped',mode:'auto',ready:'ready',fault:'clear'};state.heatRequest=false;state.heatCommand='off';state.fillCommand='close';state.doseCommand='inhibited';state.manualConfirmed=false;state.startPending=null;if(state.failover.phase!=='idle')state.failover.phase='stopped';};
+  const attemptStandby=failed=>{
+    const target=failed==='A'?'B':'A';
+    if(state.failover.attemptUsed){stopPumps();state.failover.phase='locked';log('ניסיון רזרבה נוסף חסום עד בדיקה והכנה מחדש.');return false;}
+    const otherTrip=alarmKeys().some(key=>HMI_ALARM_DEFS[key].heat&&key!=='flow');
+    if(!pathSafe()||otherTrip||state.inputs.safety!=='clear'||state.localSafetyResetRequired||!reserveReady(target)){state.failover.phase='blocked';if(!reserveReady(target))latch('noreserve');log('אין היתר לניסיון רזרבה: נדרשים נתיב, הגנות וכשירות.');return false;}
+    state.failover={attemptUsed:true,phase:'awaiting-run',target};state.pumps[target].command='run';state.startPending={target,kind:'standby'};log('ניסיון רזרבה יחיד: בקשת '+target+'; ממתינים למשוב ריצה ול-FS01 בנפרד.');return true;
+  };
+  const scenario=key=>{
+    const keys=['normal','snapshot','offline','powerreturn','flow','branches','pumpA','pumpB','noreserve','bothpumps','manualpump','startfailure','uncommanded','overtemp','highpressure','boilertrip','lowwater','pressure','pt','vetclosed','vetunknown','quality','makeup'];
+    if(!authorized()||!keys.includes(key))return false;
+    if(key==='snapshot'){
+      if(alarmKeys().length||state.tankService||state.localSafetyResetRequired){log('תמונת עבודה לא נטענה: יש נעילות או שירות; אין עקיפת שחזור.');return false;}
+      normalInputs();state.input=key;state.manualConfirmed=true;
+      // Complete explicit input fixture, not feedback inferred from command execution.
+      state.pumps.A.command='run';state.pumps.A.feedback='running';state.inputs.flow='proven';state.heatRequest=true;state.heatCommand='on';state.inputs.heatFeedback='on';
+      log('נטענה תמונת עבודה מקומית: משוב A, FS01, חימום ובדיקת מכל נמסרו כקלטים מוכנים.');return true;
+    }
+    if(key==='normal'){
+      normalInputs();state.input=key;for(const id of alarmKeys())clearCause(id);enforce();log('אותות שוחזרו במצב עצור. נעילות, צורך באיפוס מקומי ומונה ניסיון רזרבה נשמרו; אין הפעלה.');return true;
+    }
+    state.input=key;
+    if(key==='offline'){
+      state.connected=false;state.source='none';state.inputs=unknownInputs();for(const id of ['A','B'])state.pumps[id]=unknownPump();state.manualConfirmed=false;for(const alarm of Object.values(state.alarms)){alarm.cause='unknown';alarm.active=true;}latch('offline');enforce();log('קישור אבד: המשובים לא ידועים, אין פקודות שנשמרות לחזרה.');return true;
+    }
+    if(key==='powerreturn'){
+      state.connected=true;state.source='local-demo';state.inputs=unknownInputs();for(const id of ['A','B'])state.pumps[id]={...unknownPump(),command:'stop'};state.manualConfirmed=false;for(const alarm of Object.values(state.alarms)){alarm.cause='unknown';alarm.active=true;}latch('powerreturn');enforce();log('חזרת מתח: בקשות חדשות חסומות עד שחזור; מצב פיזי טרם אומת.');return true;
+    }
+    if(offline())normalInputs();
+    state.input=key;
+    if(key==='flow'){state.inputs.flow='absent';latch('flow');stopPumps();}
+    if(key==='branches'){state.inputs.path='closed';state.inputs.flow='absent';latch('branches');latch('flow');stopPumps();}
+    if(key==='pumpA'||key==='pumpB'){
+      const failed=key==='pumpA'?'A':'B',wasDuty=state.pumps[failed].feedback==='running'||state.pumps[failed].command==='run';state.pumps[failed].fault='fault';state.pumps[failed].feedback='stopped';state.pumps[failed].ready='unavailable';state.pumps[failed].command='stop';latch(key);if(wasDuty){state.inputs.flow='absent';latch('flow');stopHeat();attemptStandby(failed);}else{latch('noreserve');if(state.failover.attemptUsed)state.failover.phase='locked';log('כשל במשאבה שאינה עובדת: אין הסקת אובדן זרימה מהתקלה לבדה.');}
+    }
+    if(key==='noreserve'){const id=state.pumps.B.feedback==='running'?'A':'B';state.pumps[id].ready='unavailable';latch('noreserve');if(state.startPending?.target===id){stopPumps();state.failover.phase='blocked';}}
+    if(key==='bothpumps'){for(const id of ['A','B']){state.pumps[id].fault='fault';state.pumps[id].ready='unavailable';state.pumps[id].feedback='stopped';latch('pump'+id);}state.inputs.flow='absent';latch('flow');latch('noreserve');stopPumps();state.failover.phase='blocked';}
+    if(key==='manualpump'){state.pumps.A.mode='manual';state.pumps.A.ready='unavailable';latch('manualpump');stopPumps();}
+    if(key==='startfailure'){const id=state.startPending?.target||state.failover.target||'A';latch('start'+id);state.failover.attemptUsed=true;stopPumps();state.failover.phase='failed';}
+    if(key==='uncommanded'){state.pumps.A.command='stop';state.pumps.A.feedback='running';latch('uncommanded');stopPumps();}
+    if(['overtemp','boilertrip','lowwater'].includes(key)){state.inputs[key==='boilertrip'?'boilerTrip':key]='trip';state.inputs.safety='trip';latch(key);}
+    if(key==='highpressure'){state.inputs.pressure='high';latch(key);}
+    if(key==='pressure'){state.inputs.pressure='low';latch(key);}
+    if(key==='pt'){state.inputs.pressure='invalid';latch(key);}
+    if(key==='vetclosed'||key==='vetunknown'){state.inputs.vet=key==='vetclosed'?'closed':'unknown';state.manualConfirmed=false;latch(key);}
+    if(key==='quality'){state.inputs.waterQuality='invalid';latch(key);}
+    if(key==='makeup'){state.inputs.makeupFlow='present';latch(key);}
+    enforce();return true;
+  };
+  const manual=value=>{if(!technician()||offline()||(value&&(state.inputs.vet!=='open'||state.tankService)))return false;state.manualConfirmed=Boolean(value);enforce();log(value?'נרשם אישור ידני מקומי לחיבור ET01, VET ו-DVET.':'אישור ידני בוטל; אין היתר הפעלה.');return true;};
+  const service=value=>{if(!technician()||offline())return false;state.tankService=Boolean(value);state.manualConfirmed=false;stopHeat();stopPumps();enforce();log(value?'מצב שירות למכל: בקשות הפעלה חסומות.':'יציאה משירות; נדרשת בדיקה ובקשת הפעלה חדשה.');return true;};
+  const canStartPump=id=>authorized()&&pathSafe()&&!heatLocked()&&!state.localSafetyResetRequired&&state.inputs.safety==='clear'&&reserveReady(id)&&!Object.values(state.pumps).some(p=>p.feedback==='running'||p.command==='run');
+  const startPump=id=>{if(!['A','B'].includes(id)||!canStartPump(id))return false;state.pumps[id].command='run';state.startPending={target:id,kind:'operator'};log('בקשת סחרור '+id+'; לא התקבלו עדיין משוב ריצה ו-FS01.');return true;};
+  const canProvePump=id=>authorized()&&!offline()&&state.pumps[id].command==='run'&&state.pumps[id].mode==='auto'&&state.pumps[id].fault==='clear'&&state.pumps[id].feedback!=='running';
+  const provePump=id=>{if(!['A','B'].includes(id)||!canProvePump(id))return false;state.pumps[id].feedback='running';if(state.failover.target===id&&state.failover.phase==='awaiting-run')state.failover.phase='awaiting-flow';log('קלט עצמאי מקומי: '+id+' בריצה; זה אינו אישור זרימה.');enforce();return true;};
+  const canProveFlow=()=>authorized()&&!offline()&&pathSafe()&&anyRunning()&&Object.values(state.pumps).some(p=>p.command==='run')&&state.inputs.flow!=='proven';
+  const proveFlow=()=>{if(!canProveFlow())return false;state.inputs.flow='proven';clearCause('flow');if(state.startPending&&state.pumps[state.startPending.target].feedback==='running'){if(state.startPending.kind==='standby')state.failover.phase='proven';state.startPending=null;}log('קלט עצמאי מקומי: FS01 אישר זרימה. נעילת החימום נשמרת עד איפוס; אין הפעלה אוטומטית.');enforce();return true;};
+  const proveStopped=()=>{if(!authorized()||offline()||Object.values(state.pumps).some(p=>p.command==='run'))return false;for(const p of Object.values(state.pumps))p.feedback='stopped';state.inputs.flow='absent';clearCause('uncommanded');log('קלט מקומי: שתי המשאבות עצרו.');enforce();return true;};
+  const failStart=()=>{if(!authorized()||offline()||!state.startPending)return false;return scenario('startfailure');};
+  const canStart=()=>authorized()&&heatPermitted()&&!state.heatRequest;
+  const start=()=>{if(!canStart())return false;state.heatRequest=true;state.heatCommand='on';log('בקשת חימום מקומית; משוב החימום לא השתנה.');return true;};
+  const stop=()=>{if(!authorized()||offline()||!state.heatRequest)return false;stopHeat();log('בקשת כיבוי חימום; ממתינים למשוב נפרד. רצף קירור אינו מוגדר כאן.');return true;};
+  const proveHeat=on=>{if(!authorized()||offline()||(on&&(!state.heatRequest||state.heatCommand!=='on'||!heatPermitted())))return false;state.inputs.heatFeedback=on?'on':'off';log('קלט עצמאי מקומי: חימום '+(on?'פעיל':'כבוי')+'.');return true;};
+  const canObserveLocalReset=()=>technician()&&!offline()&&state.localSafetyResetRequired&&['overtemp','lowwater','boilerTrip'].every(k=>state.inputs[k]==='clear');
+  const observeLocalReset=()=>{if(!canObserveLocalReset())return false;state.localSafetyResetRequired=false;state.inputs.safety='clear';log('קלט בדיקה בלבד: דווח איפוס ידני שבוצע בשטח. ה-HMI לא איפס הגנה.');return true;};
+  const acknowledge=()=>{const alarm=selected();if(!authorized()||!alarm||alarm.ack)return false;state.alarms[alarm.key].ack=true;log('אישור ראייה: '+HMI_ALARM_DEFS[alarm.key].title+'; ללא איפוס.');return true;};
+  const canReset=()=>{const alarm=selected();return Boolean(technician()&&!offline()&&alarm&&alarm.cause==='cleared'&&alarm.ack&&(!HMI_ALARM_DEFS[alarm.key].local||!state.localSafetyResetRequired));};
+  const reset=()=>{if(!canReset())return false;const key=state.selected;delete state.alarms[key];state.selected=alarmKeys()[0]||null;log('איפוס נעילת '+HMI_ALARM_DEFS[key].title+'; ללא הפעלה.');enforce();return true;};
+  const canRearm=()=>technician()&&pathSafe()&&state.failover.attemptUsed&&!heatLocked()&&!state.heatRequest&&!state.localSafetyResetRequired&&['A','B'].every(id=>reserveReady(id))&&!state.alarms.pumpA&&!state.alarms.pumpB&&!state.startPending;
+  const rearmFailover=()=>{if(!canRearm())return false;state.failover={attemptUsed:false,phase:'idle',target:null};log('ניסיון רזרבה הוכן מחדש אחרי בדיקה; ללא הפעלת משאבה.');return true;};
+  log('נטען במצב לא מחובר. אין מדידות, גבולות נורמה או משובים פיזיים.');
+  return {state,offline,authorized,technician,alarmKeys,heatLocked,fillLocked,selected,choose,setRole,scenario,manual,service,pathSafe,reserveReady,heatPermitted,dosePermitted,canStartPump,startPump,canProvePump,provePump,canProveFlow,proveFlow,proveStopped,failStart,canStart,start,stop,proveHeat,canObserveLocalReset,observeLocalReset,acknowledge,canReset,reset,canRearm,rearmFailover};
+}
+/* HMI_MODEL_END */
+(() => {
+  const root=document.getElementById('technician');if(!root)return;
+  const model=createHmiModel(),get=id=>document.getElementById(id),put=(id,value)=>{const el=get(id);if(el)el.textContent=value;};
+  const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const label={unknown:'לא ידוע',running:'בריצה',stopped:'עצורה',run:'הפעלה',stop:'עצירה',auto:'אוטומטי',manual:'ידני',ready:'מוכנה',unavailable:'לא זמינה',clear:'ללא תקלה',fault:'תקלה',on:'פעיל',off:'כבוי',close:'סגור',absent:'אין',present:'יש',proven:'מאושר',open:'פתוח',closed:'סגור',permitted:'קלט היתר',low:'נמוך',high:'גבוה',invalid:'לא תקף','valid-demo':'קלט תקף',trip:'סיבה פעילה'};
+  const t=v=>label[v]||v;
+  const phaseLabels={idle:'טרם בוצע',blocked:'אין תנאים לניסיון',locked:'ניסיון נוסף חסום',stopped:'נעצר; אין חידוש אוטומטי',failed:'ניסיון נכשל','awaiting-run':'ממתין למשוב ריצה','awaiting-flow':'ממתין ל-FS01',proven:'ריצה וזרימה אושרו; חימום לא מתחדש אוטומטית'};
+  let currentFaceplate=null;
+  const announce=message=>put('hmi-announcement',message);
+  const showView=name=>{root.querySelectorAll('[data-hmi-screen]').forEach(el=>el.hidden=el.dataset.hmiScreen!==name);root.querySelectorAll('[data-hmi-view]').forEach(el=>el.setAttribute('aria-pressed',String(el.dataset.hmiView===name)));};
+  const pumpStatus=id=>{const p=model.state.pumps[id];if(model.offline())return 'לא ידוע';if(p.fault==='fault')return 'תקלה';if(p.mode==='manual')return 'ידני';if(p.feedback==='running')return 'בריצה';if(p.feedback==='unknown')return 'לא ידוע';if(p.command==='run')return 'ממתינה למשוב';return p.ready==='ready'?'המתנה':'לא זמינה';};
+  const pumpRole=id=>{const p=model.state.pumps[id];return model.offline()?'—':p.feedback==='running'?'אוטומטי':model.reserveReady(id)?'גיבוי מוכן':p.command==='run'?'פקודה בלבד':'רזרבה חסרה';};
+  const rows=items=>'<dl class="hmi-rows">'+items.map(([a,b])=>'<div><dt>'+a+'</dt><dd>'+b+'</dd></div>').join('')+'</dl>';
+  const commandButton=(id,text,enabled)=>'<button type="button" id="'+id+'" data-hmi-command="'+id+'" data-permitted="'+enabled+'" disabled>'+text+'</button>';
+  const commandArea=html=>'<div class="hmi-command-area"><label class="hmi-confirmation"><input type="checkbox" id="hmi-command-confirm" '+(!model.authorized()||model.offline()?'disabled':'')+'>אישור הפעולה המקומית שנבחרה</label><div class="hmi-controls">'+html+'</div><small>בקשה אינה משוב. הרשאות אלה אינן אימות זהות של המפעל.</small></div>';
+  function faceplateData(key){
+    const s=model.state,i=s.inputs,off=model.offline(),pumpTable='<div class="hmi-table-wrap"><table class="hmi-table"><thead><tr><th>משאבה</th><th>פקודה / ריצה</th><th>מצב / תקלה</th><th>כשירות</th></tr></thead><tbody>'+['A','B'].map(id=>{const p=s.pumps[id];return '<tr><td>P01'+id+'</td><td>'+t(p.command)+' / '+t(p.feedback)+'</td><td>'+t(p.mode)+' / '+t(p.fault)+'</td><td>'+t(p.ready)+'</td></tr>';}).join('')+'</tbody></table></div>';
+    if(key==='boiler')return {title:'B01 · דוד וחימום',body:rows([['חימום לפי משוב K_HEAT',t(i.heatFeedback)],['בקשה מקומית / פקודה',s.heatRequest?'יש / '+t(s.heatCommand):'אין / '+t(s.heatCommand)],['היתר תהליך',model.heatPermitted()?'קיים':'חסום / לא מאומת'],['שרשרת הגנות עצמאיות',t(i.safety)],['מצב בורר הדוד','לא הוגדר אות'],['טמפרטורת מים / ערך כיוון','— / טרם נקבע'],['שלבים פעילים / הספק','— / —']])+'<p class="hmi-note">K_HEAT מייצג משוב כוח נפרד מוצע, ולא ביט תוכנה של הבקשה. THH_B01 ו-LW_B01 פועלים לפי יצרן הדוד ללא תלות במסך. איפוס הגנות נעשה מקומית; אין עקיפה כאן. קירור לאחר עצירה תלוי בנתיב ובדרישות היצרן.</p>'+commandArea(commandButton('hmi-start','בקשת חימום',model.canStart())+commandButton('hmi-stop','בקשת כיבוי חימום',model.authorized()&&!off&&s.heatRequest))};
+    if(['pumps','pumpA','pumpB'].includes(key))return {title:'P01A / P01B · סחרור ורזרבה',body:pumpTable+rows([['אישור FS01',t(i.flow)],['רצף ניסיון רזרבה',phaseLabels[s.failover.phase]],['שעות / התנעות A','— / —'],['שעות / התנעות B','— / —'],['תפקיד / מועד תורנות','לפי משוב; לוח תורנות טרם יושם']])+'<p class="hmi-note">ניסיון רזרבה יחיד מותנה בנתיב ובכשירות. פקודת הפעלה, משוב ריצה ו-FS01 נפרדים. כל הענפים סגורים או אובדן זרימה: חסימת חימום/מינון ובקשת עצירה, ללא ניסיונות חוזרים. הגדרת Qmin, השהיות וקירור נשארה פתוחה. ברזי בידוד, אל־חוזרים, DPA1/DPA2/DPB1/DPB2 ואוורור VPA/VPB לפי היצרן מופיעים בתרשים.</p>'+commandArea(commandButton('hmi-pump-A','בקשת סחרור A',model.canStartPump('A'))+commandButton('hmi-pump-B','בקשת סחרור B',model.canStartPump('B')))};
+    if(['expansion','pressure'].includes(key))return {title:'ET01 / PT01 · חיבור והיתרים',body:rows([['PT01 · לחץ מערכת','— bar · '+t(i.pressure)],['PI01','מד מקומי, ללא ערך דיגיטלי'],['ZSO_VET · חיווי פתיחה מוצע',t(i.vet)],['בדיקה ידנית',s.manualConfirmed?'דווחה':'טרם אושרה'],['מצב שירות',s.tankService?'פעיל':'לא נבחר'],['לחץ גז / תקינות ממברנה','אינם נמדדים ב-PT01']])+'<p>T1 נמצא לפני היניקה המשותפת. ET01 מחובר בשלוחה צדדית אחת דרך T2, VET ומחבר פירוק; T2 מחוץ לגוף המכל, ומי השלמה נכנסים אליו דרך CV1. אין אל־חוזר בשלוחת ET01.</p><p>בהפעלה רגילה VET פתוח ומקובע ו-DVET סגור. ZSO_VET אינו מחליף בדיקה וקיבוע מכני. תנוחת ההתקנה, קדם־הלחץ והתמיכה ייקבעו לפי היצרן. גבולות PT ומגמות טרם הוגדרו; אין היסטוריית מדידות.</p><p class="hmi-note"><strong>נתון ראשוני · לא מאומת:</strong> עד 2 bar למעטפות מפי טכנאי, ללא דרכון; יחסי/מוחלט, עבודה/מרבי ותחולה על כל השישה טרם ידועים. אין בכך ערך כיוון או קריאת PT01. נדרשת בדיקת לחץ מקומי והגנה בכושר פריקה מלא. <a href="concept-notes-he.html#pressure">לחץ, ספיקה ואנרגיה ←</a></p><a href="assets/boiler-expansion-detail-he-v4.svg" target="_blank" rel="noopener">תקריב עדכני קונספט ←</a>'};
+    if(key==='fill')return {title:'XV1 / FQ01 · השלמה מבוקרת',body:rows([['פקודת XV1',t(s.fillCommand)],['חיווי מיקום / אטימה','לא הוגדר / לא נמדד'],['עדות FQ01',t(i.makeupFlow)],['נפח כולל / יממה / משמרת','— / — / — L'],['נעילת מילוי',model.fillLocked()?'חסומה':'תוכנית מילוי טרם הוגדרה']])+'<p>אין מילוי אוטומטי פעיל במודל. המימוש נדרש להגביל זמן ונפח מצטברים גם במחזורים חוזרים, לסגור בחריגה/אות PT לא תקף/אובדן מתח ולהתריע על זרימה בפקודת סגור. סגירה בפקודה אינה הוכחת אטימה.</p><p>WT1 לפי בדיקות מים; RO עשוי לדרוש אגירה והחזרת לחץ. BF1, סוג ההפרדה, לחץ זמין וניקוזי בדיקה/פריקה טעונים תכנון. התקריב אינו הוכחת התאמה של RO בלחץ הקו.</p>'};
+    if(['chemistry','water'].includes(key))return {title:'טיפול במים ומינון',body:rows([['pH / EC','— / — · '+t(i.waterQuality)],['תוכנית / גבולות מינון','טרם אושרו'],['היתר מינון',model.dosePermitted()?'קיים':'חסום'],['ריכוז מעכב קורוזיה','בדיקה ייעודית / מעבדה'],['מכל תוסף / מפלס','אין אות מחובר']])+'<p>DOSE_T הוא מחבר הזרקה לקו החזרה, ואינו מכל הכימיקל. מינון מותנה במשוב ריצה, FS01 תקף, תוכנית מאושרת וגבולות. איכות pH/EC לבדה אינה מכתיבה מינון מעכב קורוזיה.</p><p>בשל סיכון דליפה למוצר, חומרים וריכוזים ייקבעו רק עם הערכת התאמה וחומרי מבנה. קשיות מקו השלמה, אם תימדד בטיטרציה, יוצאת לניקוז ואינה חוזרת למעגל.</p><a href="assets/water-treatment-control-he.html">מחקר המים והבקרה ←</a>'};
+    if(key==='safety')return {title:'הגנות עצמאיות ומעטפת לחץ',body:rows([['THH_B01',t(i.overtemp)],['LW_B01',t(i.lowwater)],['חיווי הגנה / K_HEAT',t(i.boilerTrip)+' / '+t(i.heatFeedback)],['איפוס מקומי',off?'לא ידוע':s.localSafetyResetRequired?'נדרש':'אין דרישה פעילה בקלט']])+'<p>הגנות חומרה אינן תלויות ב-HMI. מימוש ואותות יוגדרו עם יצרן הדוד. לחץ תהליך PT01 אינו תחליף לכל הגנה עצמאית.</p><p>PSV מחובר ישירות לדוד ללא ברז ניתוק ביניהם; הפריקה לממשק חיצוני בטוח שטרם תוכנן. PSV של הדוד אינו הוכחה להגנת כל מעטפת או מקטע מבודד. מעטפת לחצים, התפשטות נוזל כלוא ופתרונות לכל מקטע טעונים בדיקה.</p><p class="hmi-note"><strong>נתון ראשוני · לא מאומת:</strong> עד 2 bar למעטפות מפי טכנאי, ללא דרכון; יחסי/מוחלט, עבודה/מרבי ותחולה על כל השישה טרם ידועים. אין בכך ערך כיוון או קריאת PT01. נדרשת בדיקת לחץ מקומי והגנה בכושר פריקה מלא. <a href="concept-notes-he.html#pressure">לחץ, ספיקה ואנרגיה ←</a></p><a href="concept-notes-he.html">תגובות עקרוניות ונתונים חסרים ←</a>'};
+    if(key==='consumers')return {title:'צרכנים חיצוניים · S1…S6 / R1…R6',body:rows([['נתיב הידראולי',t(i.path)],['TT_R1…TT_R6','מוצעים; ללא מדידות'],['TT-P · טמפרטורת מוצר','ממשק עתידי; אין מדידה'],['ΔT / איזון ענפים','— / טרם אומת']])+'<p>שישה זוגות יציאה וחזרה מייצגים ממשקים מחוץ לחדר. הצרכנים עצמם אינם מצוירים ואין מעקף ישיר אספקה–חזרה. BV1…BV6 הם אביזרי איזון עם נקודות בדיקה בתרשים.</p><p>FS01 המשותף אינו מוכיח זרימה בכל ענף. מצב כל הענפים במודל הוא קלט תרחיש בלבד; שיטת אימות מצב השסתומים/הנתיב עדיין דורשת תכנון. אין מדידת מוצר מחוברת; 45 °C הוא ייחוס ראשוני למוצר בלבד. סוג השוקולד, ויסות ענפים וטמפרטורת מים טרם הוגדרו.</p>'};
+    if(key==='temperature')return {title:'TT01 / TT02 · מדידה ומגמות',body:rows([['TT01 · אחרי המשאבות ו-FS01','— °C'],['TT02 · חזרה','— °C'],['ΔT','—'],['תחומי נורמה / ספים','טרם נקבעו'],['היסטוריית מדידה','לא קיימת']])+'<p>אין כאן ערכי תהליך או ציר זמן מלאכותיים. רצועות ההמחשה משובצות כי גבולות הנורמה לא הוגדרו. ΔT יחושב רק מזוג מדידות תקפות ומתואמות; הוא אינו זמין כעת.</p><div class="hmi-empty-chart" style="min-height:120px">אין נתונים להצגת מגמה</div>'};
+    if(key==='flow')return {title:'FS01 · הוכחת זרימה משותפת',body:rows([['קלט זרימה',t(i.flow)],['משוב ריצה עצמאי',Object.values(s.pumps).some(p=>p.feedback==='running')?'התקבל':'לא מאומת']])+'<p>זהו אישור דיגיטלי ולא מד ספיקה. פקודת משאבה אינה הוכחת ריצה, וריצה אינה הוכחת זרימה. אובדן אישור נועל חימום ומינון ומבקש עצירה; כל הענפים סגורים מונע ניסיון רזרבה. פתרון Qmin חייב להתבסס על נתוני המכלול.</p>'};
+    if(key==='air')return {title:'AS01 · הפרדת אוויר',body:'<p>נמצא ביציאת הדוד לפני T1 והיניקה המשותפת. פורק האוויר, תנוחת ההתקנה ודרך השירות לפי היצרן; אינו קו חזרה ואינו חיישן מצב אוויר. אין חיווי תקינות מחובר.</p>'};
+    if(key==='dirt')return {title:'DS01 · הפרדת משקעים',body:'<p>בקו החזרה: VDSI/VDSO לבידוד ו-DDS01 לפריקה/ניקוי בתרשים. טיפול לפי נוהל ויצרן; יעד הפריקה הבטוח ותנאי בידוד מקטע עדיין טעונים תכנון. אין חיווי ניקיון אוטומטי מחובר.</p>'};
+    return {title:'תפקידי גישה וגבולות',body:'<p>צופה: צפייה בלבד. מפעיל: בקשות תפעול ואישור ראייה. טכנאי: בדיקות, שירות ואיפוס נעילת תהליך לאחר הסרת הסיבה. בחירת התפקיד המקומית אינה חשבון משתמש או אימות הרשאה במפעל.</p><p>לכל בקשה נדרש אישור בחלון הציוד. אין עקיפת הגנה, שינוי ערך תכן או מינון בלתי מוגבל. בהיעדר קישור אין בקשות שנשמרות לביצוע מאוחר. איפוס אינו התנעה; איפוס חומרה מבוצע מקומית בלבד.</p><p>ספים, זמני תגובה, תורנות, לוח תחזוקה, הסתרת תקלות, שמירת נתונים וחיבור לבקר אינם שירותים פעילים בדף.</p>'};
+  }
+  const dialog=get('hmi-faceplate');
+  function renderFaceplate(){if(!currentFaceplate)return;const data=faceplateData(currentFaceplate);put('hmi-faceplate-title',data.title);get('hmi-faceplate-content').innerHTML=data.body;}
+  function render(){
+    const s=model.state,i=s.inputs,off=model.offline(),ids=model.alarmKeys(),alarm=model.selected();get('hmi-shell').classList.toggle('hmi-offline',off);get('hmi-role').value=s.role;get('hmi-scenario').value=s.input;get('hmi-scenario').disabled=!model.authorized();get('hmi-recover').disabled=!model.authorized();
+    put('hmi-source',off?'אין נתונים עדכניים':s.input==='snapshot'?'מקור: תמונת קלטים מקומית':'מקור: קלטי בדיקה מקומיים');put('hmi-connection',off?'קישור: לא מחובר':'קישור פיזי: אינו קיים');
+    put('hmi-system-state',off?'מצב המתקן לא ידוע':model.heatLocked()?'חימום נעול':s.tankService?'מצב שירות':i.heatFeedback==='on'?(s.heatCommand==='on'?'חימום פעיל · משוב':'משוב חימום פעיל ללא בקשה'):s.heatRequest?'ממתין למשוב חימום':model.heatPermitted()?'ניתן לבקש חימום':'ממתין לתנאי היתר');
+    get('hmi-alert-strip').innerHTML=ids.length?ids.map(id=>'<button type="button" data-hmi-pick="'+id+'" data-tone="'+HMI_ALARM_DEFS[id].tone+'">! '+esc(HMI_ALARM_DEFS[id].source)+(s.alarms[id].ack?' · נצפה':'')+'</button>').join(''):'<button type="button" data-hmi-view="operations">'+(off?'קלטים לא זמינים':'אין נעילות פתוחות')+'</button>';
+    put('mimic-heat',t(i.heatFeedback));get('mimic-heat').classList.toggle('deviation',i.heatFeedback==='on'&&s.heatCommand!=='on');put('mimic-boiler-sp','SP — °C');put('mimic-protections','הגנות: '+(i.safety==='clear'?(s.localSafetyResetRequired?'איפוס נדרש':'קלט היתר'):t(i.safety)));
+    for(const id of ['A','B']){put('mimic-pump'+id,pumpStatus(id));put('mimic-pump'+id+'-role',pumpRole(id));root.querySelector('[data-hmi-equipment="pump'+id+'"]').dataset.running=String(!off&&s.pumps[id].feedback==='running');get('mimic-pump'+id).classList.toggle('deviation',s.pumps[id].fault==='fault'||s.pumps[id].mode==='manual');}
+    put('mimic-flow',t(i.flow));put('mimic-pressure',t(i.pressure));put('mimic-vet',i.vet==='unknown'?'?':t(i.vet));put('mimic-fill','פק׳ '+t(s.fillCommand)+' · זר׳ '+t(i.makeupFlow));put('mimic-path',i.path==='available'?'קלט: נתיב זמין':i.path==='closed'?'כל הענפים סגורים':'מצב נתיב לא ידוע');
+    put('hmi-reserve-top',off?'רזרבה: לא ידוע':['A','B'].some(id=>model.reserveReady(id))?'רזרבה מוכנה':'אין רזרבה מוכנה');put('hmi-reserve',off?'רזרבה: לא ידוע':(['A','B'].some(id=>model.reserveReady(id))?'רזרבה מוכנה':'אין רזרבה מוכנה')+' · '+phaseLabels[s.failover.phase]);
+    put('hmi-pressure-trend',i.pressure==='invalid'?'איכות לא תקפה · אין מגמה':'אין היסטוריית מדידות');
+    root.querySelectorAll('[data-alarm-source]').forEach(el=>{const keys=ids.filter(key=>HMI_ALARM_DEFS[key].node===el.dataset.alarmSource);el.toggleAttribute('hidden',!keys.length);if(keys.length){el.dataset.tone=keys.some(key=>HMI_ALARM_DEFS[key].tone==='trip')?'trip':'warn';el.dataset.hmiPick=keys[0];el.setAttribute('role','button');el.setAttribute('tabindex','0');el.setAttribute('aria-label',HMI_ALARM_DEFS[keys[0]].title);}else{delete el.dataset.hmiPick;el.removeAttribute('tabindex');}});
+    put('hmi-failover',phaseLabels[s.failover.phase]);put('hmi-heat-pair',(s.heatRequest?'יש':'אין')+' / '+t(i.heatFeedback));
+    for(const id of ['A','B'])get('hmi-proof-'+id).disabled=!model.canProvePump(id);get('hmi-proof-flow').disabled=!model.canProveFlow();get('hmi-proof-on').disabled=!model.authorized()||off||!s.heatRequest||!model.heatPermitted()||i.heatFeedback==='on';get('hmi-proof-off').disabled=!model.authorized()||off||i.heatFeedback==='off';get('hmi-proof-stopped').disabled=!model.authorized()||off||Object.values(s.pumps).some(p=>p.command==='run')||Object.values(s.pumps).every(p=>p.feedback==='stopped');get('hmi-start-failure').disabled=!model.authorized()||off||!s.startPending;
+    put('hmi-water-ph',t(i.waterQuality));put('hmi-water-ec',t(i.waterQuality));put('hmi-fill-command',t(s.fillCommand));put('hmi-fill-evidence',t(i.makeupFlow));put('hmi-fill-status',model.fillLocked()?'נעולה / אין היתר':'תוכנית מילוי טרם הוגדרה');put('hmi-dose-status',off?'מצב לא ידוע; בקשה אינה זמינה':i.waterQuality==='invalid'?'חסומה · אות לא תקף ותוכנית לא מאושרת':'חסומה · תוכנית וגבולות לא אושרו');
+    get('hmi-manual-check').checked=s.manualConfirmed;get('hmi-manual-check').disabled=!model.technician()||off||s.tankService||i.vet!=='open';get('hmi-tank-service').checked=s.tankService;get('hmi-tank-service').disabled=!model.technician()||off;put('hmi-vet-proof',t(i.vet));put('hmi-local-reset-status',off?'לא ידוע':s.localSafetyResetRequired?'נדרש — בשטח':'אין דרישה פעילה בקלט');put('hmi-rearm-status',s.failover.attemptUsed?'ניסיון נוצל; נדרשת בדיקה':'ניסיון לא נוצל');get('hmi-local-reset').disabled=!model.canObserveLocalReset();get('hmi-rearm').disabled=!model.canRearm();
+    put('hmi-alarm-count',ids.length+' פתוחות');get('hmi-ack').disabled=!model.authorized()||!alarm||alarm.ack;get('hmi-reset').disabled=!model.canReset();
+    if(alarm){const d=HMI_ALARM_DEFS[alarm.key];put('hmi-alarm-title',d.title);put('hmi-alarm-meta',d.source+' · עדיפות '+d.priority+' (ראשונית)');put('hmi-alarm-copy',d.effect);put('hmi-alarm-action',d.action);get('hmi-alarm-badges').innerHTML='<span class="hmi-tone '+d.tone+'">'+(alarm.cause==='unknown'?'הסיבה אינה ידועה':alarm.active?'סיבה פעילה':'הסיבה הוסרה; נעילה נשמרה')+'</span><span class="hmi-tone">'+(alarm.ack?'נצפה':'טרם נצפה')+'</span>';put('hmi-reset-help',off?'אישור ראייה מקומי בלבד; איפוס חסום.':d.local&&s.localSafetyResetRequired?'נדרש איפוס ידני בשטח לאחר הסרת הסיבה. העמדה אינה מאפסת הגנה.':alarm.active?'איפוס חסום כל עוד הסיבה פעילה או לא ידועה.':!alarm.ack?'יש לאשר ראייה לפני איפוס.':'איפוס נעילה אינו מפעיל חימום או סחרור.');}
+    else{put('hmi-alarm-title',off?'אין מידע תפעולי מאומת':'אין נעילות פתוחות');put('hmi-alarm-meta','מקור נתונים: '+(off?'לא זמין':'קלט מקומי'));put('hmi-alarm-copy','המצב הפיזי של המפעל אינו נבדק בדף.');put('hmi-alarm-action','לבחינת הרצף בחרו תרחיש מקומי מפורש.');put('hmi-reset-help','אישור ראייה, הסרת סיבה, איפוס והפעלה הם פעולות נפרדות.');get('hmi-alarm-badges').innerHTML='';}
+    get('hmi-alarm-picks').innerHTML=ids.map(id=>'<button type="button" data-hmi-pick="'+id+'" aria-pressed="'+(s.selected===id)+'">'+esc(HMI_ALARM_DEFS[id].source)+'</button>').join('');
+    get('hmi-alarms-table').innerHTML=ids.length?ids.map(id=>{const d=HMI_ALARM_DEFS[id],a=s.alarms[id];return '<tr><td class="'+d.tone+'">'+d.priority+' · '+esc(d.source)+'</td><td>'+esc(d.title)+'<br>'+esc(d.effect)+'</td><td>'+(a.cause==='unknown'?'לא ידועה':a.active?'פעילה':'הוסרה; נעילה נשמרה')+'</td><td>'+(a.ack?'נצפה':'טרם נצפה')+'</td><td><button type="button" data-hmi-pick="'+id+'">פתיחה</button></td></tr>';}).join(''):'<tr><td colspan="5">'+(off?'אין נתונים מאומתים.':'אין נעילות פתוחות.')+'</td></tr>';
+    get('hmi-event-log').innerHTML=s.events.map(e=>'<tr><td>'+e.n+'</td><td>'+esc(e.text)+'</td><td>קלט / פעולה מקומיים</td></tr>').join('');
+    if(dialog.open)renderFaceplate();
+  }
+  const run=fn=>{const result=fn();render();announce(result?'הפעולה המקומית עודכנה. אין פקודה למתקן.':'הפעולה אינה מותרת במצב הנוכחי; אין שינוי במתקן.');return result;};
+  root.addEventListener('click',event=>{const view=event.target.closest('[data-hmi-view]');if(view){showView(view.dataset.hmiView);return;}const pick=event.target.closest('[data-hmi-pick]');if(pick){model.choose(pick.dataset.hmiPick);render();showView('operations');return;}const equip=event.target.closest('[data-hmi-equipment]');if(equip){currentFaceplate=equip.dataset.hmiEquipment;renderFaceplate();dialog.showModal();return;}const command=event.target.closest('[data-hmi-command]');if(command){if(!get('hmi-command-confirm')?.checked||command.dataset.permitted!=='true')return;const actions={'hmi-start':()=>model.start(),'hmi-stop':()=>model.stop(),'hmi-pump-A':()=>model.startPump('A'),'hmi-pump-B':()=>model.startPump('B')};run(actions[command.dataset.hmiCommand]);}});
+  root.querySelectorAll('svg [data-hmi-equipment], svg [data-alarm-source]').forEach(el=>el.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();el.dispatchEvent(new MouseEvent('click',{bubbles:true}));}}));
+  get('hmi-expand').addEventListener('click',()=>{const expanded=root.classList.toggle('hmi-expanded');get('hmi-expand').setAttribute('aria-pressed',String(expanded));put('hmi-expand',expanded?'חזרה למצגת':'הגדלת הסקירה');});get('hmi-faceplate-close').addEventListener('click',()=>dialog.close());dialog.addEventListener('close',()=>{currentFaceplate=null;});
+  root.addEventListener('change',event=>{if(event.target.id==='hmi-command-confirm')root.querySelectorAll('[data-hmi-command]').forEach(el=>el.disabled=!event.target.checked||el.dataset.permitted!=='true');});
+  get('hmi-role').addEventListener('change',event=>run(()=>model.setRole(event.target.value)));get('hmi-scenario').addEventListener('change',event=>run(()=>model.scenario(event.target.value)));get('hmi-recover').addEventListener('click',()=>run(()=>model.scenario('normal')));
+  get('hmi-ack').addEventListener('click',()=>run(()=>model.acknowledge()));get('hmi-reset').addEventListener('click',()=>run(()=>model.reset()));get('hmi-manual-check').addEventListener('change',event=>run(()=>model.manual(event.target.checked)));get('hmi-tank-service').addEventListener('change',event=>run(()=>model.service(event.target.checked)));
+  for(const id of ['A','B'])get('hmi-proof-'+id).addEventListener('click',()=>run(()=>model.provePump(id)));get('hmi-proof-flow').addEventListener('click',()=>run(()=>model.proveFlow()));get('hmi-proof-on').addEventListener('click',()=>run(()=>model.proveHeat(true)));get('hmi-proof-off').addEventListener('click',()=>run(()=>model.proveHeat(false)));get('hmi-proof-stopped').addEventListener('click',()=>run(()=>model.proveStopped()));get('hmi-start-failure').addEventListener('click',()=>run(()=>model.failStart()));get('hmi-local-reset').addEventListener('click',()=>run(()=>model.observeLocalReset()));get('hmi-rearm').addEventListener('click',()=>run(()=>model.rearmFailover()));
+  render();
+})();
+</script>
+
+</body></html>
