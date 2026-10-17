@@ -147,6 +147,17 @@ body:has(#technician:not([hidden])) main{padding:12px 18px}
 #technician .hmi-diagram-scroll.is-fit .hmi-process{width:100%;min-width:0;height:auto;min-height:0;max-height:none}
 @media(max-width:650px){.hmi-mimic-toolbar>span:first-child{width:100%}.hmi-scale-controls{width:100%;justify-content:space-between}.hmi-diagram-scroll:not(.is-fit) .hmi-process{width:1040px;min-width:1040px;height:auto;min-height:0;max-height:none}}
 </style>
+<link rel="stylesheet" href="assets/site-input-ui.css?rev=a4-20261017-r1">
+<link rel="stylesheet" href="assets/site-input-bindings.css?rev=a4-20261017-r1">
+<link rel="stylesheet" href="assets/site-calc-ui.css?rev=a4-20261017-r1">
+<link rel="stylesheet" href="assets/site-calc-graphs.css?rev=a4-20261017-r1">
+<script defer src="assets/site-calc-schema.js?rev=a4-20261017-r1"></script>
+<script defer src="assets/site-input-core.js?rev=a4-20261017-r1"></script>
+<script defer src="tools/compute_site.js?rev=a4-20261017-r1"></script>
+<script defer src="assets/site-input-ui.js?rev=a4-20261017-r1"></script>
+<script defer src="assets/site-calc-graphs.js?rev=a4-20261017-r1"></script>
+<script defer src="assets/site-calc-ui.js?rev=a4-20261017-r1"></script>
+<script defer src="assets/site-data-public.js?rev=a4-20261017-r1"></script>
 </head>
 <body>
 <nav class="topbar" aria-label="ניווט במצגת">
@@ -156,6 +167,7 @@ body:has(#technician:not([hidden])) main{padding:12px 18px}
 <button type="button" class="tab" role="tab" id="tab-schematic" aria-controls="schematic" aria-selected="true" tabindex="0"><span class="tab-number" aria-hidden="true">02</span>תרשים המערכת</button>
 <button type="button" class="tab" role="tab" id="tab-suppliers" aria-controls="suppliers" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">03</span>רכיבים וספקים</button>
 <button type="button" class="tab" role="tab" id="tab-technician" aria-controls="technician" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">04</span>לוח טכנאי</button>
+<button type="button" class="tab" role="tab" id="tab-site-data" aria-controls="site-data" aria-selected="false" tabindex="-1"><span class="tab-number" aria-hidden="true">05</span>נתוני אתר</button>
 </div><span class="tag">קונספט · לא תכנון לביצוע</span>
 </nav>
 <main>
@@ -431,6 +443,7 @@ body:has(#technician:not([hidden])) main{padding:12px 18px}
 <dialog id="hmi-faceplate" class="hmi-dialog"><header><h2 id="hmi-faceplate-title">פרטי ציוד</h2><button type="button" id="hmi-faceplate-close" aria-label="סגירת פרטי ציוד">סגירה</button></header><div id="hmi-faceplate-content" class="hmi-dialog-content"></div></dialog>
 </div>
 
+<div id="site-data" class="tab-panel" role="tabpanel" aria-labelledby="tab-site-data" tabindex="0" hidden><div id="site-input-app"><p role="status">טוען את טופס נתוני האתר…</p></div></div>
 </main><footer>v4.2/R2 • הוכן לשלב המחשה בלבד • עודכן ב־17.10.2026 • אין שינוי בהגדרות ציוד או מערכת פיזית</footer>
 
 <script>
