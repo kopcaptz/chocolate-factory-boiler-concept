@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2100" height="1430" viewBox="0 0 2100 1430" role="img" aria-labelledby="detail-title detail-description">
-<title id="detail-title">פרט מכל התפשטות והשלמה — קונספט</title>
+<title id="detail-title">פרט מכל התפשטות והשלמה — v4.2 / R2</title>
 <desc id="detail-description">פרט נגזר מאותו גרף: T1 לפני היניקה המשותפת של שתי המשאבות, T2 מחוץ למכל, PI01 ו־PT01 בצד המערכת של VET, DVET בצד המכל ומשוב פתיחה מוצע ZSO_VET. אין בתרשים צרכני מפעל.</desc>
 <defs>
 <marker id="hot" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="3.2" markerHeight="3.2" orient="auto-start-reverse"><path d="M0 0 L12 6 L0 12 Z" fill="#c84c43"/></marker>
@@ -14,7 +14,7 @@
 <rect x="0" y="0" width="2100" height="1430" rx="0" fill="#f5f8fa" stroke="#f5f8fa" stroke-width="2" />
 <rect x="0" y="0" width="2100" height="135" rx="0" fill="#17384e" stroke="#17384e" stroke-width="2" />
 <text x="2040" y="58" fill="white" font-size="36" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מכל התפשטות והשלמה · שתי משאבות על יניקה משותפת</text>
-<text x="2040" y="108" fill="#d9e6ed" font-size="24" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">קונספט · פרט מתוך אותו גרף חיבורים · לבדיקת מהנדס, לא לביצוע</text>
+<text x="2040" y="108" fill="#d9e6ed" font-size="24" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">v4.2 / R2 · פרט מתוך אותו גרף חיבורים · לבדיקת מהנדס, לא לביצוע</text>
 <rect x="40" y="170" width="920" height="1040" rx="16" fill="white" stroke="#d6e1e8" stroke-width="2" />
 <rect x="980" y="295" width="1000" height="535" rx="16" fill="#fff9f4" stroke="#ead8c9" stroke-width="2" />
 <text x="1520" y="329" fill="#183348" font-size="26" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">סחרור 1+1 · סידור מוצע</text>
@@ -29,10 +29,6 @@
 <g data-edge="FS_IN&gt;FS_OUT" data-a="FS_IN" data-b="FS_OUT" data-kind="hot" data-state="open"><title>FS_IN → FS_OUT</title>
 <path d="M 1620 520 L 1680 520" fill="none" stroke="white" stroke-width="10"/>
 <path d="M 1620 520 L 1680 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
-</g>
-<g data-edge="FS_OUT&gt;TT_TAP" data-a="FS_OUT" data-b="TT_TAP" data-kind="hot" data-state="open"><title>FS_OUT → TT_TAP</title>
-<path d="M 1680 520 L 1740 520" fill="none" stroke="white" stroke-width="10"/>
-<path d="M 1680 520 L 1740 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
 </g>
 <g data-edge="TT_TAP&gt;SUPPLY" data-a="TT_TAP" data-b="SUPPLY" data-kind="hot" data-state="open"><title>TT_TAP → SUPPLY</title>
 <path d="M 1740 520 L 1890 520" fill="none" stroke="white" stroke-width="10"/>
@@ -98,9 +94,33 @@
 <path d="M 250 930 L 250 1050" fill="none" stroke="white" stroke-width="10"/>
 <path d="M 250 930 L 250 1050" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
 </g>
+<g data-edge="FQ_IN&gt;FQ_OUT" data-a="FQ_IN" data-b="FQ_OUT" data-kind="fill" data-state="open"><title>FQ_IN → FQ_OUT</title>
+<path d="M 1960 860 L 1900 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1960 860 L 1900 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PRV1_IN&gt;PRV1_OUT" data-a="PRV1_IN" data-b="PRV1_OUT" data-kind="fill" data-state="open"><title>PRV1_IN → PRV1_OUT</title>
+<path d="M 1780 860 L 1720 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1780 860 L 1720 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="FQ_OUT&gt;PRV1_IN" data-a="FQ_OUT" data-b="PRV1_IN" data-kind="fill" data-state="open"><title>FQ_OUT → PRV1_IN</title>
+<path d="M 1900 860 L 1780 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1900 860 L 1780 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="XV1_IN&gt;XV1_OUT" data-a="XV1_IN" data-b="XV1_OUT" data-kind="fill" data-state="controlled_closed"><title>XV1_IN → XV1_OUT</title>
+<path d="M 1490 860 L 1430 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1490 860 L 1430 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PRV1_OUT&gt;XV1_IN" data-a="PRV1_OUT" data-b="XV1_IN" data-kind="fill" data-state="open"><title>PRV1_OUT → XV1_IN</title>
+<path d="M 1720 860 L 1490 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1720 860 L 1490 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
 <g data-edge="CV1_IN&gt;CV1_OUT" data-a="CV1_IN" data-b="CV1_OUT" data-kind="fill" data-state="oneway"><title>CV1_IN → CV1_OUT</title>
 <path d="M 980 860 L 920 860" fill="none" stroke="white" stroke-width="10"/>
 <path d="M 980 860 L 920 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="XV1_OUT&gt;CV1_IN" data-a="XV1_OUT" data-b="CV1_IN" data-kind="fill" data-state="open"><title>XV1_OUT → CV1_IN</title>
+<path d="M 1430 860 L 980 860" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1430 860 L 980 860" fill="none" stroke="#0c8b80" stroke-width="5" stroke-linejoin="round"/>
 </g>
 <g data-edge="CV1_OUT&gt;T2" data-a="CV1_OUT" data-b="T2" data-kind="fill" data-state="open"><title>CV1_OUT → T2</title>
 <path d="M 920 860 L 920 570 L 460 570" fill="none" stroke="white" stroke-width="10"/>
@@ -202,6 +222,42 @@
 <path d="M 1000 260 L 1000 520" fill="none" stroke="white" stroke-width="10"/>
 <path d="M 1000 260 L 1000 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
 </g>
+<g data-edge="FS_OUT&gt;PT02_TAP" data-a="FS_OUT" data-b="PT02_TAP" data-kind="hot" data-state="open"><title>FS_OUT → PT02_TAP</title>
+<path d="M 1680 520 L 1710 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1680 520 L 1710 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PT02_TAP&gt;TT_TAP" data-a="PT02_TAP" data-b="TT_TAP" data-kind="hot" data-state="open"><title>PT02_TAP → TT_TAP</title>
+<path d="M 1710 520 L 1740 520" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1710 520 L 1740 520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PT02_TAP&gt;PT02" data-a="PT02_TAP" data-b="PT02" data-kind="hot" data-state="open"><title>PT02_TAP → PT02</title>
+<path d="M 1710 520 L 1710 255" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1710 520 L 1710 255" fill="none" stroke="#c84c43" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="T2&gt;PSV02_IN" data-a="T2" data-b="PSV02_IN" data-kind="drain" data-state="open"><title>T2 → PSV02_IN</title>
+<path d="M 460 570 L 330 570" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 460 570 L 330 570" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV02_IN&gt;PSV02_OUT" data-a="PSV02_IN" data-b="PSV02_OUT" data-kind="drain" data-state="relief"><title>PSV02_IN → PSV02_OUT</title>
+<path d="M 330 570 L 280 570" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 330 570 L 280 570" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV02_OUT&gt;PSV02_END" data-a="PSV02_OUT" data-b="PSV02_END" data-kind="drain" data-state="open"><title>PSV02_OUT → PSV02_END</title>
+<path d="M 280 570 L 110 570 L 110 650" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 280 570 L 110 570 L 110 650" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="SUPPLY&gt;PSV03_IN" data-a="SUPPLY" data-b="PSV03_IN" data-kind="drain" data-state="open"><title>SUPPLY → PSV03_IN</title>
+<path d="M 1890 520 L 1980 520 L 1980 650" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1890 520 L 1980 520 L 1980 650" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV03_IN&gt;PSV03_OUT" data-a="PSV03_IN" data-b="PSV03_OUT" data-kind="drain" data-state="relief"><title>PSV03_IN → PSV03_OUT</title>
+<path d="M 1980 650 L 1980 690" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1980 650 L 1980 690" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
+<g data-edge="PSV03_OUT&gt;PSV03_END" data-a="PSV03_OUT" data-b="PSV03_END" data-kind="drain" data-state="open"><title>PSV03_OUT → PSV03_END</title>
+<path d="M 1980 690 L 1980 810" fill="none" stroke="white" stroke-width="10"/>
+<path d="M 1980 690 L 1980 810" fill="none" stroke="#a97924" stroke-width="5" stroke-linejoin="round"/>
+</g>
 <g data-component="AS" data-type="airSeparator" transform="translate(290.0 260.0) rotate(0)">
 <rect x="-29" y="-40" width="58" height="80" rx="19" fill="#f4f8fa" stroke="#c84c43" stroke-width="3"/>
 <circle cx="-9" cy="-9" r="5" fill="none" stroke="#c84c43"/><circle cx="9" cy="9" r="6" fill="none" stroke="#c84c43"/>
@@ -216,6 +272,17 @@
 <g data-component="DVET" data-type="valve" transform="translate(250.0 905.0) rotate(90)">
 <path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#a97924" stroke="#a97924" stroke-width="3"/>
 <path d="M0 -1 V-26 M-10 -26 H10" stroke="#a97924" fill="none" stroke-width="3"/>
+</g>
+<g data-component="FQ01" data-type="meter" transform="translate(1930.0 860.0) rotate(180)">
+<rect x="-28" y="-23" width="56" height="46" rx="9" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="PRV1" data-type="prv" transform="translate(1750.0 860.0) rotate(180)">
+<path d="M-23 -17 H23 V17 H-23 Z M-14 9 L14 -9" fill="white" stroke="#0c8b80" stroke-width="3"/>
+</g>
+<g data-component="XV1" data-type="ctrlValve" transform="translate(1460.0 860.0) rotate(180)">
+<path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="#0c8b80" stroke="#0c8b80" stroke-width="3"/>
+<path d="M0 -1 V-26 M-10 -26 H10" stroke="#0c8b80" fill="none" stroke-width="3"/>
+<rect x="-12" y="-46" width="24" height="20" rx="3" fill="white" stroke="#0c8b80" stroke-width="2"/>
 </g>
 <g data-component="CV1" data-type="check" transform="translate(950.0 860.0) rotate(180)">
 <path d="M-18 -14 L8 0 L-18 14 Z M12 -18 V18" stroke="#0c8b80" fill="white" stroke-width="3"/>
@@ -254,6 +321,12 @@
 <path d="M-20 -13 L20 13 L20 -13 L-20 13 Z" fill="white" stroke="#c84c43" stroke-width="3"/>
 <path d="M0 -1 V-26 M-10 -26 H10" stroke="#c84c43" fill="none" stroke-width="3"/>
 </g>
+<g data-component="PSV02" data-type="psv" transform="translate(305.0 570.0) rotate(180)">
+<rect x="-24" y="-22" width="48" height="44" rx="5" fill="white" stroke="#a97924" stroke-width="3"/><path d="M-14 10 L14 -10 M0 -22 V-30 L-8 -34 L8 -39 L-8 -44 L8 -49" fill="none" stroke="#a97924" stroke-width="3"/>
+</g>
+<g data-component="PSV03" data-type="psv" transform="translate(1980.0 670.0) rotate(90)">
+<rect x="-24" y="-22" width="48" height="44" rx="5" fill="white" stroke="#a97924" stroke-width="3"/><path d="M-14 10 L14 -10 M0 -22 V-30 L-8 -34 L8 -39 L-8 -44 L8 -49" fill="none" stroke="#a97924" stroke-width="3"/>
+</g>
 <rect x="370" y="930" width="180" height="240" rx="55" fill="#f0f4f9" stroke="#617f91" stroke-width="3" />
 <polyline points="375,1045 545,1045" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="7 5"/>
 <text x="460" y="1000" fill="#183348" font-size="28" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ET01</text>
@@ -264,10 +337,13 @@
 <text x="660" y="305" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מד לחץ</text>
 <circle cx="820" cy="350" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
 <text x="820" y="357" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PT01</text>
-<text x="820" y="305" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משדר לחץ</text>
+<text x="820" y="305" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">לחץ ביניקה</text>
+<circle cx="1710" cy="255" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
+<text x="1710" y="262" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PT02</text>
+<text x="1710" y="210" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">לחץ באספקה</text>
 <circle cx="1740" cy="445" r="29" fill="white" stroke="#5a7081" stroke-width="2"/>
 <text x="1740" y="452" fill="#183348" font-size="18" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">TT01</text>
-<text x="1740" y="400" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טמפרטורת אספקה</text>
+<text x="1850" y="480" fill="#5a7081" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">טמפרטורת אספקה</text>
 <circle cx="460" cy="260" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <circle cx="1000" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <circle cx="1540" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
@@ -275,16 +351,28 @@
 <circle cx="660" cy="420" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <circle cx="460" cy="570" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <circle cx="460" cy="820" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1710" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<circle cx="1890" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <circle cx="1740" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
+<polyline points="1890,520 2070,520" fill="none" stroke="#c84c43" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#hot)"/>
+<circle cx="1980" cy="520" r="7" fill="#c84c43" stroke="none" stroke-width="2"/>
 <text x="110" y="220" fill="#c84c43" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מהדוד</text>
 <text x="170" y="306" fill="#183348" font-size="20" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VB01O</text>
 <text x="290" y="316" fill="#183348" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">AS</text>
 <text x="460" y="220" fill="#183348" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">T1 · לפני היניקה המשותפת</text>
-<text x="460" y="610" fill="#0c8b80" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">T2 · נקודת ההשלמה מחוץ למכל</text>
+<text x="680" y="615" fill="#0c8b80" font-size="24" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">T2 · השלמה מחוץ למכל</text>
 <text x="660" y="470" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">PI/PT נשארים בצד המערכת של VET</text>
 <text x="715" y="540" fill="#0c8b80" font-size="22" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">מי השלמה אל המערכת</text>
 <text x="950" y="905" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CV1</text>
-<text x="1280" y="860" fill="#0c8b80" font-size="22" font-weight="600" text-anchor="start" direction="rtl" unicode-bidi="plaintext">משרשרת ההשלמה</text>
+<text x="1930" y="905" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">FQ01</text>
+<text x="1750" y="905" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">PRV1</text>
+<text x="1460" y="935" fill="#0c8b80" font-size="21" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">XV1</text>
+<text x="1870" y="952" fill="#0c8b80" font-size="20" font-weight="600" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">כניסה אחרי BF1 / WT1 · מהתרשים הכללי</text>
+<text x="310" y="527" fill="#a97924" font-size="23" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">PSV02 · ב־T2</text>
+<text x="270" y="690" fill="#a97924" font-size="20" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">פריקה · ללא ברז בידוד</text>
+<text x="1845" y="715" fill="#a97924" font-size="21" font-weight="700" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">PSV03 · אספקה</text>
+<polyline points="99,661 99,672 121,672 121,661" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="1969,821 1969,832 1991,832 1991,821" fill="none" stroke="#a97924" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="1230" y="472" fill="#183348" font-size="25" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">P01A</text>
 <text x="1120" y="360" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">VAI</text>
 <text x="1350" y="360" fill="#183348" font-size="19" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">CVA</text>
@@ -305,13 +393,13 @@
 <text x="790" y="681" fill="#183348" font-size="23" font-weight="700" text-anchor="middle" direction="ltr" unicode-bidi="plaintext">ZSO_VET</text>
 <text x="790" y="714" fill="#183348" font-size="19" font-weight="400" text-anchor="middle" direction="rtl" unicode-bidi="plaintext">משוב פתיחה מוצע · לא מחובר</text>
 <polyline points="478,720 620,720 620,690 650,690" fill="none" stroke="#5a7081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8 6"/>
-<rect x="1020" y="900" width="1000" height="280" rx="14" fill="white" stroke="#d7e1e8" stroke-width="2" />
-<text x="1960" y="946" fill="#183348" font-size="27" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">מה נשאר מחוץ לפרט</text>
-<text x="1960" y="994" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ברזי ניקוז/אוורור המשאבות והסעפות מופיעים בתרשים הכללי.</text>
-<text x="1960" y="1029" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PSV והגנות עצמאיות בדוד נשארים בצד הדוד.</text>
-<text x="1960" y="1064" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">VET סגור או משוב לא ידוע: אין הרשאת חימום.</text>
-<text x="1960" y="1099" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">סגירת VB01I/VB01O מנתקת את הדוד מהמכל — רק בנוהל נעילה.</text>
-<text x="1960" y="1134" fill="#183348" font-size="23" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין כאן צרכנים; שישה זוגות הממשקים מוצגים בתרשים הכללי.</text>
+<rect x="1020" y="975" width="1000" height="235" rx="14" fill="white" stroke="#d7e1e8" stroke-width="2" />
+<text x="1960" y="1012" fill="#183348" font-size="25" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">הגנות מוצעות · טרם תוכננו או אושרו</text>
+<text x="1960" y="1048" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">ברזי ניקוז/אוורור המשאבות והסעפות מופיעים בתרשים הכללי.</text>
+<text x="1960" y="1081" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PSV02: כשל PRV1 ומילוי; PSV03: צד הדחיפה המשותף.</text>
+<text x="1960" y="1114" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">לחצי פתיחה, ספיקת פריקה ויעדי ניקוז — אין נתונים.</text>
+<text x="1960" y="1147" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין הוכחת הגנה על מעטפת מרוחקת או מקטע כלוא.</text>
+<text x="1960" y="1180" fill="#183348" font-size="22" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">PT02 אינו תחליף לפריקה; VET לא ידוע חוסם חימום.</text>
 <polyline points="60,1240 2040,1240" fill="none" stroke="#d7e1e8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <text x="2030" y="1290" fill="#183348" font-size="25" font-weight="700" text-anchor="start" direction="rtl" unicode-bidi="plaintext">כיוון חיבור המכל, יכולת ניקוזו, קדם־לחץ, נפח ומרווח תחזוקה ייקבעו לפי הדגם והנתונים — לא נקבעו כאן.</text>
 <text x="2030" y="1333" fill="#183348" font-size="25" font-weight="400" text-anchor="start" direction="rtl" unicode-bidi="plaintext">אין אל־חוזר בין T1 למכל. השלמת מים מצטרפת ב־T2 לפני VET ואינה מוזרמת ישירות לתוך המכל.</text>

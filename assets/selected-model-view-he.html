@@ -84,7 +84,7 @@ header h1{font-size:21px}header p{font-size:13px;margin-top:5px}.preview-status{
 @media(max-width:760px){header{padding:10px 12px;height:72px}header h1{font-size:17px}header p{display:none}.preview-status{font-size:11px;padding:5px 8px}.toolbar{top:72px;bottom:auto;left:0;right:0;gap:12px;padding:6px 10px}.group{flex-shrink:0}.toolbar button{font-size:12px}footer{font-size:11px;padding:7px 10px}.page-note{display:none}}
 body.embedded header{display:none}body.embedded .toolbar{top:0}body.embedded #stage{inset:49px 0 37px}
 </style><link rel="stylesheet" href="selected-model-interaction.css?rev=cards-1"></head><body>
-<header><div><h1>חדר הדוד — תצוגה מקדימה</h1><p>על בסיס מודל Claude · מערכת הדוד והחיבורים לצרכנים בלבד</p></div><span class="preview-status">קונספט · לא תכנון לביצוע</span></header>
+<header><div><h1>חדר הדוד — תצוגה מקדימה</h1><p>על בסיס מודל Claude · מערכת הדוד והחיבורים לצרכנים בלבד</p></div><span class="preview-status">v4.2 / R2 · קונספט · לא תכנון לביצוע</span></header>
 <div class="toolbar" role="group" aria-label="בחירת מבט">
  <div class="group"><button type="button" data-view="iso">מבט כללי</button><button type="button" data-view="jacket">חיבורי צרכנים 1–6</button><button type="button" data-view="boiler">דוד והגנות</button><button type="button" data-view="pump">משאבות 1+1</button><button type="button" data-view="exp">מכל התפשטות והשלמה</button></div>
  <div class="group"><button type="button" id="bReset">איפוס מבט</button><button type="button" id="find-component" aria-controls="component-panel" aria-expanded="false">איתור רכיב</button><button type="button" id="tSignals" class="tg on">קווי בקרה</button><button type="button" id="tProj">פרספקטיבה</button><button type="button" id="exportFrame" hidden>שמירת מבט נקי</button></div>
@@ -94,19 +94,19 @@ body.embedded header{display:none}body.embedded .toolbar{top:0}body.embedded #st
 <footer><span class="flow-key"><span><i style="background:#d7463e"></i>אספקה לצרכן</span><span><i style="background:#167abb"></i>חזרה מהצרכן</span><span><i style="background:#008c84"></i>השלמה</span></span><span class="page-note">הצרכנים מחוץ לחדר · <a href="../concept-notes-he.html#pressure" target="_blank" rel="noopener">נתון ראשוני: עד 2 bar מפי טכנאי — לא מאומת</a> · לא לביצוע</span></footer>
 <span id="viewTitle"></span><div id="err" role="alert"></div>
 <script>if(new URLSearchParams(location.search).get('embedded')==='1')document.body.classList.add('embedded');window.addEventListener('error',function(e){var el=document.getElementById('err');el.style.display='block';el.textContent+='שגיאה: '+e.message+'\n';});</script>
-<script src="model-base/scene/topology-v3.js?rev=4.1-r1"></script>
-<script src="model-base/scene/scene-source.js?rev=4.1-r1"></script>
-<script src="model-base/scene/scene-objects.js?rev=4.1-r1"></script>
-<script src="model-base/scene/scene-labels.js?rev=4.1-r1"></script>
-<script src="model-base/viewer/js/math.js?rev=4.1-r1"></script>
-<script src="model-base/viewer/js/geometry.js?rev=4.1-r1"></script>
-<script src="model-base/viewer/js/renderer.js?rev=4.1-r1"></script>
+<script src="model-base/scene/topology-v3.js?rev=4.2-r2"></script>
+<script src="model-base/scene/scene-source.js?rev=4.2-r2"></script>
+<script src="model-base/scene/scene-objects.js?rev=4.2-r2"></script>
+<script src="model-base/scene/scene-labels.js?rev=4.2-r2"></script>
+<script src="model-base/viewer/js/math.js?rev=4.2-r2"></script>
+<script src="model-base/viewer/js/geometry.js?rev=4.2-r2"></script>
+<script src="model-base/viewer/js/renderer.js?rev=4.2-r2"></script>
 <script src="model-base/viewer/js/build-pipes.js?rev=cards-1"></script>
 <script src="model-base/viewer/js/build-components.js?rev=cards-1"></script>
 <script src="model-base/viewer/js/build-objects.js?rev=cards-1"></script>
-<script src="model-base/viewer/js/labels.js?rev=4.1-r1"></script>
-<script src="selected-model-scene.js?rev=cards-1"></script>
-<script src="selected-model-interaction.js?rev=cards-1"></script>
+<script src="model-base/viewer/js/labels.js?rev=4.2-r2"></script>
+<script src="selected-model-scene.js?rev=4.2-r2"></script>
+<script src="selected-model-interaction.js?rev=4.2-r2"></script>
 <script src="model-base/viewer/js/app.js?rev=cards-1"></script>
 <script>
 (function(){

@@ -1,6 +1,6 @@
 {
   "schema": "boiler-workshop-connections/v4",
-  "revision": "public-concept-1",
+  "revision": "public-concept-v4.2-R2",
   "status": "קונספט בלבד — לא תכנון לביצוע; ציוד וערכי תכן טרם נבחרו",
   "source": "assets/selected-model-scene.js with assets/model-base/scene sources",
   "ports": {
@@ -895,6 +895,38 @@
     "BV6_P2": [
       2500,
       1052
+    ],
+    "PT02_TAP": [
+      1905,
+      660
+    ],
+    "PT02": [
+      1905,
+      560
+    ],
+    "PSV02_IN": [
+      690,
+      800
+    ],
+    "PSV02_OUT": [
+      650,
+      800
+    ],
+    "PSV02_END": [
+      580,
+      870
+    ],
+    "PSV03_IN": [
+      1880,
+      440
+    ],
+    "PSV03_OUT": [
+      1820,
+      440
+    ],
+    "PSV03_END": [
+      1855,
+      1220
     ]
   },
   "scene_ports_3d": {
@@ -2012,6 +2044,46 @@
       3.05,
       0.32,
       -0.8
+    ],
+    "PT02_TAP": [
+      9.65,
+      0.95,
+      0.75
+    ],
+    "PT02": [
+      9.65,
+      1.38,
+      0.75
+    ],
+    "PSV02_IN": [
+      5.55,
+      2,
+      1
+    ],
+    "PSV02_OUT": [
+      5.82,
+      2,
+      1
+    ],
+    "PSV02_END": [
+      6.05,
+      0.25,
+      2
+    ],
+    "PSV03_IN": [
+      10.6,
+      1.61,
+      0.75
+    ],
+    "PSV03_OUT": [
+      10.6,
+      1.87,
+      0.75
+    ],
+    "PSV03_END": [
+      10.2,
+      0.25,
+      1.9
     ]
   },
   "edges": [
@@ -2147,36 +2219,6 @@
         "id": "FS01",
         "type": "flowSwitch"
       }
-    },
-    {
-      "a": "FS_OUT",
-      "b": "TT_TAP",
-      "kind": "hot",
-      "state": "open",
-      "label": null,
-      "points": [
-        [
-          1870,
-          660
-        ],
-        [
-          1940,
-          660
-        ]
-      ],
-      "scene_points": [
-        [
-          9.3,
-          0.95,
-          0.75
-        ],
-        [
-          10,
-          0.95,
-          0.75
-        ]
-      ],
-      "component": null
     },
     {
       "a": "TT_TAP",
@@ -8994,6 +9036,332 @@
         ]
       ],
       "component": null
+    },
+    {
+      "a": "FS_OUT",
+      "b": "PT02_TAP",
+      "kind": "hot",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          1870,
+          660
+        ],
+        [
+          1905,
+          660
+        ]
+      ],
+      "scene_points": [
+        [
+          9.3,
+          0.95,
+          0.75
+        ],
+        [
+          9.65,
+          0.95,
+          0.75
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "PT02_TAP",
+      "b": "TT_TAP",
+      "kind": "hot",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          1905,
+          660
+        ],
+        [
+          1940,
+          660
+        ]
+      ],
+      "scene_points": [
+        [
+          9.65,
+          0.95,
+          0.75
+        ],
+        [
+          10,
+          0.95,
+          0.75
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "PT02_TAP",
+      "b": "PT02",
+      "kind": "hot",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          1905,
+          660
+        ],
+        [
+          1905,
+          560
+        ]
+      ],
+      "scene_points": [
+        [
+          9.65,
+          0.95,
+          0.75
+        ],
+        [
+          9.65,
+          1.38,
+          0.75
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "T2",
+      "b": "PSV02_IN",
+      "kind": "drain",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          800,
+          800
+        ],
+        [
+          690,
+          800
+        ]
+      ],
+      "scene_points": [
+        [
+          5.2,
+          2,
+          1
+        ],
+        [
+          5.55,
+          2,
+          1
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "PSV02_IN",
+      "b": "PSV02_OUT",
+      "kind": "drain",
+      "state": "relief",
+      "label": "PSV02",
+      "points": [
+        [
+          690,
+          800
+        ],
+        [
+          650,
+          800
+        ]
+      ],
+      "scene_points": [
+        [
+          5.55,
+          2,
+          1
+        ],
+        [
+          5.82,
+          2,
+          1
+        ]
+      ],
+      "component": {
+        "id": "PSV02",
+        "type": "psv",
+        "state": "relief",
+        "setPressure": null,
+        "certifiedCapacity": null,
+        "status": "proposed; qualification pending",
+        "protectedZone": "makeup/base loop at T2, system side of VET; available with pump branches isolated"
+      }
+    },
+    {
+      "a": "PSV02_OUT",
+      "b": "PSV02_END",
+      "kind": "drain",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          650,
+          800
+        ],
+        [
+          580,
+          800
+        ],
+        [
+          580,
+          870
+        ]
+      ],
+      "scene_points": [
+        [
+          5.82,
+          2,
+          1
+        ],
+        [
+          6.05,
+          2,
+          1
+        ],
+        [
+          6.05,
+          2,
+          2
+        ],
+        [
+          6.05,
+          0.25,
+          2
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "SUPPLY",
+      "b": "PSV03_IN",
+      "kind": "drain",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          2100,
+          420
+        ],
+        [
+          2040,
+          420
+        ],
+        [
+          2040,
+          440
+        ],
+        [
+          1880,
+          440
+        ]
+      ],
+      "scene_points": [
+        [
+          10.6,
+          1.35,
+          0.75
+        ],
+        [
+          10.6,
+          1.61,
+          0.75
+        ]
+      ],
+      "component": null
+    },
+    {
+      "a": "PSV03_IN",
+      "b": "PSV03_OUT",
+      "kind": "drain",
+      "state": "relief",
+      "label": "PSV03",
+      "points": [
+        [
+          1880,
+          440
+        ],
+        [
+          1820,
+          440
+        ]
+      ],
+      "scene_points": [
+        [
+          10.6,
+          1.61,
+          0.75
+        ],
+        [
+          10.6,
+          1.87,
+          0.75
+        ]
+      ],
+      "component": {
+        "id": "PSV03",
+        "type": "psv",
+        "state": "relief",
+        "setPressure": null,
+        "certifiedCapacity": null,
+        "status": "proposed; qualification pending",
+        "protectedZone": "common supply after pump checks and before SV1–6; not isolated remote jackets"
+      }
+    },
+    {
+      "a": "PSV03_OUT",
+      "b": "PSV03_END",
+      "kind": "drain",
+      "state": "open",
+      "label": null,
+      "points": [
+        [
+          1820,
+          440
+        ],
+        [
+          1755,
+          440
+        ],
+        [
+          1755,
+          1220
+        ],
+        [
+          1855,
+          1220
+        ]
+      ],
+      "scene_points": [
+        [
+          10.6,
+          1.87,
+          0.75
+        ],
+        [
+          10.6,
+          1.87,
+          1.9
+        ],
+        [
+          10.2,
+          1.87,
+          1.9
+        ],
+        [
+          10.2,
+          0.25,
+          1.9
+        ]
+      ],
+      "component": null
     }
   ],
   "scene_edge_tuples": [
@@ -9024,13 +9392,6 @@
       "hot",
       "open",
       "flow proving"
-    ],
-    [
-      "FS_OUT",
-      "TT_TAP",
-      "hot",
-      "open",
-      null
     ],
     [
       "TT_TAP",
@@ -10522,6 +10883,69 @@
       "drain",
       "open",
       null
+    ],
+    [
+      "FS_OUT",
+      "PT02_TAP",
+      "hot",
+      "open",
+      null
+    ],
+    [
+      "PT02_TAP",
+      "TT_TAP",
+      "hot",
+      "open",
+      null
+    ],
+    [
+      "PT02_TAP",
+      "PT02",
+      "hot",
+      "open",
+      null
+    ],
+    [
+      "T2",
+      "PSV02_IN",
+      "drain",
+      "open",
+      null
+    ],
+    [
+      "PSV02_IN",
+      "PSV02_OUT",
+      "drain",
+      "relief",
+      "PSV02"
+    ],
+    [
+      "PSV02_OUT",
+      "PSV02_END",
+      "drain",
+      "open",
+      null
+    ],
+    [
+      "SUPPLY",
+      "PSV03_IN",
+      "drain",
+      "open",
+      null
+    ],
+    [
+      "PSV03_IN",
+      "PSV03_OUT",
+      "drain",
+      "relief",
+      "PSV03"
+    ],
+    [
+      "PSV03_OUT",
+      "PSV03_END",
+      "drain",
+      "open",
+      null
     ]
   ],
   "components": {
@@ -10885,6 +11309,24 @@
         "BV6_P2"
       ],
       "setting": "unselected"
+    },
+    "PSV02_IN>PSV02_OUT": {
+      "id": "PSV02",
+      "type": "psv",
+      "state": "relief",
+      "setPressure": null,
+      "certifiedCapacity": null,
+      "status": "proposed; qualification pending",
+      "protectedZone": "makeup/base loop at T2, system side of VET; available with pump branches isolated"
+    },
+    "PSV03_IN>PSV03_OUT": {
+      "id": "PSV03",
+      "type": "psv",
+      "state": "relief",
+      "setPressure": null,
+      "certifiedCapacity": null,
+      "status": "proposed; qualification pending",
+      "protectedZone": "common supply after pump checks and before SV1–6; not isolated remote jackets"
     }
   },
   "terminals": {
@@ -10950,7 +11392,10 @@
     "TT_R6": "TT_R6",
     "BV6_P1": "BV6_P1",
     "BV6_P2": "BV6_P2",
-    "VENT_END": "END_VENT"
+    "VENT_END": "END_VENT",
+    "PT02": "PT02",
+    "PSV02_END": "END_PSV02",
+    "PSV03_END": "END_PSV03"
   },
   "pump_design": {
     "arrangement": "1 duty + 1 standby; each sized later for full design flow/head",
@@ -10960,7 +11405,72 @@
     "commonExpansionConnection": "T1",
     "noFlow": "block heat and dose; stop pumps when zero-flow/deadhead/dry operation is unsafe; inhibit repeated standby attempts on common hydraulic fault; exact sequence/timing subject to selected equipment. On overtemperature, residual circulation is conditional on safe hydraulics.",
     "commonCauseLimits": "power, controls, water and shared hydraulic path are not redundant",
-    "minimumFlowArchitecture": "OPEN; no arbitrary bypass"
+    "minimumFlowArchitecture": "OPEN; no arbitrary bypass",
+    "modePolicy": "Standby manual/service removes that pump only; healthy auto duty pump and proven flow remain. Active removal requires stopped-source feedback, new reserve run feedback and fresh common FS proof.",
+    "heatRecovery": "Manual acknowledgement/reset of cleared heat-blocking latch plus new heat request; automatic heat restart pending N7"
+  },
+  "pressure_protection": {
+    "status": "PROPOSED_NOT_QUALIFIED",
+    "baseSensor": "PT01",
+    "supplySensor": "PT02",
+    "independentReliefs": [
+      {
+        "id": "PSV01",
+        "root": "PSV_ROOT",
+        "scope": "boiler only"
+      },
+      {
+        "id": "PSV02",
+        "root": "T2",
+        "scope": "makeup/base loop"
+      },
+      {
+        "id": "PSV03",
+        "root": "SUPPLY",
+        "scope": "common supply header"
+      }
+    ],
+    "mainsFailureCase": "PRV1 failed fully open with XV1 open or leaking; CV1 and BF1 do not reduce forward pressure; FQ01 and PLC are not relief protection",
+    "qualificationRequired": [
+      "maximum mains pressure and failed-open inflow",
+      "weakest verified allowable pressure and temperature",
+      "pump shutoff head and all operating states",
+      "local elevations and pressure losses",
+      "relieving overpressure, tolerances and certified water capacity",
+      "discharge capacity/backpressure",
+      "isolated and remotely trapped volumes"
+    ],
+    "setpoints": null,
+    "capacity": null,
+    "remoteProtectionProved": false,
+    "alternatives": "If direct-feed pressure envelope cannot be qualified, assess pressure-decoupled supply/break tank or separate low-pressure heat-exchanger circuit; no selection made",
+    "reference": "concept-notes-he.html"
+  },
+  "fill_design": {
+    "mode": "supervised bounded cold refill; explicit operator request",
+    "default": "disabled/unconfigured",
+    "startRequires": [
+      "approved procedure and configured pressure/time/volume/cycle limits",
+      "qualified independent relief protection and safe drains",
+      "independent cold-fill permit",
+      "heat off feedback",
+      "both pumps stopped feedback and stop commands",
+      "PT01 valid low/permitted",
+      "PT02 valid permitted",
+      "valid FQ01 and closed XV1 feedback"
+    ],
+    "closeOn": [
+      "target reached",
+      "time/volume/cycle limit",
+      "high or invalid pressure",
+      "meter/valve fault",
+      "unexpected flow",
+      "lost permit/link"
+    ],
+    "completion": "closed valve feedback AND no makeup flow; no automatic retry",
+    "recovery": "find cause; repair leak if present; verify water by LW_B01 independently; manufacturer local reset; acknowledge/reset appropriate latches; new pump/run/flow/heat requests",
+    "productionAutomation": "May be designed after data and safety approval; low pressure alone never authorizes unlimited makeup",
+    "numericSettings": null
   },
   "signal_nodes": {
     "THH_B01": {
@@ -11028,19 +11538,42 @@
       "unknown": "block heat"
     },
     {
-      "from": "FS01",
-      "to": "DP01_PERMISSION",
-      "kind": "flow_proof"
+      "from": "PT01",
+      "to": "BASE_PRESSURE_INTERLOCK",
+      "kind": "proposed_pressure_monitoring",
+      "invalid": "heat/fill/dose inhibited; pump stop requested by provisional policy",
+      "mechanicalReliefSubstitute": false
     },
     {
-      "from": "P01A/P01B_RUN_FEEDBACK",
+      "from": "PT02",
+      "to": "SUPPLY_PRESSURE_INTERLOCK",
+      "kind": "proposed_pressure_monitoring",
+      "invalid": "heat/fill/dose inhibited; pump stop requested by provisional policy",
+      "mechanicalReliefSubstitute": false
+    },
+    {
+      "from": "HEAT_PERMISSION",
       "to": "DP01_PERMISSION",
-      "kind": "running_feedback"
+      "kind": "and_permissive",
+      "actualHeatOnRequired": false
+    },
+    {
+      "from": "APPROVED_CHEMISTRY",
+      "to": "DP01_PERMISSION",
+      "kind": "and_permissive",
+      "actualHeatOnRequired": false
+    },
+    {
+      "from": "VALID_WATER_QUALITY",
+      "to": "DP01_PERMISSION",
+      "kind": "and_permissive",
+      "actualHeatOnRequired": false
     },
     {
       "from": "APPROVED_TREATMENT_LIMITS",
       "to": "DP01_PERMISSION",
-      "kind": "qualified_treatment_permissive"
+      "kind": "and_permissive",
+      "actualHeatOnRequired": false
     }
   ],
   "engineering_holds": {
@@ -11083,7 +11616,8 @@
       },
       "assessment": "concept-notes-he.html#pressure",
       "protectionRequires": "local pressure incl elevation, pump, transients, tolerances and full-capacity relieving pressure; nominal 2 bar setpoint is not proof",
-      "alternativesSelected": false
+      "alternativesSelected": false,
+      "pressureRevision": "N1/N2: PSV02 at T2, PSV03 common supply and PT02 proposed; qualification, local jacket pressure and remote isolated thermal relief remain OPEN"
     },
     "R12": {
       "status": "OPEN",
@@ -11106,6 +11640,18 @@
     "R22": {
       "status": "OPEN",
       "topic": "TT-P external product-temperature interface with process technologist; not drawn as factory equipment"
+    },
+    "N4": {
+      "status": "OPEN",
+      "topic": "Selected boiler manufacturer must approve hot-stop and residual-cooling sequence; HMI conservative pressure-unknown/high stop is not a certified physical sequence"
+    },
+    "N5": {
+      "status": "OPEN",
+      "topic": "Fill pressure/time/volume/cycle limits, safety qualification, instrumentation and operator procedure require engineering configuration; default disabled"
+    },
+    "N7": {
+      "status": "OPEN",
+      "topic": "Automatic heat recovery not selected; interim manual reset and new heat request after verified standby; allowed chocolate cooling time missing"
     }
   },
   "service_branches": [
@@ -11376,6 +11922,20 @@
       "airGap": true,
       "pressurizedConnection": false,
       "destination": "final destination, capacity and permitted backpressure unselected"
+    },
+    {
+      "id": "RCV_PSV02",
+      "from": "PSV02_END",
+      "airGap": true,
+      "pressurizedConnection": false,
+      "destination": "dedicated safe receptor; capacity, temperature, backpressure and supports unselected"
+    },
+    {
+      "id": "RCV_PSV03",
+      "from": "PSV03_END",
+      "airGap": true,
+      "pressurizedConnection": false,
+      "destination": "dedicated safe receptor; capacity, temperature, backpressure and supports unselected"
     }
   ],
   "conditional_interfaces": [
@@ -11416,12 +11976,25 @@
   },
   "dosing_design": {
     "permission": [
-      "proven FS01",
-      "pump running feedback",
+      "heatPermitted",
+      "approved chemistry",
+      "valid water quality",
       "approved treatment limits"
     ],
+    "heatPermittedRequires": [
+      "eligible pump running feedback",
+      "fresh FS01 proof for that pump",
+      "safe hydraulic path",
+      "valid permitted PT01 and PT02",
+      "VET open proof",
+      "boiler safety ready",
+      "no heat-blocking latches",
+      "no fill cycle"
+    ],
+    "actualHeatOnRequired": false,
     "ECandPH": "do not measure inhibitor concentration",
-    "productAndDose": "not selected"
+    "productAndDose": "not selected",
+    "policy": "conservative concept shared with HMI"
   },
   "vessel_connections": {
     "B01": [
@@ -11461,7 +12034,6 @@
       "AS_IN>AS_OUT",
       "AS_OUT>T1",
       "FS_IN>FS_OUT",
-      "FS_OUT>TT_TAP",
       "TT_TAP>SUPPLY",
       "TT_TAP>TT01",
       "T1>ET_PRESS_TEE",
@@ -11478,7 +12050,13 @@
       "DVET_IN>DVET_OUT",
       "DRAIN_BRANCH>DVET_IN",
       "DVET_OUT>ET_DRAIN",
+      "FQ_IN>FQ_OUT",
+      "PRV1_IN>PRV1_OUT",
+      "FQ_OUT>PRV1_IN",
+      "XV1_IN>XV1_OUT",
+      "PRV1_OUT>XV1_IN",
       "CV1_IN>CV1_OUT",
+      "XV1_OUT>CV1_IN",
       "CV1_OUT>T2",
       "P_SUC>P01A_VI_IN",
       "P01A_VI_IN>P01A_VI_OUT",
@@ -11503,7 +12081,16 @@
       "VB01O_IN>VB01O_OUT",
       "VB01O_OUT>AS_IN",
       "T1>P_HI",
-      "P_HI>P_SUC"
+      "P_HI>P_SUC",
+      "FS_OUT>PT02_TAP",
+      "PT02_TAP>TT_TAP",
+      "PT02_TAP>PT02",
+      "T2>PSV02_IN",
+      "PSV02_IN>PSV02_OUT",
+      "PSV02_OUT>PSV02_END",
+      "SUPPLY>PSV03_IN",
+      "PSV03_IN>PSV03_OUT",
+      "PSV03_OUT>PSV03_END"
     ],
     "ports": {
       "B_OUT": [
@@ -11625,6 +12212,62 @@
       "CV1_OUT": [
         920,
         860
+      ],
+      "FQ_IN": [
+        1960,
+        860
+      ],
+      "FQ_OUT": [
+        1900,
+        860
+      ],
+      "PRV1_IN": [
+        1780,
+        860
+      ],
+      "PRV1_OUT": [
+        1720,
+        860
+      ],
+      "XV1_IN": [
+        1490,
+        860
+      ],
+      "XV1_OUT": [
+        1430,
+        860
+      ],
+      "PT02_TAP": [
+        1710,
+        520
+      ],
+      "PT02": [
+        1710,
+        255
+      ],
+      "PSV02_IN": [
+        330,
+        570
+      ],
+      "PSV02_OUT": [
+        280,
+        570
+      ],
+      "PSV02_END": [
+        110,
+        650
+      ],
+      "PSV03_IN": [
+        1980,
+        650
+      ],
+      "PSV03_OUT": [
+        1980,
+        690
+      ],
+      "PSV03_END": [
+        1980,
+        810
       ],
       "P01A_VI_IN": [
         1100,

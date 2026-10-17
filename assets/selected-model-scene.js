@@ -186,6 +186,63 @@
   };
 })(window);
 
+// R2 PRESSURE REVISION START — applied after the preserved base and R1 scene below.
+// The function is invoked at the end so the R1 initialization cannot overwrite it.
+window.applyBoilerR2 = function () {
+  'use strict';
+  var H=window.HE3D,P=H.ports,C=H.components;
+  function edge(a,b,k,state,label){H.topology.edges.push([a,b,k,state||'open',label||null]);}
+  H.topology.edges=H.topology.edges.filter(function(e){return !(e[0]==='FS_OUT'&&e[1]==='TT_TAP');});
+  delete H.routes['FS_OUT>TT_TAP'];
+  P.PT02_TAP=[9.65,0.95,0.75];P.PT02=[9.65,1.38,0.75];
+  edge('FS_OUT','PT02_TAP','hot');edge('PT02_TAP','TT_TAP','hot');edge('PT02_TAP','PT02','hot');
+  H.objects.push({id:'PT02',type:'instrument',port:'PT02',style:'transmitter',status:'proposed unwired supply transmitter'});H.terminals.PT02='PT02';
+  function relief(id,root,pi,po,pe,via,scope){
+    P[id+'_IN']=pi;P[id+'_OUT']=po;P[id+'_END']=pe;
+    edge(root,id+'_IN','drain');edge(id+'_IN',id+'_OUT','drain','relief',id);edge(id+'_OUT',id+'_END','drain');
+    C[id+'_IN>'+id+'_OUT']={id:id,type:'psv',state:'relief',setPressure:null,certifiedCapacity:null,status:'proposed; qualification pending',protectedZone:scope};
+    H.routes[id+'_OUT>'+id+'_END']=via;
+    H.objects.push({id:'END_'+id,type:'openEnd',port:id+'_END',kind:'drain',dir:[0,-1,0]});H.terminals[id+'_END']='END_'+id;
+    H.topology.dischargeInterfaces.push({id:'RCV_'+id,from:id+'_END',airGap:true,pressurizedConnection:false,destination:'dedicated safe receptor; capacity, temperature, backpressure and supports unselected'});
+  }
+  relief('PSV02','T2',[5.55,2,1],[5.82,2,1],[6.05,0.25,2.0],[[6.05,2,1],[6.05,2,2.0]],'makeup/base loop at T2, system side of VET; available with pump branches isolated');
+  relief('PSV03','SUPPLY',[10.6,1.61,0.75],[10.6,1.87,0.75],[10.2,0.25,1.9],[[10.6,1.87,1.9],[10.2,1.87,1.9]],'common supply after pump checks and before SV1–6; not isolated remote jackets');
+  H.supports.push({x:6.05,z:2.0,h:1.9,arms:[]},{x:10.2,z:1.9,h:1.78,arms:[]});
+  H.topology.revision='v4.2 / R2';H.topology.source='selected Claude room / v4.2 R2 conceptual correction / no engineering acceptance';
+  H.topology.pressureProtection={
+    status:'PROPOSED_NOT_QUALIFIED',baseSensor:'PT01',supplySensor:'PT02',
+    independentReliefs:[{id:'PSV01',root:'PSV_ROOT',scope:'boiler only'},{id:'PSV02',root:'T2',scope:'makeup/base loop'},{id:'PSV03',root:'SUPPLY',scope:'common supply header'}],
+    mainsFailureCase:'PRV1 failed fully open with XV1 open or leaking; CV1 and BF1 do not reduce forward pressure; FQ01 and PLC are not relief protection',
+    qualificationRequired:['maximum mains pressure and failed-open inflow','weakest verified allowable pressure and temperature','pump shutoff head and all operating states','local elevations and pressure losses','relieving overpressure, tolerances and certified water capacity','discharge capacity/backpressure','isolated and remotely trapped volumes'],
+    setpoints:null,capacity:null,remoteProtectionProved:false,
+    alternatives:'If direct-feed pressure envelope cannot be qualified, assess pressure-decoupled supply/break tank or separate low-pressure heat-exchanger circuit; no selection made',
+    reference:'../concept-notes-he.html'
+  };
+  H.topology.engineeringHolds.R3.pressureRevision='N1/N2: PSV02 at T2, PSV03 common supply and PT02 proposed; qualification, local jacket pressure and remote isolated thermal relief remain OPEN';
+  H.topology.engineeringHolds.N4={status:'OPEN',topic:'Selected boiler manufacturer must approve hot-stop and residual-cooling sequence; HMI conservative pressure-unknown/high stop is not a certified physical sequence'};
+  H.topology.engineeringHolds.N5={status:'OPEN',topic:'Fill pressure/time/volume/cycle limits, safety qualification, instrumentation and operator procedure require engineering configuration; default disabled'};
+  H.topology.engineeringHolds.N7={status:'OPEN',topic:'Automatic heat recovery not selected; interim manual reset and new heat request after verified standby; allowed chocolate cooling time missing'};
+  H.topology.fillDesign={mode:'supervised bounded cold refill; explicit operator request',default:'disabled/unconfigured',
+    startRequires:['approved procedure and configured pressure/time/volume/cycle limits','qualified independent relief protection and safe drains','independent cold-fill permit','heat off feedback','both pumps stopped feedback and stop commands','PT01 valid low/permitted','PT02 valid permitted','valid FQ01 and closed XV1 feedback'],
+    closeOn:['target reached','time/volume/cycle limit','high or invalid pressure','meter/valve fault','unexpected flow','lost permit/link'],
+    completion:'closed valve feedback AND no makeup flow; no automatic retry',
+    recovery:'find cause; repair leak if present; verify water by LW_B01 independently; manufacturer local reset; acknowledge/reset appropriate latches; new pump/run/flow/heat requests',
+    productionAutomation:'May be designed after data and safety approval; low pressure alone never authorizes unlimited makeup',numericSettings:null};
+  H.topology.dosingDesign={permission:['heatPermitted','approved chemistry','valid water quality','approved treatment limits'],
+    heatPermittedRequires:['eligible pump running feedback','fresh FS01 proof for that pump','safe hydraulic path','valid permitted PT01 and PT02','VET open proof','boiler safety ready','no heat-blocking latches','no fill cycle'],
+    actualHeatOnRequired:false,ECandPH:'do not measure inhibitor concentration',productAndDose:'not selected',policy:'conservative concept shared with HMI'};
+  H.topology.controlSignals=H.topology.controlSignals.filter(function(q){return q.to!=='DP01_PERMISSION';});
+  [['PT01','BASE_PRESSURE_INTERLOCK'],['PT02','SUPPLY_PRESSURE_INTERLOCK']].forEach(function(q){H.topology.controlSignals.push({from:q[0],to:q[1],kind:'proposed_pressure_monitoring',invalid:'heat/fill/dose inhibited; pump stop requested by provisional policy',mechanicalReliefSubstitute:false});});
+  ['HEAT_PERMISSION','APPROVED_CHEMISTRY','VALID_WATER_QUALITY','APPROVED_TREATMENT_LIMITS'].forEach(function(q){H.topology.controlSignals.push({from:q,to:'DP01_PERMISSION',kind:'and_permissive',actualHeatOnRequired:false});});
+  H.topology.pumpDesign.modePolicy='Standby manual/service removes that pump only; healthy auto duty pump and proven flow remain. Active removal requires stopped-source feedback, new reserve run feedback and fresh common FS proof.';
+  H.topology.pumpDesign.heatRecovery='Manual acknowledgement/reset of cleared heat-blocking latch plus new heat request; automatic heat restart pending N7';
+  H.topology.operatingNotes.DS01='VDSI/VDSO isolate the entire common return; service only with circulation stopped, heat isolated, cooled and safely depressurized per manufacturer procedure; no bypass';
+  H.topology.portIds=Object.keys(P);
+  H.labels.push({t:'PT02',s:'לחץ באספקה אחרי המשאבות · לא הגנת פריקה',at:P.PT02,c:'tag',p:1,v:['pump','exp'],d:'ne',o:0});
+  ['PSV02','PSV03'].forEach(function(id){H.labels.push({t:id,s:'שסתום ביטחון מוצע · לחץ וכושר פריקה טרם נקבעו',at:P[id+'_IN'],c:'drain',p:1,v:['exp'],d:'e',o:0});});
+  H.views.exp.title='מכל, השלמה והגנות לחץ · v4.2/R2';H.views.exp.box=[[4.35,0,0],[11.05,3.25,3.45]];
+};
+
 // v4.1 / R1: proposed serviceability, balancing and independent protection detail.
 // No operating setpoints, selected models or engineering acceptance are implied.
 (function (root) {
@@ -339,3 +396,4 @@
     b.pickId=null;
   };
 })(window);
+window.applyBoilerR2();
